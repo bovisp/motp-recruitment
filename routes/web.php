@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/cases/case-one', 'CaseOneController@show');
 Route::get('/cases/case-two', 'CaseTwoController@show');
+Route::post('/cases/case-two/image', 'CaseTwoController@image');
