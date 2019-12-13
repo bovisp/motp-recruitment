@@ -6,3 +6,10 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import "~toastify-js/src/toastify.css";
+
+.toastify-center {
+  max-width: 400px;
+  text-align: center;
+}

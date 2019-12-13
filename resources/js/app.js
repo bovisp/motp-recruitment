@@ -2,6 +2,8 @@ require('./bootstrap');
 
 require('./plugins/jqScribble')
 
+import Toastify from 'toastify-js'
+
 axios.defaults.baseURL = 'http://msc-educ-smc.cmc.ec.gc.ca/motp-recruitment'
 
 const options = {
@@ -19,7 +21,15 @@ function saveImage (e) {
   $("#warmFront").data("jqScribble").save(async (imageData) => {
     let response = await axios.post('/cases/case-two/image', { imageData })
 
-    console.log(response.data)
+    Toastify({
+      text: "Image saved successfully",
+      duration: 3000,
+      newWindow: true,
+      gravity: "top",
+      position: 'center',
+      backgroundColor: "#28a745",
+      stopOnFocus: true,
+    }).showToast();
   })
 }
 
@@ -29,6 +39,16 @@ async function clearImage (e) {
   await $("#warmFront").data("jqScribble").clear()
 
   await $("#warmFront").data("jqScribble").update({backgroundImage: options.backgroundImage});
+
+  Toastify({
+    text: "Image cleared successfully",
+    duration: 3000,
+    newWindow: true,
+    gravity: "top",
+    position: 'center',
+    backgroundColor: "#28a745",
+    stopOnFocus: true,
+  }).showToast();
 }
 
 $('#warmFront').jqScribble(options);

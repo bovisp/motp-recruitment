@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "napa": "^3.0.0"
+        "napa": "^3.0.0",
+        "toastify-js": "^1.6.1"
     }
 }

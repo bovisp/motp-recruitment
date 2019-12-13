@@ -207,11 +207,11 @@
 
     <div class="d-flex w-100">
       <div class="d-flex flex-column mr-4">
-        <button type="button" class="btn btn-outline-dark saveImage">
+        <button type="button" class="btn btn-outline-dark saveImage" title="Save image">
           <i class="fas fa-save"></i>
         </button>
 
-        <button type="button" class="btn btn-outline-dark clearImage mt-4">
+        <button type="button" class="btn btn-outline-dark clearImage mt-4" title="Clear image">
           <i class="fas fa-trash"></i>
         </button>
       </div>
