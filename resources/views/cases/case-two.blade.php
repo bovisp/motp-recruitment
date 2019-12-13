@@ -205,9 +205,23 @@
 
     <p>Using only the data found above, please draw on the printed-out map which was provided to you where you think the surface warm front is located at 12Z. In the box below, provide a detailed reasoning of why you placed the front where you did. </p>
 
-    <p>Insert draw onto image here.</p>
+    <div class="d-flex w-100">
+      <div class="d-flex flex-column mr-4">
+        <button type="button" class="btn btn-outline-dark saveImage">
+          <i class="fas fa-save"></i>
+        </button>
 
-    <h2>Case 2 Exersise 2 - Precipitation Forecast over Newfoundland</h2>
+        <button type="button" class="btn btn-outline-dark clearImage mt-4">
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+
+      <div style="width: 800px; height: 530px">
+        <canvas id="warmFront" class="mb-4"></canvas>
+      </div>
+    </div>    
+
+    <h2 class="mt-4">Case 2 Exersise 2 - Precipitation Forecast over Newfoundland</h2>
 
     <p>It is November 12 at 12:00Z, and you have begun working your shift as an operational meteorologist for Northeastern Quebec and Newfoundland. Today, you are in charge of issuing weather forecasts for Natashquan, QC (CYNA) and Deer Lake, NL (CYDF).</p>
 
