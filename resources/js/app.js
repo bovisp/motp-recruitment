@@ -15,7 +15,7 @@ function saveImage (e) {
   e.preventDefault()
 
   $("#warmFront").data("jqScribble").save(async (imageData) => {
-    let response = await axios.post('/cases/case-two/image', { imageData })
+    let response = await axios.post('cases/case-two/image', { imageData })
 
     console.log(response.data)
   })
