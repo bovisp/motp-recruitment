@@ -2,6 +2,8 @@ require('./bootstrap');
 
 require('./plugins/jqScribble')
 
+axios.defaults.baseURL = 'http://msc-educ-smc.cmc.ec.gc.ca/motp-recruitment'
+
 const options = {
   backgroundImage: 'https://res.cloudinary.com/tcddmedia/image/upload/v1576252972/moip_direct_entry_assessment/case%202/Exercise%201/OBS-reference_hhz4yl.jpg',
   brushColor: '#FF2D00',
@@ -15,7 +17,7 @@ function saveImage (e) {
   e.preventDefault()
 
   $("#warmFront").data("jqScribble").save(async (imageData) => {
-    let response = await axios.post('cases/case-two/image', { imageData })
+    let response = await axios.post('/cases/case-two/image', { imageData })
 
     console.log(response.data)
   })
