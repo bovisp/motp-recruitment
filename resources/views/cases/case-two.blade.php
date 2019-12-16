@@ -3,6 +3,8 @@
 @section('content')
 
   <div class="container">
+    @include('cases.partials.header')
+
     <h2>Case 2 Exersise 1 - Diagnosis of a Warm Front Over Atlantic Canada</h2>
 
     <p>Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front on the map which was provided, and provide a detailed justification for its placement on the page below.</p>
@@ -369,6 +371,10 @@
     <p>Insert Table with dropdown values here.</p>
 
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
+
+    <a href="/cases/confirm" class="btn btn-primary mt-4">
+      Submit all and finish
+    </a>
   </div>
 
 @endsection

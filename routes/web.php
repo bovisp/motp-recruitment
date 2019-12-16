@@ -17,8 +17,25 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')
+  ->name('home')
+  ->middleware(['auth', 'candidate.empty']);
 
-Route::get('/cases/case-one', 'CaseOneController@show');
-Route::get('/cases/case-two', 'CaseTwoController@show');
-Route::post('/cases/case-two/image', 'CaseTwoController@image');
+Route::get('/cases/case-one', 'CaseOneController@show')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/cases/case-two', 'CaseTwoController@show')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::post('/cases/case-two/image', 'CaseTwoController@image')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::post('/submit-name', 'SubmitNameController@store')
+  ->middleware(['auth', 'candidate.empty']);
+
+Route::get('/cases/confirm', function() {
+  return view('cases.confirm');
+})->middleware(['auth', 'candidate.exists']);
+
+Route::post('/cases/submit-all', 'SubmitAllController@store')
+  ->middleware(['auth', 'candidate.exists']);

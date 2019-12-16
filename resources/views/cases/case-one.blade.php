@@ -5,6 +5,8 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col col-md-10">
+        @include('cases.partials.header')
+
         <h2>Case 1</h2>
 
         <p>It is October 8 at 12:00Z (8am local), and you have begun working your shift as an operational meteorologist for central Ontario. Today, you are in charge of issuing weather forecasts for Kapuskasing, ON (CYYU) and Timmins, ON (CYTS).</p>
