@@ -40,7 +40,7 @@
         <div class="tab-content mb-4">
           <div id="case1Tab1Fog" class="tab-pane active">
             <p class="my-2">GOES fog product valid from 0900Z-1200Z 8 October 2019</p>
-            <video controls>
+            <video controls loop>
               <source 
                 src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609118/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_a9ilaq.mp4"
                 type="video/mp4"
@@ -50,7 +50,7 @@
           
           <div id="case1Tab1Night" class="tab-pane">
             <p class="my-2">GOES night IR product valid from 0900Z-1200Z 8 October 2019</p>
-            <video controls>
+            <video controls loop>
               <source 
                 src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609119/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_br77ci.mp4"
                 type="video/mp4"
@@ -114,7 +114,7 @@
         </div>
 
         <figure class="figure my-4">
-          <video controls>
+          <video controls loop>
             <source 
               src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609118/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_a9ilaq.mp4"
               type="video/mp4"
@@ -161,7 +161,7 @@
         <p>After analyzing all these observations, you decide to examine some NWP fields. In the loop below, the model-derived MSLP is contoured, near-surface level wind barbs are plotted, and areas of strong winds are contoured in greens/yellows.</p>
 
         <figure class="figure my-4">
-          <video controls>
+          <video controls loop>
             <source 
               src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609652/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS_vl5llx_n3ezyo_ytojml.mp4"
               type="video/mp4"
@@ -183,17 +183,17 @@
         <!-- Tab panes for case1Tab4 -->
         <div class="tab-content mb-4">
           <div id="case1Tab4YTS" class="tab-pane active">
-            <video controls>
+            <video controls loop>
               <source 
-                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609998/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yts_crjvxq.mp4"
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576610697/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yts_ebib5v.mp4"
                 type="video/mp4"
               >
             </video>
           </div>
           <div id="case1Tab4YYU" class="tab-pane">
-            <video controls>
+            <video controls loop>
               <source 
-                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609998/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yyu_hmwts0.mp4"
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576610697/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yyu_ywxrge.mp4"
                 type="video/mp4"
               >
             </video>
