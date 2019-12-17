@@ -27,15 +27,29 @@
     <div class="tab-content mb-4">
       <div id="Case2E1Tab1IR" class="tab-pane active">
       <p class="my-2">GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576010122/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_zd3r8h.gif" alt="" /></div>
+      <video controls loop>
+        <source 
+          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615272/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_ts6kjm.mp4"
+          type="video/mp4"
+        >
+      </video>
+    </div>
       
       <div id="Case2E1Tab1IRMultispectral" class="tab-pane">
       <p class="my-2">GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576010125/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_cry7ke.gif" alt="" /></div>
+      <video controls loop>
+        <source 
+          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615273/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_gsopm3.mp4"
+          type="video/mp4"
+        >
+      </video>
+    </div>
       
       <div id="Case2E1Tab1WV" class="tab-pane">
       <p class="my-2">GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576010122/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_gh9m7f.gif" alt="" /></div>
+      
+        
+    </div>
     </div>
 
     <p>The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.</p>
@@ -56,16 +70,19 @@
     <!-- Tab panes for Case2E1Tab2 -->
     <div class="tab-content mb-4">
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
-      <p class="my-2">Surface pressure and temperature valid 1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_pmxyjd.png" alt="" /></div>
+        <p class="my-2">Surface pressure and temperature valid 1200Z 12 November 2019</p>
+        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_pmxyjd.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
-      <p class="my-2">Surface pressure and dew point temperature valid 1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011912/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_hr93sc.png" alt="" /></div>
+        <p class="my-2">Surface pressure and dew point temperature valid 1200Z 12 November 2019</p>
+        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011912/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_hr93sc.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
-      <p class="my-2">Surface pressure and pressure tendency valid 1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_jwqx54.png" alt="" /></div>
+        <p class="my-2">Surface pressure and pressure tendency valid 1200Z 12 November 2019</p>
+        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_jwqx54.png" alt="" />
+      </div>
     </div>
 
     <!-- Nav tabs for Case2E1Tab3 -->
@@ -84,16 +101,34 @@
     <!-- Tab panes for Case2E1Tab3 -->
     <div class="tab-content mb-4">
       <div id="Case2E1Tab315CAPPISNOW" class="tab-pane active">
-      <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576013351/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_CAPPI_1.5KM_SNOW_08-12Z_anr1i5.gif" alt="" /></div>
+        <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
+        <video controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615599/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_CAPPI_1.5KM_SNOW_08-12Z_xok4ck.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
       
       <div id="Case2E1Tab3CompositeLOLLA" class="tab-pane">
-      <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576013352/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Composite_VR_LOLAA_08-12Z_nw5aei.gif" alt="" /></div>
+        <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
+        <video controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615600/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Composite_VR_LOLAA_08-12Z_effwgs.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
       
       <div id="Case2E1TabDrilldownLOLLA" class="tab-pane">
-      <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_600/v1576013351/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Drilldown_VR_LOLAA_08-12Z_lpt8pg.gif" alt="" /></div>
+        <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
+        <video controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615599/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Drilldown_VR_LOLAA_08-12Z_x0d3lb.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
     </div>
 
     <!-- Nav tabs -->
@@ -142,60 +177,73 @@
     <!-- Tab panes -->
     <div class="tab-content mb-4">
       <div id="Case2E1Tab4CYQITephi" class="tab-pane active">
-      <p class="my-2">Yarmouth (CYQI) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_ouk3tb.png" alt="" /></div>
+        <p class="my-2">Yarmouth (CYQI) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_ouk3tb.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYQIHodo" class="tab-pane">
-      <p class="my-2">Yarmouth (CYQI) hodograph valid 1200Z 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_HODO_blmmfq.png" alt="" /></div>
+        <p class="my-2">Yarmouth (CYQI) hodograph valid 1200Z 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_HODO_blmmfq.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYCXTephi" class="tab-pane">
-      <p class="my-2">Gagetown (CYCX) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_hkswsd.png" alt="" /></div>
+        <p class="my-2">Gagetown (CYCX) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_hkswsd.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYCXHodo" class="tab-pane">
-      <p class="my-2">Gagetown (CYCX) hodograph valid 1200Z 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_HODO_uajkae.png" alt="" /></div>
+        <p class="my-2">Gagetown (CYCX) hodograph valid 1200Z 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_HODO_uajkae.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4KCARTephi" class="tab-pane">
-      <p class="my-2">Caribou (KCAR) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_fvda3u.png" alt="" /></div>
+        <p class="my-2">Caribou (KCAR) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_fvda3u.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4KCARHodo" class="tab-pane">
-      <p class="my-2">Caribou (KCAR) hodograph valid 1200Z or 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013435/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_HODO_xds5er.png" alt="" /></div>
+        <p class="my-2">Caribou (KCAR) hodograph valid 1200Z or 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013435/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_HODO_xds5er.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYZVTephi" class="tab-pane">
-      <p class="my-2">Sept-Iles (CYZV) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_f6gtqq.png" alt="" /></div>
+        <p class="my-2">Sept-Iles (CYZV) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_f6gtqq.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYZVHodo" class="tab-pane">
-      <p class="my-2">Sept-Iles (CYZV) hodograph valid 1200Z 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_HODO_qzkwd5.png" alt="" /></div>
+        <p class="my-2">Sept-Iles (CYZV) hodograph valid 1200Z 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_HODO_qzkwd5.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYJTTephi" class="tab-pane">
-      <p class="my-2">Stephenville (CYJT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_z9tltf.png" alt="" /></div>
+        <p class="my-2">Stephenville (CYJT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_z9tltf.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYJTHodo" class="tab-pane">
-      <p class="my-2">Stephenville (CYJT) hodograph valid 1200Z 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_HODO_dnzjsa.png" alt="" /></div>
+        <p class="my-2">Stephenville (CYJT) hodograph valid 1200Z 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_HODO_dnzjsa.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYYTTephi" class="tab-pane">
-      <p class="my-2">St. John's (CYYT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_clbc4p.png" alt="" /></div>
+        <p class="my-2">St. John's (CYYT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_clbc4p.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4CYYTHodo" class="tab-pane">
-      <p class="my-2">St. John's (CYYT) hodograph valid 1200Z 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_HODO_xtn24n.png" alt="" /></div>
+        <p class="my-2">St. John's (CYYT) hodograph valid 1200Z 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_HODO_xtn24n.png" alt="" />
+      </div>
       
       <div id="Case2E1Tab4YQIYCXKCARComp" class="tab-pane">
-      <p class="my-2">YQI (black) / YCX (red) / KCAR (blue) Tephi Comparison valid 1200Z 12 November 2019</p>
-      <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" /></div>
+        <p class="my-2">YQI (black) / YCX (red) / KCAR (blue) Tephi Comparison valid 1200Z 12 November 2019</p>
+        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
+      </div>
     </div>
 
     <figure class="figure my-4">
-      <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
+      <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
       <figcaption class="figure-caption">GOES 10.3 μm IR satellite image valid 1200Z 12 November 2019. Upper air sites are indicated in red.</figcaption>
     </figure>
 
