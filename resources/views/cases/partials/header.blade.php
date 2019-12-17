@@ -7,7 +7,7 @@
     </p>
 
     <p class="ml-auto">
-      <a href="/cases/case-{{ Str::contains(url()->current(), 'case-one') ? 'two': 'one' }}">
+      <a href="{{ env('APP_URL') }}/cases/case-{{ Str::contains(url()->current(), 'case-one') ? 'two': 'one' }}">
         Go to Case #{{ Str::contains(url()->current(), 'case-one') ? 2 : 1 }}
       </a>
     </p>

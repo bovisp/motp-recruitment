@@ -16,7 +16,7 @@
 
     <div class="row justify-content-center mt-5">
       <div class="col-md-4">
-        <form action="/submit-name" method="POST">
+      <form action="{{ env('APP_URL') }}/submit-name" method="POST">
           @csrf
 
           <div class="form-group">

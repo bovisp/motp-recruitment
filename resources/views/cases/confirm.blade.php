@@ -9,7 +9,7 @@
           Are ya sure you wanna finish?
         </p> 
 
-        <form action="/cases/submit-all" method="POST">
+        <form action="{{ env('APP_URL') }}/cases/submit-all" method="POST">
           @csrf
           
           <button class="btn btn-primary">

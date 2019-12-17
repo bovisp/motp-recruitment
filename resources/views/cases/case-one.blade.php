@@ -12,7 +12,7 @@
         <p>It is October 8 at 12:00Z (8am local), and you have begun working your shift as an operational meteorologist for central Ontario. Today, you are in charge of issuing weather forecasts for Kapuskasing, ON (CYYU) and Timmins, ON (CYTS).</p>
 
         <figure class="figure">
-          <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575644904/moip_direct_entry_assessment/case%201/case_1_kap_tim_map_hmldig.jpg" alt="Satellite image of central Ontario with Timmins and Kapuskasing highlighted" width="967" height="685" />
+          <img class="figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_589/v1575644904/moip_direct_entry_assessment/case%201/case_1_kap_tim_map_hmldig.jpg" />
           <figcaption class="figure-caption">Topographic map of central Canada with Timmins (CYTS) and Kapuskasing (CYYU) highlighted</figcaption>
         </figure>
 
@@ -40,11 +40,11 @@
         <div class="tab-content mb-4">
           <div id="case1Tab1Fog" class="tab-pane active">
           <p class="my-2">GOES fog product valid from 0900Z-1200Z 8 October 2019</p>
-          <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575647001/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_zrfovg.gif" alt="" /></div>
+          <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575647001/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_zrfovg.gif" alt="" /></div>
           
           <div id="case1Tab1Night" class="tab-pane">
           <p class="my-2">GOES night IR product valid from 0900Z-1200Z 8 October 2019</p>
-          <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575647001/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_g5ggct.gif" alt="" /></div>
+          <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575647001/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_g5ggct.gif" alt="" /></div>
         </div>
 
         <p>The first satellite loop above is the GOES Fog Product. It is a subtraction between the 3.7µ channel and the 10.3µ channel. At night in the absence of solar radiation, high cloud appears white and low stratus cloud and fog appears dark. The second satellite loop shows a multispectral IR image, where lower cloud is mapped to blue and higher cloud is mapped to white at night.</p>
@@ -102,7 +102,7 @@
         </div>
 
         <figure class="figure my-4">
-          <img class="img-fluid figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575647001/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_zrfovg.gif" alt="" />
+          <img class="img-fluid figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575647001/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_zrfovg.gif" alt="" />
           <figcaption class="figure-caption">GOES fog product valid from 0900Z-1200Z 8 October 2019</figcaption>
         </figure>
 
@@ -144,7 +144,7 @@
         <p>After analyzing all these observations, you decide to examine some NWP fields. In the loop below, the model-derived MSLP is contoured, near-surface level wind barbs are plotted, and areas of strong winds are contoured in greens/yellows.</p>
 
         <figure class="figure my-4">
-          <img class="img-fluid figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575992020/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS_vl5llx_n3ezyo.gif" alt="" />
+          <img class="img-fluid figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575992020/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS_vl5llx_n3ezyo.gif" alt="" />
           <figcaption class="figure-caption">Model-derived mean sea level pressure (MSLP) and 925 mb winds valid from 0900Z 8 October to 0000Z 9 October 2019. Shaded regions indicate areas of stronger winds</figcaption>
         </figure>
 
@@ -186,12 +186,12 @@
         <div class="tab-content mb-4">
           <div id="case1Tab5YTSFog" class="tab-pane active">
             <p class="my-2">Fog climatology for September (blue), October (pink) and November (yellow) at Timmins(CYTS). The graph indicates the probability, in a given hour, that fog could occur.</p>
-            <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575927777/moip_direct_entry_assessment/case%201/YTS_FOG_CLIMATOLOGY_cjlp37.png" alt="" />
+            <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576601320/moip_direct_entry_assessment/case%201/YTS_FOG_CLIMATOLOGY_dkosfy.png" alt="" />
           </div>
           
           <div id="case1Tab5YYUFog" class="tab-pane">
             <p class="my-2">Fog climatology for September (blue), October (pink) and November (yellow) at Kapuskasing (CYYU). The graph indicates the probability, in a given hour, that fog could occur.</p>
-            <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575927777/moip_direct_entry_assessment/case%201/YYU_FOG_CLIMATOLOGY_hvyeh0.png" alt="" />
+            <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576601320/moip_direct_entry_assessment/case%201/YYU_FOG_CLIMATOLOGY_depvon.png" alt="" />
           </div>
         </div>
 

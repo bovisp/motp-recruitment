@@ -27,15 +27,15 @@
     <div class="tab-content mb-4">
       <div id="Case2E1Tab1IR" class="tab-pane active">
       <p class="my-2">GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576010122/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_zd3r8h.gif" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576010122/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_zd3r8h.gif" alt="" /></div>
       
       <div id="Case2E1Tab1IRMultispectral" class="tab-pane">
       <p class="my-2">GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576010125/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_cry7ke.gif" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576010125/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_cry7ke.gif" alt="" /></div>
       
       <div id="Case2E1Tab1WV" class="tab-pane">
       <p class="my-2">GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576010122/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_gh9m7f.gif" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576010122/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_gh9m7f.gif" alt="" /></div>
     </div>
 
     <p>The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.</p>
@@ -57,15 +57,15 @@
     <div class="tab-content mb-4">
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
       <p class="my-2">Surface pressure and temperature valid 1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_pmxyjd.png" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_pmxyjd.png" alt="" /></div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
       <p class="my-2">Surface pressure and dew point temperature valid 1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576011912/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_hr93sc.png" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011912/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_hr93sc.png" alt="" /></div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
       <p class="my-2">Surface pressure and pressure tendency valid 1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_jwqx54.png" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_jwqx54.png" alt="" /></div>
     </div>
 
     <!-- Nav tabs for Case2E1Tab3 -->
@@ -85,15 +85,15 @@
     <div class="tab-content mb-4">
       <div id="Case2E1Tab315CAPPISNOW" class="tab-pane active">
       <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013351/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_CAPPI_1.5KM_SNOW_08-12Z_anr1i5.gif" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576013351/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_CAPPI_1.5KM_SNOW_08-12Z_anr1i5.gif" alt="" /></div>
       
       <div id="Case2E1Tab3CompositeLOLLA" class="tab-pane">
       <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013352/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Composite_VR_LOLAA_08-12Z_nw5aei.gif" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576013352/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Composite_VR_LOLAA_08-12Z_nw5aei.gif" alt="" /></div>
       
       <div id="Case2E1TabDrilldownLOLLA" class="tab-pane">
       <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
-      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013351/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Drilldown_VR_LOLAA_08-12Z_lpt8pg.gif" alt="" /></div>
+      <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_600/v1576013351/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Drilldown_VR_LOLAA_08-12Z_lpt8pg.gif" alt="" /></div>
     </div>
 
     <!-- Nav tabs -->
@@ -372,7 +372,7 @@
 
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
 
-    <a href="/cases/confirm" class="btn btn-primary mt-4">
+    <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-primary mt-4">
       Submit all and finish
     </a>
   </div>
