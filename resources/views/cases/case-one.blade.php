@@ -39,12 +39,24 @@
         <!-- Tab panes for case1Tab1 -->
         <div class="tab-content mb-4">
           <div id="case1Tab1Fog" class="tab-pane active">
-          <p class="my-2">GOES fog product valid from 0900Z-1200Z 8 October 2019</p>
-          <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575647001/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_zrfovg.gif" alt="" /></div>
+            <p class="my-2">GOES fog product valid from 0900Z-1200Z 8 October 2019</p>
+            <video controls>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609118/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_a9ilaq.mp4"
+                type="video/mp4"
+              >
+            </video>
+          </div>
           
           <div id="case1Tab1Night" class="tab-pane">
-          <p class="my-2">GOES night IR product valid from 0900Z-1200Z 8 October 2019</p>
-          <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575647001/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_g5ggct.gif" alt="" /></div>
+            <p class="my-2">GOES night IR product valid from 0900Z-1200Z 8 October 2019</p>
+            <video controls>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609119/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_br77ci.mp4"
+                type="video/mp4"
+              >
+            </video>
+          </div>
         </div>
 
         <p>The first satellite loop above is the GOES Fog Product. It is a subtraction between the 3.7µ channel and the 10.3µ channel. At night in the absence of solar radiation, high cloud appears white and low stratus cloud and fog appears dark. The second satellite loop shows a multispectral IR image, where lower cloud is mapped to blue and higher cloud is mapped to white at night.</p>
@@ -102,14 +114,19 @@
         </div>
 
         <figure class="figure my-4">
-          <img class="img-fluid figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575647001/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_zrfovg.gif" alt="" />
+          <video controls>
+            <source 
+              src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609118/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_a9ilaq.mp4"
+              type="video/mp4"
+            >
+          </video>
           <figcaption class="figure-caption">GOES fog product valid from 0900Z-1200Z 8 October 2019</figcaption>
         </figure>
 
         <p>Because it is just after 12Z, you now have access to new upper air soundings from the area. The three upper air sounding sites relevant for your geographic area are Pickle Lake, ON; Buffalo, NY; and Maniwaki, QC. In the image below, the 850mb winds from the soundings are plotted, as well as the actual 500mb height pattern from the 12Z soundings with the 12Z GOES NIGHT IR satellite image.</p>
 
         <figure class="figure my-4">
-          <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575662700/moip_direct_entry_assessment/case%201/case_1_850_winds_500_heights_i2nkz3.jpg" alt="" />
+          <img src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575662700/moip_direct_entry_assessment/case%201/case_1_850_winds_500_heights_i2nkz3.jpg" alt="" />
           <figcaption class="figure-caption">GOES night IR image valid at 1200Z 8 October 2019. 500 mb geopotential heights and 850 mb winds are superimposed on top of the image. Pickle Lake, Maniwaki and Buffalo are indicated on the map</figcaption>
         </figure>
 
@@ -144,7 +161,12 @@
         <p>After analyzing all these observations, you decide to examine some NWP fields. In the loop below, the model-derived MSLP is contoured, near-surface level wind barbs are plotted, and areas of strong winds are contoured in greens/yellows.</p>
 
         <figure class="figure my-4">
-          <img class="img-fluid figure-img" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1575992020/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS_vl5llx_n3ezyo.gif" alt="" />
+          <video controls>
+            <source 
+              src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609652/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS_vl5llx_n3ezyo_ytojml.mp4"
+              type="video/mp4"
+            >
+          </video>
           <figcaption class="figure-caption">Model-derived mean sea level pressure (MSLP) and 925 mb winds valid from 0900Z 8 October to 0000Z 9 October 2019. Shaded regions indicate areas of stronger winds</figcaption>
         </figure>
 
@@ -161,10 +183,20 @@
         <!-- Tab panes for case1Tab4 -->
         <div class="tab-content mb-4">
           <div id="case1Tab4YTS" class="tab-pane active">
-            <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575927242/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yts_s3qvop.gif" alt="" />
+            <video controls>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609998/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yts_crjvxq.mp4"
+                type="video/mp4"
+              >
+            </video>
           </div>
           <div id="case1Tab4YYU" class="tab-pane">
-            <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575927247/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yyu_jsbe32.gif" alt="" />
+            <video controls>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609998/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yyu_hmwts0.mp4"
+                type="video/mp4"
+              >
+            </video>
           </div>
         </div>
 
