@@ -358,7 +358,7 @@
               <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
               <video style="max-width: 100%;" controls loop>
                 <source 
-                  src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691872/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_6_3HR_QPF_850MB_TEMP_hat9pm.mp4"
+                  src="https://res.cloudinary.com/tcddmedia/video/upload/v1576697358/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_6_3HR_QPF_850MB_TEMP_1_waws1r.mp4"
                   type="video/mp4"
                 >
               </video>
