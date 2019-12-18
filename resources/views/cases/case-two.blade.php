@@ -47,8 +47,12 @@
       
       <div id="Case2E1Tab1WV" class="tab-pane">
       <p class="my-2">GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019</p>
-      
-        
+      <video controls loop>
+        <source 
+          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615271/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_wpkd3p.mp4"
+          type="video/mp4"
+        >
+      </video>
     </div>
     </div>
 
