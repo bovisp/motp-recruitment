@@ -301,17 +301,32 @@
         <div class="tab-content mb-4">
           <div id="Case2E2Tab1SFCTEMPPRES" class="tab-pane active">
             <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089452/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_2_SFC_TEMP_PRES_zp9frt.gif" alt="" />
+            <video style="max-width: 100%;" controls loop>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691870/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_2_SFC_TEMP_PRES_vnlulx.mp4"
+                type="video/mp4"
+              >
+            </video>
           </div>
           
           <div id="Case2E2Tab1SFCWINDPRES" class="tab-pane">
             <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089452/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_7_SFC_WIND_PRES_ag0uef.gif" alt="" />
+            <video style="max-width: 100%;" controls loop>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691863/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_7_SFC_WIND_PRES_wj2zeo.mp4"
+                type="video/mp4"
+              >
+            </video>
           </div>
           
           <div id="Case2E2Tab1WETBULBTEMP" class="tab-pane">
-            <p class="my-2">[Insert beginning of caption here] [Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089452/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1_850MB_WET_BULB_TEMP_HEIGHTS_bpfi97.gif" alt="" />
+            <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+            <video style="max-width: 100%;" controls loop>
+              <source 
+                src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691866/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1_850MB_WET_BULB_TEMP_HEIGHTS_uxew3b.mp4"
+                type="video/mp4"
+              >
+            </video>
           </div>
         </div>
       </div>
@@ -337,22 +352,42 @@
           <div class="tab-content mb-4">
             <div id="Case2E2Tab23HRQPF850MBTEMP" class="tab-pane active">
               <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-              <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089453/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_6_3HR_QPF_850MB_TEMP_tik6ss.gif" alt="" />
+              <video style="max-width: 100%;" controls loop>
+                <source 
+                  src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691872/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_6_3HR_QPF_850MB_TEMP_hat9pm.mp4"
+                  type="video/mp4"
+                >
+              </video>
             </div>
             
             <div id="Case2E2Tab2700MBRHHEIGHTS" class="tab-pane">
               <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-              <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089454/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_5_700MB_RH_HEIGHTS_pcunjv.gif" alt="" />
+              <video style="max-width: 100%;" controls loop>
+                <source 
+                  src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691867/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_5_700MB_RH_HEIGHTS_pxfwcy.mp4"
+                  type="video/mp4"
+                >
+              </video>
             </div>
             
             <div id="Case2E2Tab2500MBVORTHEIGHTS" class="tab-pane">
               <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-              <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089452/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_3_500MB_VORT_HEIGHTS_p6yn9u.gif" alt="" />
+              <video style="max-width: 100%;" controls loop>
+                <source 
+                  src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691866/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_3_500MB_VORT_HEIGHTS_eerj20.mp4"
+                  type="video/mp4"
+                >
+              </video>
             </div>
 
             <div id="Case2E2Tab21000-500THICJNESSSFCPRES" class="tab-pane">
               <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
-              <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576089452/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_4_1000-500MB_THICKNESS_SFC_PRESSURE_qcnqvx.gif" alt="" />
+              <video style="max-width: 100%;" controls loop>
+                <source 
+                  src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691865/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_4_1000-500MB_THICKNESS_SFC_PRESSURE_mmrhpa.mp4"
+                  type="video/mp4"
+                >
+              </video>
             </div>
           </div>
       </div>
@@ -405,12 +440,22 @@
     <div class="tab-content mb-4">
       <div id="Case2E2Tab3CYNA" class="tab-pane active">
         <p class="my-2">[Insert beginning of caption here] valid 1200Z 12 November 2019 to 0600Z 13 November 2019</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576167301/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYNA-SOUNDINGS_qbwrmx.gif" alt="" />
+        <video style="max-width: 100%;" controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576693692/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYNA-SOUNDINGS_dpmp5d.mp4"
+            type="video/mp4"
+          >
+        </video>
       </div>
       
       <div id="Case2E2Tab3CYDF" class="tab-pane">
         <p class="my-2">[Insert beginning of caption here] valid 1200Z 12 November 2019 to 0600Z 13 November 2019</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576167297/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/CYDF_00Z_fi6oag.png" alt="" />
+        <video style="max-width: 100%;" controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576693693/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYDF-SOUNDINGS_qbp8qd.mp4"
+            type="video/mp4"
+          >
+        </video>
       </div>
     </div>
 
