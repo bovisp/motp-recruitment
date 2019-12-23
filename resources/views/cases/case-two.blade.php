@@ -7,7 +7,7 @@
 
     <h2>Case 2 Exersise 1 - Diagnosis of a Warm Front Over Atlantic Canada</h2>
 
-    <p>Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front on the map which was provided, and provide a detailed justification for its placement on the page below.</p>
+    <p>Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front over the map at the bottom of the exercise and provide a detailed justification for its placement on the page below.</p>
 
     <!-- Nav tabs for Case2E1Tab1 -->
 
@@ -26,34 +26,34 @@
     <!-- Tab panes for Case2E1Tab1 -->
     <div class="tab-content mb-4">
       <div id="Case2E1Tab1IR" class="tab-pane active">
-      <p class="my-2">GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019</p>
-      <video controls loop>
-        <source 
-          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615272/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_ts6kjm.mp4"
-          type="video/mp4"
-        >
-      </video>
-    </div>
-      
+        <p class="my-2">GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019</p>
+        <video controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576787434/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_yuplwq.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
+        
       <div id="Case2E1Tab1IRMultispectral" class="tab-pane">
-      <p class="my-2">GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019</p>
-      <video controls loop>
-        <source 
-          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615273/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_gsopm3.mp4"
-          type="video/mp4"
-        >
-      </video>
-    </div>
-      
+        <p class="my-2">GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019</p>
+        <video controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576787433/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_mhwysz.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
+        
       <div id="Case2E1Tab1WV" class="tab-pane">
-      <p class="my-2">GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019</p>
-      <video controls loop>
-        <source 
-          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615271/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_wpkd3p.mp4"
-          type="video/mp4"
-        >
-      </video>
-    </div>
+        <p class="my-2">GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019</p>
+        <video controls loop>
+          <source 
+            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576787431/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_somjti.mp4"
+            type="video/mp4"
+          >
+        </video>
+      </div>
     </div>
 
     <p>The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.</p>
@@ -75,17 +75,17 @@
     <div class="tab-content mb-4">
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
         <p class="my-2">Surface pressure and temperature valid 1200Z 12 November 2019</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_pmxyjd.png" alt="" />
+        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864830/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_temp_m8cw8y.png" alt="" />
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
         <p class="my-2">Surface pressure and dew point temperature valid 1200Z 12 November 2019</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_800/v1576011912/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_hr93sc.png" alt="" />
+        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864830/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_dp_aucffs.png" alt="" />
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
         <p class="my-2">Surface pressure and pressure tendency valid 1200Z 12 November 2019</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576011911/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_jwqx54.png" alt="" />
+        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864831/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_ptend_cvmqkv.png" alt="" />
       </div>
     </div>
 
@@ -105,7 +105,7 @@
     <!-- Tab panes for Case2E1Tab3 -->
     <div class="tab-content mb-4">
       <div id="Case2E1Tab315CAPPISNOW" class="tab-pane active">
-        <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
+        <p class="my-2">Composite loop of RADAR 1.5km CAPPI Snow imagery over the northeast coast, valid 0800-1200Z 12 November 2019</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615599/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_CAPPI_1.5KM_SNOW_08-12Z_xok4ck.mp4"
@@ -115,7 +115,7 @@
       </div>
       
       <div id="Case2E1Tab3CompositeLOLLA" class="tab-pane">
-        <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
+        <p class="my-2">Composite loop of Doppler LOLAA RADAR imagery over the northeast, valid 0800-1200Z 12 November 2019</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615600/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Composite_VR_LOLAA_08-12Z_effwgs.mp4"
@@ -125,7 +125,7 @@
       </div>
       
       <div id="Case2E1TabDrilldownLOLLA" class="tab-pane">
-        <p class="my-2">[Insert beginning of caption here] valid 0800-1200Z 12 November 2019</p>
+        <p class="my-2">o	Caption for Drilldown: Loop of Doppler LOLAA RADAR imagery from the CBW RADAR (In Cariboo, Maine), valid 0800-1200Z 12 November 2019</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615599/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Drilldown_VR_LOLAA_08-12Z_x0d3lb.mp4"
@@ -134,6 +134,8 @@
         </video>
       </div>
     </div>
+
+    <p>In the tephigrams below, the soundings valid for 00Z November 12 (red) and 12Z (black) are plotted. The associated hodographs are from the 12Z soundings.</p>
 
     <!-- Nav tabs -->
     <ul id="Case2E1Tab4" class="nav nav-tabs mt-4">
@@ -182,67 +184,67 @@
     <div class="tab-content mb-4">
       <div id="Case2E1Tab4CYQITephi" class="tab-pane active">
         <p class="my-2">Yarmouth (CYQI) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_ouk3tb.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_ouk3tb.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYQIHodo" class="tab-pane">
         <p class="my-2">Yarmouth (CYQI) hodograph valid 1200Z 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_HODO_blmmfq.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_HODO_blmmfq.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYCXTephi" class="tab-pane">
-        <p class="my-2">Gagetown (CYCX) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_hkswsd.png" alt="" />
+        <p class="my-2">Gagetown (CYCX) tephi valid 1200Z (black) for 12 November 2019 (no balloon was launched at 0000Z that day)</p>
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576768979/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_coyiuw.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYCXHodo" class="tab-pane">
         <p class="my-2">Gagetown (CYCX) hodograph valid 1200Z 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_HODO_uajkae.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_HODO_uajkae.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4KCARTephi" class="tab-pane">
         <p class="my-2">Caribou (KCAR) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_fvda3u.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_fvda3u.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4KCARHodo" class="tab-pane">
         <p class="my-2">Caribou (KCAR) hodograph valid 1200Z or 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013435/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_HODO_xds5er.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013435/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_HODO_xds5er.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYZVTephi" class="tab-pane">
         <p class="my-2">Sept-Iles (CYZV) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_f6gtqq.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_f6gtqq.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYZVHodo" class="tab-pane">
         <p class="my-2">Sept-Iles (CYZV) hodograph valid 1200Z 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_HODO_qzkwd5.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_HODO_qzkwd5.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYJTTephi" class="tab-pane">
         <p class="my-2">Stephenville (CYJT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_z9tltf.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_z9tltf.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYJTHodo" class="tab-pane">
         <p class="my-2">Stephenville (CYJT) hodograph valid 1200Z 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_HODO_dnzjsa.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_HODO_dnzjsa.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYYTTephi" class="tab-pane">
         <p class="my-2">St. John's (CYYT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_clbc4p.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_clbc4p.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYYTHodo" class="tab-pane">
         <p class="my-2">St. John's (CYYT) hodograph valid 1200Z 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_HODO_xtn24n.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_HODO_xtn24n.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4YQIYCXKCARComp" class="tab-pane">
         <p class="my-2">YQI (black) / YCX (red) / KCAR (blue) Tephi Comparison valid 1200Z 12 November 2019</p>
-        <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
+        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
       </div>
     </div>
 
@@ -250,8 +252,6 @@
       <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
       <figcaption class="figure-caption">GOES 10.3 μm IR satellite image valid 1200Z 12 November 2019. Upper air sites are indicated in red.</figcaption>
     </figure>
-
-    <p>In the tephigrams above, the soundings valid for 00Z November 12 (red) and 12Z (black) are plotted. The associated hodographs are from the 12Z soundings.</p>
 
     <p>Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.</p>
 
@@ -277,12 +277,39 @@
 
     <h2 class="mt-4">Case 2 Exersise 2 - Precipitation Forecast over Newfoundland</h2>
 
-    <p>It is November 12 at 12:00Z, and you have begun working your shift as an operational meteorologist for Northeastern Quebec and Newfoundland. Today, you are in charge of issuing weather forecasts for Natashquan, QC (CYNA) and Deer Lake, NL (CYDF).</p>
+    <p>It is November 12 at 12:00Z, and you have begun working your shift as an operational meteorologist for Northeastern Quebec and Newfoundland. Today, you are in charge of issuing weather forecasts for Natashquan, QC (CYNA) and Deer Lake, NL (CYDF). Examining the maps in the TABs below, you can see that Natashquan is located on the shore of the Gulf of St Lawrence, with terrain rising to the north. The town of Deer Lake is located in a valley oriented NE-SW on the eastern edge of the lake from which it is named, in north-central Newfoundland.</p>
 
-    <figure class="figure my-4">
-      <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576165269/moip_direct_entry_assessment/case%202/Exercise%202/Forecast_Reference_z0m8vm.png" alt="" />
-      <figcaption class="figure-caption">Caption needed here.</figcaption>
-    </figure>
+    <!-- Nav tabs for Case2E2Tab6 -->
+
+    <ul id="Case2E2Tab6" class="nav nav-tabs mt-4">
+      <li class="nav-item">
+        <a id="Case2E2Tab6Ref-tab" class="nav-link active" href="#Case2E2Tab6Ref" data-toggle="tab">Reference map</a>
+      </li>
+      <li class="nav-item">
+        <a id="Case2E2Tab6YNA-tab" class="nav-link" href="#Case2E2Tab6YNA" data-toggle="tab">Map – CYNA</a>
+      </li>
+      <li class="nav-item">
+        <a id="Case2E2Tab6YDF-tab" class="nav-link" href="#Case2E2Tab6YDF" data-toggle="tab">Map – CYDF</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes for Case2E2Tab6 -->
+    <div class="tab-content mb-4">
+      <div id="Case2E2Tab6Ref" class="tab-pane active">
+        <p class="my-2">10.3&mu; IR GOES satellite image over the northeast coast, taken at 12:00Z. The locations of Natashquan (CYNA) and Deer Lake (CYDF) are circled in red.</p>
+        <img src="https://res.cloudinary.com/tcddmedia/image/upload/v1576165269/moip_direct_entry_assessment/case%202/Exercise%202/Forecast_Reference_z0m8vm.png" alt="" />
+      </div>
+        
+      <div id="Case2E2Tab6YNA" class="tab-pane">
+        <p>Google Map view around Natashquan (CYNA), detailing the terrain.</p>
+        <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576768486/moip_direct_entry_assessment/case%202/Exercise%202/Topo_map_Natashquan_zacdnw.png" alt="" />
+      </div>
+        
+      <div id="Case2E2Tab6YDF" class="tab-pane">
+        <p>Google Map view around Deer Lake (CYDF), detailing the terrain.</p>
+        <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576768486/moip_direct_entry_assessment/case%202/Exercise%202/Topo_map_Deer_Lake_njanea.png" alt="" />
+      </div>
+    </div>
 
     <p>You have already analyzed the satellite, RADAR, METARs, and upper air data over the area, and diagnosed the presence of a warm front (Case 2 Exercise 1). You now must create a forecast of precipitation type and amount for both CYNA and CYDF from 15:00Z November 12 until 06:00Z November 13.</p>
 
@@ -304,7 +331,7 @@
         <!-- Tab panes for Case2E1Tab3 -->
         <div class="tab-content mb-4">
           <div id="Case2E2Tab1SFCTEMPPRES" class="tab-pane active">
-            <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+            <p class="my-2">Surface temperature plotted in reds (warm) to blues (cool), overlaid with mean sea level pressure in black valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
             <video style="max-width: 100%;" controls loop>
               <source 
                 src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691870/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_2_SFC_TEMP_PRES_vnlulx.mp4"
@@ -314,7 +341,7 @@
           </div>
           
           <div id="Case2E2Tab1SFCWINDPRES" class="tab-pane">
-            <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+            <p class="my-2">Wind barbs colour-coded to wind speed of winds at 10m height above ground level, overlaid with mean sea level pressure in black valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
             <video style="max-width: 100%;" controls loop>
               <source 
                 src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691863/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_7_SFC_WIND_PRES_wj2zeo.mp4"
@@ -324,7 +351,7 @@
           </div>
           
           <div id="Case2E2Tab1WETBULBTEMP" class="tab-pane">
-            <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+            <p class="my-2">Wet-bulb potential temperature at 850mb in oC plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
             <video style="max-width: 100%;" controls loop>
               <source 
                 src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691866/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1_850MB_WET_BULB_TEMP_HEIGHTS_uxew3b.mp4"
@@ -355,7 +382,7 @@
           <!-- Tab panes for Case2E1Tab3 -->
           <div class="tab-content mb-4">
             <div id="Case2E2Tab23HRQPF850MBTEMP" class="tab-pane active">
-              <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+              <p class="my-2">3HR Quantitative Precipitation Amounts, overlaid with temperature in &deg;C at 850mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
               <video style="max-width: 100%;" controls loop>
                 <source 
                   src="https://res.cloudinary.com/tcddmedia/video/upload/v1576697358/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_6_3HR_QPF_850MB_TEMP_1_waws1r.mp4"
@@ -365,7 +392,7 @@
             </div>
             
             <div id="Case2E2Tab2700MBRHHEIGHTS" class="tab-pane">
-              <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+              <p class="my-2">Areas of Relative humidity greater than 50% at 700mb, overlaid with geopotential heights at 700mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
               <video style="max-width: 100%;" controls loop>
                 <source 
                   src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691867/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_5_700MB_RH_HEIGHTS_pxfwcy.mp4"
@@ -373,9 +400,9 @@
                 >
               </video>
             </div>
-            
+             
             <div id="Case2E2Tab2500MBVORTHEIGHTS" class="tab-pane">
-              <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+              <p class="my-2">Absolute vorticity at 500mb, overlaid with geopotential heights at 500mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
               <video style="max-width: 100%;" controls loop>
                 <source 
                   src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691866/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_3_500MB_VORT_HEIGHTS_eerj20.mp4"
@@ -385,7 +412,7 @@
             </div>
 
             <div id="Case2E2Tab21000-500THICJNESSSFCPRES" class="tab-pane">
-              <p class="my-2">[Insert beginning of caption here] valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
+              <p class="my-2">1000-500mb thickness lines, overlaid with mean sea level pressure valid 1500Z 12 November 2019 to 0600Z 13 November 2019</p>
               <video style="max-width: 100%;" controls loop>
                 <source 
                   src="https://res.cloudinary.com/tcddmedia/video/upload/v1576691865/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_4_1000-500MB_THICKNESS_SFC_PRESSURE_mmrhpa.mp4"
@@ -443,20 +470,20 @@
     <!-- Tab panes for Case2E1Tab3 -->
     <div class="tab-content mb-4">
       <div id="Case2E2Tab3CYNA" class="tab-pane active">
-        <p class="my-2">[Insert beginning of caption here] valid 1200Z 12 November 2019 to 0600Z 13 November 2019</p>
+        <p class="my-2">Model sounding at Natashquan, QC from the 1200Z model run of the RDPS, valid every 3hrs from 1200Z November 12 2019 until 0600Z November 13.</p>
         <video style="max-width: 100%;" controls loop>
           <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576693692/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYNA-SOUNDINGS_dpmp5d.mp4"
+            src="https://res.cloudinary.com/tcddmedia/video/upload/c_scale,w_700/v1576693692/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYNA-SOUNDINGS_dpmp5d.mp4"
             type="video/mp4"
           >
         </video>
       </div>
       
       <div id="Case2E2Tab3CYDF" class="tab-pane">
-        <p class="my-2">[Insert beginning of caption here] valid 1200Z 12 November 2019 to 0600Z 13 November 2019</p>
+        <p class="my-2">Model sounding at Deer Lake, NL from the 1200Z model run of the RDPS, valid every 3hrs from 1200Z November 12 2019 until 0600Z November 13.</p>
         <video style="max-width: 100%;" controls loop>
           <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576693693/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYDF-SOUNDINGS_qbp8qd.mp4"
+            src="https://res.cloudinary.com/tcddmedia/video/upload/c_scale,w_700/v1576693693/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYDF-SOUNDINGS_qbp8qd.mp4"
             type="video/mp4"
           >
         </video>
