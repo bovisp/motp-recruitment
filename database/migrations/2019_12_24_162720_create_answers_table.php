@@ -41,11 +41,6 @@ class CreateAnswersTable extends Migration
             $table->string('dfpat06')->nullable();
             $table->integer('candidate_id');
             $table->timestamps();
-
-            $table->foreign('candidate_id')
-              ->references('id')
-              ->on('candidates')
-              ->onDelete('cascade');
         });
     }
 
