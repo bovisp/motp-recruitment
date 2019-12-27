@@ -38,6 +38,8 @@ class CaseTwoController extends Controller
 
     public function table(CaseTwoTableRequest $request)
     {
+      $candidate_id = (int) Cache::get('candidateid');
+      
       if (Answer::where('candidate_id', $candidate_id)->first() === null) {
         $answer = Answer::make(request()->all());
 
@@ -45,8 +47,6 @@ class CaseTwoController extends Controller
 
         $answer->save();
       } else {
-        $candidate_id = (int) Cache::get('candidateid');
-
         $answer = Answer::where('candidate_id', $candidate_id)->first();
 
         $answer->update(array_merge(
