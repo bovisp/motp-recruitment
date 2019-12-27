@@ -1,21 +1,70 @@
 <template>
-  <select @input="changeAmount" ref="precipAmount" class="form-control form-control-sm">
-    <option value=""></option>
+  <div>
+    <select 
+      @input="changeAmount" 
+      ref="precipAmount" 
+      class="form-control form-control-sm"
+      :class="{ 'is-invalid': hasErrorForType }"
+      v-model="precipAmount"
+    >
+      <option value=""></option>
 
-    <option 
-      v-for="amount in amounts"
-      :key="amount"
-      :value="amount"
-    >{{ amount }}</option>
-  </select>
+      <option 
+        v-for="amount in amounts"
+        :key="amount"
+        :value="amount"
+      >{{ amount }}</option>
+    </select>
+
+    <p 
+      v-if="hasErrorForType"
+      v-text="hasErrorForType"
+      class="invalid-feedback"
+    ></p>
+  </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import { replace, get } from 'lodash-es'
+
 export default {
   props: {
     typeKey: {
       type: String,
       required: true
+    },
+    value: {
+      type: String,
+      required: true
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      errors: 'errors'
+    }),
+
+    precipAmount: {
+      get () {
+        return this.value
+      },
+
+      set (val) {
+        this.changeAmount()
+      }
+    },
+
+    hasErrorForType () {
+      let key = replace(this.typeKey, /\./g, '')
+
+      let messages = get(this.errors, key)
+
+      if (!messages) {
+        return false
+      }
+
+      return messages[0]
     }
   },
 
@@ -62,7 +111,7 @@ export default {
         case 'Ice Pellets':
         case 'Snow Grains':
           this.amounts = this.solidAmounts
-          beak;
+          break;
 
         default: 
           throw new Error('Not a valid precipitation type')

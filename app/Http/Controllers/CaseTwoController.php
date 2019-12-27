@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Answer;
 use App\Candidate;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
+use App\Http\Requests\CaseTwoTableRequest;
 
 class CaseTwoController extends Controller
 {
@@ -32,5 +34,21 @@ class CaseTwoController extends Controller
       imagepng($imgRes, $filename);
       
       return 'good!';
+    }
+
+    public function table(CaseTwoTableRequest $request)
+    {
+      $answer = Answer::make(request()->all());
+
+      $answer->candidate_id = (int) Cache::get('candidateid');
+
+      $answer->save();
+    }
+
+    public function getTableData()
+    {
+      $candidate_id = (int) Cache::get('candidateid');
+
+      return Answer::where('candidate_id', $candidate_id)->first();
     }
 }
