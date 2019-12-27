@@ -30,6 +30,12 @@ Route::get('/cases/case-two', 'CaseTwoController@show')
 Route::post('/cases/case-two/image', 'CaseTwoController@image')
   ->middleware(['auth', 'candidate.exists']);
 
+Route::post('/cases/case-two/table', 'CaseTwoController@table')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/cases/case-two/table', 'CaseTwoController@getTableData')
+  ->middleware(['auth', 'candidate.exists']);
+
 Route::post('/submit-name', 'SubmitNameController@store')
   ->middleware(['auth', 'candidate.empty']);
 
