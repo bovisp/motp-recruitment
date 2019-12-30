@@ -261,7 +261,9 @@
 
     <draw-app></draw-app>
 
-    <case-two-exercise-one-textarea></case-two-exercise-one-textarea>
+    <div id="case-two-exercise-one-answer">
+      <case-two-exercise-one-textarea></case-two-exercise-one-textarea>
+    </div>
 
     <h2 class="mt-4">Case 2 Exersise 2 - Precipitation Forecast over Newfoundland</h2>
 
@@ -491,17 +493,17 @@
 
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
 
-    <case-two-exercise-two-textarea></case-two-exercise-two-textarea>
+    <div id="case-two-exercise-two-answer">
+      <case-two-exercise-two-textarea></case-two-exercise-two-textarea>
+    </div>
 
     <div class="mt-5">
       @include('cases.partials.header')
     </div>
 
-    <div class="d-flex w-100 mt-4">
-      <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-outline-secondary ml-auto">
-        Review answers and finish
-      </a>
-    </div>
+    <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-primary mt-4">
+      Review answers and finish
+    </a>
   </div>
 
 @endsection

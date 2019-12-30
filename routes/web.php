@@ -63,3 +63,6 @@ Route::get('/cases/confirm', function() {
 
 Route::post('/cases/submit-all', 'SubmitAllController@store')
   ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/cases/submit-all/answers', 'SubmitAllController@index')
+  ->middleware(['auth', 'candidate.exists']);

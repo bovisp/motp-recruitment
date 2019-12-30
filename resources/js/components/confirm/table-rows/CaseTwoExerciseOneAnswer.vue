@@ -1,0 +1,37 @@
+<template>
+  <tr>
+    <td>
+      <a href="/cases/case-two#case-two-exercise-one-answer">
+        Case Two Exercise One answer
+      </a>
+    </td>
+    <td v-html="getStatus"></td>
+  </tr>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      key: 'case2ex1',
+      answers: null
+    }
+  },
+
+  computed: {
+    getStatus () {
+      if (!this.answers) return `<span class="text-success"><i class="fas fa-check"></i> Completed</span>`
+
+      return this.answers[this.key] ? 
+        `<span class="text-success"><i class="fas fa-check"></i> Completed</span>` :
+        `<span class="text-danger"><i class="fas fa-times"></i> Not completed</span>`
+    }
+  },
+
+  mounted () {
+    window.events.$on('answers', answers => {
+      this.answers = answers
+    })
+  }
+}
+</script>

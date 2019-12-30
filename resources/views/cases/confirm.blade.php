@@ -4,8 +4,9 @@
 
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-6">
-        <p>
+      <div class="col-md-8">
+        <confirm-page></confirm-page>
+        {{-- <p>
           Are ya sure you wanna finish?
         </p> 
 
@@ -15,7 +16,7 @@
           <button class="btn btn-primary">
             Yo!
           </button>
-        </form>
+        </form> --}}
       </div>
     </div>
   </div>

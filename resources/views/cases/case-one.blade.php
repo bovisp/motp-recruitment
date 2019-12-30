@@ -245,7 +245,9 @@
 
     <p>Given your analysis, what do you tell her? Please explain your reasoning with at least 5 pieces of evidence for each forecast site.</p>
 
-    <case-one-textarea></case-one-textarea>
+    <div id="case-one-answer">
+      <case-one-textarea></case-one-textarea>
+    </div>
 
     <div class="mt-5">
       @include('cases.partials.header')
