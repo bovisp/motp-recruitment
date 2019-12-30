@@ -261,6 +261,8 @@
 
     <draw-app></draw-app>
 
+    <case-two-exercise-one-textarea></case-two-exercise-one-textarea>
+
     <h2 class="mt-4">Case 2 Exersise 2 - Precipitation Forecast over Newfoundland</h2>
 
     <p>It is November 12 at 12:00Z, and you have begun working your shift as an operational meteorologist for Northeastern Quebec and Newfoundland. Today, you are in charge of issuing weather forecasts for Natashquan, QC (CYNA) and Deer Lake, NL (CYDF). Examining the maps in the TABs below, you can see that Natashquan is located on the shore of the Gulf of St Lawrence, with terrain rising to the north. The town of Deer Lake is located in a valley oriented NE-SW on the eastern edge of the lake from which it is named, in north-central Newfoundland.</p>
@@ -489,9 +491,17 @@
 
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
 
-    <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-primary mt-4">
-      Submit all and finish
-    </a>
+    <case-two-exercise-two-textarea></case-two-exercise-two-textarea>
+
+    <div class="mt-5">
+      @include('cases.partials.header')
+    </div>
+
+    <div class="d-flex w-100 mt-4">
+      <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-outline-secondary ml-auto">
+        Review answers and finish
+      </a>
+    </div>
   </div>
 
 @endsection

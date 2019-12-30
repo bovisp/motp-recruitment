@@ -27,6 +27,12 @@ Route::get('/cases/case-one', 'CaseOneController@show')
 Route::get('/cases/case-two', 'CaseTwoController@show')
   ->middleware(['auth', 'candidate.exists']);
 
+Route::post('/cases/case-one', 'CaseOneController@store')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/cases/case-one/answer', 'CaseOneController@getCase1Answer')
+  ->middleware(['auth', 'candidate.exists']);
+
 Route::post('/cases/case-two/image', 'CaseTwoController@image')
   ->middleware(['auth', 'candidate.exists']);
 
@@ -34,6 +40,18 @@ Route::post('/cases/case-two/table', 'CaseTwoController@table')
   ->middleware(['auth', 'candidate.exists']);
 
 Route::get('/cases/case-two/table', 'CaseTwoController@getTableData')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::post('/cases/case-two/exercise-one', 'CaseTwoController@storeExerciseOneAnswer')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/cases/case-two/exercise-one/answer', 'CaseTwoController@getExerciseOneAnswer')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::post('/cases/case-two/exercise-two', 'CaseTwoController@storeExerciseTwoAnswer')
+  ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/cases/case-two/exercise-two/answer', 'CaseTwoController@getExerciseTwoAnswer')
   ->middleware(['auth', 'candidate.exists']);
 
 Route::post('/submit-name', 'SubmitNameController@store')

@@ -130,7 +130,7 @@ export default {
     async fetch () {
       let { data } = await axios.get('/cases/case-two/table')
 
-      if (data) {
+      if (data.naptt15) {
         this.na.pt.t15 = data.naptt15
         this.na.pt.t18 = data.naptt18
         this.na.pt.t21 = data.naptt21
