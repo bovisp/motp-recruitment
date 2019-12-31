@@ -4,7 +4,7 @@
 
     <confirm-table :base-url="baseUrl"/>
 
-    <button class="btn btn-primary btn-block mt-4">
+    <button class="btn btn-primary btn-block mt-4" @click.prevent="submit">
       Finish assessment
     </button>
   </div>
@@ -23,6 +23,14 @@ export default {
 
   components: {
     ConfirmTable
+  },
+
+  methods: {
+    async submit () {
+      let { data } = await axios.post('/cases/submit-all')
+
+      window.location = `${this.baseUrl}/login`
+    }
   }
 }
 </script>

@@ -15,8 +15,6 @@ class SubmitAllController extends Controller
     Cache::forget('candidateid');
 
     auth()->logout();
-
-    return redirect('/home');
   }
 
   public function index()
