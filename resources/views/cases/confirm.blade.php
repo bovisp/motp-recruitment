@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <confirm-page></confirm-page>
+      <confirm-page base-url="{{ env('APP_URL') }}"></confirm-page>
         {{-- <p>
           Are ya sure you wanna finish?
         </p> 

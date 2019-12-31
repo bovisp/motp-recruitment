@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td>
-      <a href="/cases/case-two#case-two-exercise-two-answer">
+      <a :href="`${baseUrl}/cases/case-two#case-two-exercise-two-answer`">
         Case Two Exercise Two answer
       </a>
     </td>
@@ -11,6 +11,13 @@
 
 <script>
 export default {
+  props: {
+    baseUrl: {
+      type: String,
+      required: true
+    }
+  },
+
   data () {
     return {
       key: 'case2ex2',

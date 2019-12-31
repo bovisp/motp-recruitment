@@ -8,9 +8,9 @@
     </thead>
 
     <tbody>
-      <case-one-answer />
-      <case-two-exercise-one-answer />
-      <case-two-exercise-two-answer />
+      <case-one-answer :base-url="baseUrl" />
+      <case-two-exercise-one-answer :base-url="baseUrl" />
+      <case-two-exercise-two-answer :base-url="baseUrl" />
     </tbody>
   </table>
 </template>
@@ -21,6 +21,13 @@ import CaseTwoExerciseOneAnswer from './table-rows/CaseTwoExerciseOneAnswer'
 import CaseTwoExerciseTwoAnswer from './table-rows/CaseTwoExerciseTwoAnswer'
 
 export default {
+  props: {
+    baseUrl: {
+      type: String,
+      required: true
+    }
+  },
+
   components: {
     CaseOneAnswer,
     CaseTwoExerciseOneAnswer,
