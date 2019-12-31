@@ -38,6 +38,8 @@ export default {
     async fetch () {
       let { data } = await axios.get('/cases/submit-all/answers')
 
+      console.log(data)
+
       window.events.$emit('answers', data)
     }
   },
