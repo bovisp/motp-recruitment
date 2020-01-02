@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Answer;
+use App\Candidate;
 use Illuminate\Http\Request;
+use App\Mail\AssessmentCompleted;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cache;
 
 class SubmitAllController extends Controller
@@ -19,6 +22,13 @@ class SubmitAllController extends Controller
         ]
       ], 422);
     }
+
+    $candidate_id = (int) Cache::get('candidateid');
+
+    $candidate = Candidate::find($candidate_id);
+
+    Mail::to('paul.bovis@canada.ca')
+      ->send(new AssessmentCompleted($candidate));
 
     Cache::forget('candidate');
     
