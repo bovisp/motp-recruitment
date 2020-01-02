@@ -19,11 +19,13 @@ class CaseTwoController extends Controller
     {
       $candidate = Candidate::find(Cache::get('candidateid'));
 
-      $filename = storage_path() . 
-                  '/app/public/images/' .
-                  "{$candidate->id}_{$candidate->firstname}_{$candidate->lastname}_" . 
+      $filepath = storage_path() . '/app/public/images/';
+
+      $filename = "{$candidate->id}_{$candidate->firstname}_{$candidate->lastname}_" . 
                   Carbon::now()->format('Ymd') .
                   '_warm_front.png';
+
+      $fullpath = $filepath . $filename;
 
       $data = substr(request('imageData'), strpos(request('imageData'), ",") + 1);
 
@@ -31,7 +33,23 @@ class CaseTwoController extends Controller
 
       $imgRes = imagecreatefromstring($data);
 
-      imagepng($imgRes, $filename);
+      imagepng($imgRes, $fullpath);
+
+      if (Answer::where('candidate_id', $candidate->id)->first() === null) {
+        $answer = Answer::make([
+          'image_url' => $filename
+        ]);
+
+        $answer->candidate_id = (int) Cache::get('candidateid');
+
+        $answer->save();
+      } else {
+        $answer = Answer::where('candidate_id', $candidate->id)->first();
+
+        $answer->update([
+          'image_url' => $filename
+        ]);
+      }
       
       return 'good!';
     }

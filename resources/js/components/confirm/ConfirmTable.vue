@@ -10,6 +10,8 @@
     <tbody>
       <case-one-answer :base-url="baseUrl" />
       <case-two-exercise-one-answer :base-url="baseUrl" />
+      <case-two-exercise-one-image :base-url="baseUrl" />
+      <case-two-exercise-two-table :base-url="baseUrl" />
       <case-two-exercise-two-answer :base-url="baseUrl" />
     </tbody>
   </table>
@@ -18,6 +20,8 @@
 <script>
 import CaseOneAnswer from './table-rows/CaseOneAnswer'
 import CaseTwoExerciseOneAnswer from './table-rows/CaseTwoExerciseOneAnswer'
+import CaseTwoExerciseOneImage from './table-rows/CaseTwoExerciseOneImage'
+import CaseTwoExerciseTwoTable from './table-rows/CaseTwoExerciseTwoTable'
 import CaseTwoExerciseTwoAnswer from './table-rows/CaseTwoExerciseTwoAnswer'
 
 export default {
@@ -31,6 +35,8 @@ export default {
   components: {
     CaseOneAnswer,
     CaseTwoExerciseOneAnswer,
+    CaseTwoExerciseOneImage,
+    CaseTwoExerciseTwoTable,
     CaseTwoExerciseTwoAnswer
   },
 

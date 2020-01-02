@@ -34,6 +34,10 @@ export default {
       type: String,
       required: true
     },
+    amountKey: {
+      type: String,
+      required: true
+    },
     value: {
       type: String,
       required: true
@@ -56,7 +60,7 @@ export default {
     },
 
     hasErrorForType () {
-      let key = replace(this.typeKey, /\./g, '')
+      let key = replace(this.amountKey, /\./g, '')
 
       let messages = get(this.errors, key)
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="my-5">
+  <div class="my-5" id="case-two-exercise-two-table">
     <table class="table">
       <thead>
         <tr>
@@ -15,21 +15,21 @@
       <tbody>
         <tr>
           <th scope="row">Precipitation Type</th>
-          <td><precip-type v-model="na.pt.t15" objKey="na.pt.t15" /></td>
-          <td><precip-type v-model="na.pt.t18" objKey="na.pt.t18" /></td>
-          <td><precip-type v-model="na.pt.t21" objKey="na.pt.t21" /></td>
-          <td><precip-type v-model="na.pt.t00" objKey="na.pt.t00" /></td>
-          <td><precip-type v-model="na.pt.t03" objKey="na.pt.t03" /></td>
-          <td><precip-type v-model="na.pt.t06" objKey="na.pt.t06" /></td>
+          <td><precip-type v-model="na.pt.t15" obj-key="na.pt.t15" /></td>
+          <td><precip-type v-model="na.pt.t18" obj-key="na.pt.t18" /></td>
+          <td><precip-type v-model="na.pt.t21" obj-key="na.pt.t21" /></td>
+          <td><precip-type v-model="na.pt.t00" obj-key="na.pt.t00" /></td>
+          <td><precip-type v-model="na.pt.t03" obj-key="na.pt.t03" /></td>
+          <td><precip-type v-model="na.pt.t06" obj-key="na.pt.t06" /></td>
         </tr>
         <tr>
           <th scope="row">Precipitation Amount</th>
-          <td><precip-amount typeKey="na.pt.t15" v-model="na.pa.t15" /></td>
-          <td><precip-amount typeKey="na.pt.t18" v-model="na.pa.t18" /></td>
-          <td><precip-amount typeKey="na.pt.t21" v-model="na.pa.t21" /></td>
-          <td><precip-amount typeKey="na.pt.t00" v-model="na.pa.t00" /></td>
-          <td><precip-amount typeKey="na.pt.t03" v-model="na.pa.t03" /></td>
-          <td><precip-amount typeKey="na.pt.t06" v-model="na.pa.t06" /></td>
+          <td><precip-amount type-key="na.pt.t15" amount-key ="na.pa.t15" v-model="na.pa.t15" /></td>
+          <td><precip-amount type-key="na.pt.t18" amount-key ="na.pa.t18" v-model="na.pa.t18" /></td>
+          <td><precip-amount type-key="na.pt.t21" amount-key ="na.pa.t21" v-model="na.pa.t21" /></td>
+          <td><precip-amount type-key="na.pt.t00" amount-key ="na.pa.t00" v-model="na.pa.t00" /></td>
+          <td><precip-amount type-key="na.pt.t03" amount-key ="na.pa.t03" v-model="na.pa.t03" /></td>
+          <td><precip-amount type-key="na.pt.t06" amount-key ="na.pa.t06" v-model="na.pa.t06" /></td>
         </tr>
       </tbody>
     </table>
@@ -49,21 +49,21 @@
       <tbody>
         <tr>
           <th scope="row">Precipitation Type</th>
-          <td><precip-type v-model="df.pt.t15" objKey="df.pt.t15" /></td>
-          <td><precip-type v-model="df.pt.t18" objKey="df.pt.t18" /></td>
-          <td><precip-type v-model="df.pt.t21" objKey="df.pt.t21" /></td>
-          <td><precip-type v-model="df.pt.t00" objKey="df.pt.t00" /></td>
-          <td><precip-type v-model="df.pt.t03" objKey="df.pt.t03" /></td>
-          <td><precip-type v-model="df.pt.t06" objKey="df.pt.t06" /></td>
+          <td><precip-type v-model="df.pt.t15" obj-key="df.pt.t15" /></td>
+          <td><precip-type v-model="df.pt.t18" obj-key="df.pt.t18" /></td>
+          <td><precip-type v-model="df.pt.t21" obj-key="df.pt.t21" /></td>
+          <td><precip-type v-model="df.pt.t00" obj-key="df.pt.t00" /></td>
+          <td><precip-type v-model="df.pt.t03" obj-key="df.pt.t03" /></td>
+          <td><precip-type v-model="df.pt.t06" obj-key="df.pt.t06" /></td>
         </tr>
         <tr>
           <th scope="row">Precipitation Amount</th>
-          <td><precip-amount typeKey="df.pt.t15" v-model="df.pa.t15" /></td>
-          <td><precip-amount typeKey="df.pt.t18" v-model="df.pa.t18" /></td>
-          <td><precip-amount typeKey="df.pt.t21" v-model="df.pa.t21" /></td>
-          <td><precip-amount typeKey="df.pt.t00" v-model="df.pa.t00" /></td>
-          <td><precip-amount typeKey="df.pt.t03" v-model="df.pa.t03" /></td>
-          <td><precip-amount typeKey="df.pt.t06" v-model="df.pa.t06" /></td>
+          <td><precip-amount type-key="df.pt.t15" amount-key ="df.pa.t15" v-model="df.pa.t15" /></td>
+          <td><precip-amount type-key="df.pt.t18" amount-key ="df.pa.t18" v-model="df.pa.t18" /></td>
+          <td><precip-amount type-key="df.pt.t21" amount-key ="df.pa.t21" v-model="df.pa.t21" /></td>
+          <td><precip-amount type-key="df.pt.t00" amount-key ="df.pa.t00" v-model="df.pa.t00" /></td>
+          <td><precip-amount type-key="df.pt.t03" amount-key ="df.pa.t03" v-model="df.pa.t03" /></td>
+          <td><precip-amount type-key="df.pt.t06" amount-key ="df.pa.t06" v-model="df.pa.t06" /></td>
         </tr>
       </tbody>
     </table>

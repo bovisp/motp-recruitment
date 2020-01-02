@@ -4,14 +4,64 @@
 
     <confirm-table :base-url="baseUrl"/>
 
-    <button class="btn btn-primary btn-block mt-4" @click.prevent="submit">
+    <button 
+      class="btn btn-primary btn-block mt-4"
+      data-toggle="modal" 
+      data-target="#confirmModal"  
+    >
       Finish assessment
     </button>
+
+    <div 
+      class="modal fade" 
+      id="confirmModal" 
+      tabindex="-1" 
+      role="dialog" 
+      aria-labelledby="confirmModalLabel" 
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmModalLabel">
+              Finish assessment
+            </h5>
+
+            <button 
+              type="button" 
+              class="close" 
+              data-dismiss="modal" 
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Are you sure that you wish to finish the assessment? If you click the "Finish" button, you will be logged out and will no longer have access to your work.
+          </div>
+
+          <div class="modal-footer">
+            <button 
+              class="btn btn-secondary" 
+              data-dismiss="modal"
+            >Close</button>
+
+            <button 
+              class="btn btn-primary" 
+              @click.prevent="submit"
+            >Finish</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import ConfirmTable from './ConfirmTable'
+import { mapGetters } from 'vuex'
+import Toastify from 'toastify-js'
 
 export default {
   props: {
@@ -25,11 +75,31 @@ export default {
     ConfirmTable
   },
 
+  computed: {
+    ...mapGetters({
+      errors: 'errors'
+    })
+  },
+
   methods: {
     async submit () {
-      let { data } = await axios.post('/cases/submit-all')
+      try {
+        let { data } = await axios.post('/cases/submit-all')
 
-      window.location = `${this.baseUrl}/login`
+        window.location = `${this.baseUrl}/login`
+      } catch (e) {
+        await $('#confirmModal').modal('hide')
+
+        Toastify({
+          text: this.errors.incomplete[0],
+          duration: 7000,
+          newWindow: true,
+          gravity: "top",
+          position: 'center',
+          backgroundColor: "#dc3545",
+          stopOnFocus: true,
+        }).showToast();
+      }
     }
   }
 }

@@ -10,6 +10,16 @@ class SubmitAllController extends Controller
 {
   public function store()
   {
+    if ($this->assessmentComplete() === false) {
+      return response()->json([
+        'errors' => [
+          'incomplete' => [
+            'You have not completed some of the exercises. Please complete these before finishing the assessment.'
+          ]
+        ]
+      ], 422);
+    }
+
     Cache::forget('candidate');
     
     Cache::forget('candidateid');
@@ -22,5 +32,18 @@ class SubmitAllController extends Controller
     $candidate_id = (int) Cache::get('candidateid');
 
     return Answer::where('candidate_id', $candidate_id)->first();
+  }
+
+  protected function assessmentComplete() {
+    $candidate_id = (int) Cache::get('candidateid');
+
+    $answer = Answer::where('candidate_id', $candidate_id)->first();
+
+    return $answer !== null &&
+           $answer->naptt15 !== null &&
+           $answer->case1 !== null && 
+           $answer->case2ex1 !== null && 
+           $answer->case2ex2 !== null && 
+           $answer->image_url !== null;
   }
 }
