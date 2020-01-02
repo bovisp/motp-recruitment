@@ -27,7 +27,7 @@ class SubmitAllController extends Controller
 
     $candidate = Candidate::find($candidate_id);
 
-    Mail::to('paul.bovis@canada.ca')
+    Mail::to('mariette.kulin@canada.ca')
       ->send(new AssessmentCompleted($candidate));
 
     Cache::forget('candidate');
