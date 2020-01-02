@@ -66,3 +66,6 @@ Route::post('/cases/submit-all', 'SubmitAllController@store')
 
 Route::get('/cases/submit-all/answers', 'SubmitAllController@index')
   ->middleware(['auth', 'candidate.exists']);
+
+Route::get('/answers/{candidate}', 'MarkingController@show')
+  ->middleware(['auth', 'isadmin']);

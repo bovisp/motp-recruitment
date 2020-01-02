@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'candidate.exists' => \App\Http\Middleware\HasCachedName::class,
         'candidate.empty' => \App\Http\Middleware\HasNoCachedName::class,
+        'isadmin' => \App\Http\Middleware\IsAdmin::class,
     ];
 
     /**
