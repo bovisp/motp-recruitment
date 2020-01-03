@@ -64,6 +64,7 @@ class Kernel extends HttpKernel
         'candidate.exists' => \App\Http\Middleware\HasCachedName::class,
         'candidate.empty' => \App\Http\Middleware\HasNoCachedName::class,
         'isadmin' => \App\Http\Middleware\IsAdmin::class,
+        'iscandidate' => \App\Http\Middleware\IsCandidate::class,
     ];
 
     /**

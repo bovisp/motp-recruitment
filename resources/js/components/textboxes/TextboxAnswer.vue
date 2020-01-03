@@ -70,7 +70,7 @@ export default {
     },
 
     async fetch() {
-      let { data } = await axios.get(`/api/answers/${this.candidateId}`)
+      let { data } = await axios.get(`/answers/${this.candidateId}/api`)
 
       if (data[this.answerKey]) {
         this.body = data[this.answerKey]

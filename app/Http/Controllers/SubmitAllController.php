@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Cache;
 
 class SubmitAllController extends Controller
 {
+  public function index()
+  {
+    return view('cases.confirm');
+  }
+
   public function store()
   {
     if ($this->assessmentComplete() === false) {
@@ -35,13 +40,6 @@ class SubmitAllController extends Controller
     Cache::forget('candidateid');
 
     auth()->logout();
-  }
-
-  public function index()
-  {
-    $candidate_id = (int) Cache::get('candidateid');
-
-    return Answer::where('candidate_id', $candidate_id)->first();
   }
 
   protected function assessmentComplete() {

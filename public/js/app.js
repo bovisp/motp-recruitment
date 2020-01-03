@@ -1924,6 +1924,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
 
 
 
@@ -1931,6 +1934,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   props: {
     baseUrl: {
       type: String,
+      required: true
+    },
+    candidateId: {
+      type: Number,
       required: true
     }
   },
@@ -2029,6 +2036,10 @@ __webpack_require__.r(__webpack_exports__);
     baseUrl: {
       type: String,
       required: true
+    },
+    candidateId: {
+      type: Number,
+      required: true
     }
   },
   data: function data() {
@@ -2068,7 +2079,7 @@ __webpack_require__.r(__webpack_exports__);
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get('/cases/submit-all/answers'));
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get("/answers/".concat(this.candidateId, "/api")));
 
             case 2:
               _ref = _context.sent;
@@ -2080,7 +2091,7 @@ __webpack_require__.r(__webpack_exports__);
               return _context.stop();
           }
         }
-      });
+      }, null, this);
     }
   },
   mounted: function mounted() {
@@ -2613,6 +2624,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    candidateId: {
+      type: Number,
+      required: true
+    }
+  },
   components: {
     PrecipType: _PrecipType__WEBPACK_IMPORTED_MODULE_1__["default"],
     PrecipAmount: _PrecipAmount__WEBPACK_IMPORTED_MODULE_2__["default"]
@@ -2666,7 +2683,7 @@ __webpack_require__.r(__webpack_exports__);
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get('/cases/case-two/table'));
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get("/answers/".concat(this.candidateId, "/api")));
 
             case 2:
               _ref = _context.sent;
@@ -2879,7 +2896,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get("/api/answers/".concat(this.candidateId)));
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get("/answers/".concat(this.candidateId, "/api")));
 
             case 2:
               _ref = _context2.sent;
@@ -55490,7 +55507,9 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _c("confirm-table", { attrs: { "base-url": _vm.baseUrl } }),
+      _c("confirm-table", {
+        attrs: { "base-url": _vm.baseUrl, "candidate-id": _vm.candidateId }
+      }),
       _vm._v(" "),
       _c(
         "button",

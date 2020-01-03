@@ -80,6 +80,13 @@ import PrecipAmount from './PrecipAmount'
 import Toastify from 'toastify-js'
 
 export default {
+  props: {
+    candidateId: {
+      type: Number,
+      required: true
+    }
+  },
+
   components: {
     PrecipType,
     PrecipAmount
@@ -128,7 +135,7 @@ export default {
 
   methods: {
     async fetch () {
-      let { data } = await axios.get('/cases/case-two/table')
+      let { data } = await axios.get(`/answers/${this.candidateId}/api`)
 
       if (data.naptt15) {
         this.na.pt.t15 = data.naptt15

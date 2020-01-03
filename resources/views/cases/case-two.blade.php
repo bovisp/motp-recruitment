@@ -493,7 +493,9 @@
 
     <p>Using the above information, fill-in the following forecast tables, choosing the likeliest precipitation type and amount for the previous 3hrs: </p>
 
-    <qpf-table></qpf-table>
+    <qpf-table
+      :candidate-id="{{ (int) Cache::get('candidateid') }}"
+    ></qpf-table>
 
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
 

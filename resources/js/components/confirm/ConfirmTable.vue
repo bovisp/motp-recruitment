@@ -28,6 +28,10 @@ export default {
     baseUrl: {
       type: String,
       required: true
+    },
+    candidateId: {
+      type: Number,
+      required: true
     }
   },
 
@@ -69,7 +73,7 @@ export default {
 
   methods: {
     async fetch () {
-      let { data } = await axios.get('/cases/submit-all/answers')
+      let { data } = await axios.get(`/answers/${this.candidateId}/api`)
 
       window.events.$emit('answers', data)
     }
