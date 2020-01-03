@@ -1,16 +1,16 @@
 <template>
-  <form @submit.prevent="submit" class="mt-4">
+  <form @submit.prevent="submit">
     <div class="form-group">
       <textarea 
-        v-model="caseTwoExerciseTwoTextarea" 
+        v-model="body" 
         rows="10" 
         class="form-control"
-        :class="{ 'is-invalid': errors.case2ex2 }"
+        :class="{ 'is-invalid': errors[answerKey] }"
       ></textarea>
 
       <p 
-        v-if="errors.case2ex2"
-        v-text="errors.case2ex2[0]"
+        v-if="errors[answerKey]"
+        v-text="errors[answerKey][0]"
         class="invalid-feedback"
       ></p>
     </div>
@@ -24,9 +24,24 @@ import { mapGetters } from 'vuex'
 import Toastify from 'toastify-js'
 
 export default {
+  props: {
+    answerKey: {
+      type: String,
+      required: true
+    },
+    endpoint: {
+      type: String,
+      required: true
+    },
+    candidateId: {
+      type: Number,
+      required: true
+    }
+  },
+
   data () {
     return {
-      caseTwoExerciseTwoTextarea: ''
+      body: ''
     }
   },
 
@@ -38,8 +53,9 @@ export default {
 
   methods: {
     async submit () {
-      let response = await axios.post('/cases/case-two/exercise-two', {
-        case2ex2: this.caseTwoExerciseTwoTextarea
+      let response = await axios.post(`/cases/${this.endpoint}`, {
+        body: this.body,
+        key: this.answerKey
       })
 
       Toastify({
@@ -54,10 +70,10 @@ export default {
     },
 
     async fetch() {
-      let { data } = await axios.get('/cases/case-two/exercise-two/answer')
+      let { data } = await axios.get(`/api/answers/${this.candidateId}`)
 
-      if (data.case2ex2) {
-        this.caseTwoExerciseTwoTextarea = data.case2ex2
+      if (data[this.answerKey]) {
+        this.body = data[this.answerKey]
       }
     }
   },

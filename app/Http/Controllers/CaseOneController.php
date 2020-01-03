@@ -16,15 +16,15 @@ class CaseOneController extends Controller
     public function store()
     {
       request()->validate([
-        'case1' => 'required'
+        'body' => 'required'
       ]);
 
       $candidate_id = (int) Cache::get('candidateid');
       
       if (Answer::where('candidate_id', $candidate_id)->first() === null) {
-        $answer = Answer::make([
-          'case1' => request('case1')
-        ]);
+        $answer = Answer::make();
+
+        $answer[request('key')] = request('body');
 
         $answer->candidate_id = (int) Cache::get('candidateid');
 
@@ -32,7 +32,9 @@ class CaseOneController extends Controller
       } else {
         $answer = Answer::where('candidate_id', $candidate_id)->first();
 
-        $answer->update(request()->all());
+        $answer[request('key')] = request('body');
+
+        $answer->save();
       }
     }
 

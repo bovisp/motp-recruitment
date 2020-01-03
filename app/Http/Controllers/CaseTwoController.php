@@ -78,18 +78,18 @@ class CaseTwoController extends Controller
       return Answer::where('candidate_id', $candidate_id)->first();
     }
 
-    public function storeExerciseOneAnswer()
+    public function store()
     {
       request()->validate([
-        'case2ex1' => 'required'
+        'body' => 'required'
       ]);
 
       $candidate_id = (int) Cache::get('candidateid');
       
       if (Answer::where('candidate_id', $candidate_id)->first() === null) {
-        $answer = Answer::make([
-          'case2ex1' => request('case2ex1')
-        ]);
+        $answer = Answer::make();
+
+        $answer[request('key')] = request('body');
 
         $answer->candidate_id = (int) Cache::get('candidateid');
 
@@ -97,7 +97,9 @@ class CaseTwoController extends Controller
       } else {
         $answer = Answer::where('candidate_id', $candidate_id)->first();
 
-        $answer->update(request()->all());
+        $answer[request('key')] = request('body');
+
+        $answer->save();
       }
     }
 

@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Answer;
 use App\Candidate;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Gate;
 
 class MarkingController extends Controller
 {
   public function show(Candidate $candidate)
   {
-    dd($candidate);
+    $answers = Answer::find($candidate->id);
+
+    return view('answers.show', compact('answers', 'candidate'));
   }
 }

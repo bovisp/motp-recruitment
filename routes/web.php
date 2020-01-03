@@ -42,7 +42,7 @@ Route::post('/cases/case-two/table', 'CaseTwoController@table')
 Route::get('/cases/case-two/table', 'CaseTwoController@getTableData')
   ->middleware(['auth', 'candidate.exists']);
 
-Route::post('/cases/case-two/exercise-one', 'CaseTwoController@storeExerciseOneAnswer')
+Route::post('/cases/case-two', 'CaseTwoController@store')
   ->middleware(['auth', 'candidate.exists']);
 
 Route::get('/cases/case-two/exercise-one/answer', 'CaseTwoController@getExerciseOneAnswer')
@@ -69,3 +69,6 @@ Route::get('/cases/submit-all/answers', 'SubmitAllController@index')
 
 Route::get('/answers/{candidate}', 'MarkingController@show')
   ->middleware(['auth', 'isadmin']);
+
+Route::get('/api/answers/{candidate}', 'Api\AnswersController@show')
+  ->middleware(['auth']);

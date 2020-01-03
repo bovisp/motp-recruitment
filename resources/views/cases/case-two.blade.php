@@ -261,8 +261,12 @@
 
     <draw-app></draw-app>
 
-    <div id="case-two-exercise-one-answer">
-      <case-two-exercise-one-textarea></case-two-exercise-one-textarea>
+    <div id="case-two-exercise-one-answer" class="mt-5">
+      <textbox-answer
+        :candidate-id="{{ (int) Cache::get('candidateid') }}"
+        answer-key="case2ex1"
+        endpoint="case-two"
+      ></textbox-answer>
     </div>
 
     <h2 class="mt-4">Case 2 Exersise 2 - Precipitation Forecast over Newfoundland</h2>
@@ -494,7 +498,11 @@
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
 
     <div id="case-two-exercise-two-answer">
-      <case-two-exercise-two-textarea></case-two-exercise-two-textarea>
+      <textbox-answer
+        :candidate-id="{{ (int) Cache::get('candidateid') }}"
+        answer-key="case2ex2"
+        endpoint="case-two"
+      ></textbox-answer>
     </div>
 
     <div class="mt-5">

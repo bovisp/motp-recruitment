@@ -1,8 +1,8 @@
 <template>
   <tr>
     <td>
-      <a :href="`${baseUrl}/cases/case-two#case-two-exercise-two-answer`">
-        Case Two Exercise Two answer
+      <a :href="`${baseUrl}/cases/${link}`">
+        {{ linkText }}
       </a>
     </td>
     <td v-html="getStatus"></td>
@@ -15,12 +15,23 @@ export default {
     baseUrl: {
       type: String,
       required: true
+    },
+    link: {
+      type: String,
+      required: true
+    },
+    rowKey: {
+      type: String,
+      required: true
+    },
+    linkText: {
+      type: String,
+      required: true
     }
   },
 
   data () {
     return {
-      key: 'case2ex2',
       answers: null
     }
   },
@@ -29,7 +40,7 @@ export default {
     getStatus () {
       if (!this.answers) return `<span class="text-danger"><i class="fas fa-times"></i> Not completed</span>`
 
-      return this.answers[this.key] ? 
+      return this.answers[this.rowKey] ? 
         `<span class="text-success"><i class="fas fa-check"></i> Completed</span>` :
         `<span class="text-danger"><i class="fas fa-times"></i> Not completed</span>`
     }

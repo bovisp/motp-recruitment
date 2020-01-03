@@ -14,9 +14,7 @@ import './plugins/interceptors'
 
 Vue.component('qpf-table', require('./components/qpf-table/QpfTable.vue').default);
 Vue.component('draw-app', require('./components/draw/Draw.vue').default);
-Vue.component('case-one-textarea', require('./components/textboxes/CaseOne.vue').default);
-Vue.component('case-two-exercise-one-textarea', require('./components/textboxes/CaseTwoExerciseOne.vue').default);
-Vue.component('case-two-exercise-two-textarea', require('./components/textboxes/CaseTwoExerciseTwo.vue').default);
+Vue.component('textbox-answer', require('./components/textboxes/TextboxAnswer.vue').default);
 Vue.component('confirm-page', require('./components/confirm/Confirm.vue').default);
 
 const app = new Vue({  

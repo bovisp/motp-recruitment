@@ -246,7 +246,11 @@
     <p>Given your analysis, what do you tell her? Please explain your reasoning with at least 5 pieces of evidence for each forecast site.</p>
 
     <div id="case-one-answer">
-      <case-one-textarea></case-one-textarea>
+      <textbox-answer
+        :candidate-id="{{ (int) Cache::get('candidateid') }}"
+        answer-key="case1"
+        endpoint="case-one"
+      ></textbox-answer>
     </div>
 
     <div class="mt-5">

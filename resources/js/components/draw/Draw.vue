@@ -2,8 +2,7 @@
   <div class="d-flex w-100" id="case-two-exercise-one-image">
     <div class="d-flex flex-column mr-4">
       <button 
-        type="button" 
-        class="btn btn-outline-dark" 
+        class="btn btn-primary" 
         title="Save image"
         @click.prevent="saveImage"
       >

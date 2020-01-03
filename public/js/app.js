@@ -1999,11 +1999,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _table_rows_CaseOneAnswer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./table-rows/CaseOneAnswer */ "./resources/js/components/confirm/table-rows/CaseOneAnswer.vue");
-/* harmony import */ var _table_rows_CaseTwoExerciseOneAnswer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./table-rows/CaseTwoExerciseOneAnswer */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue");
-/* harmony import */ var _table_rows_CaseTwoExerciseOneImage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./table-rows/CaseTwoExerciseOneImage */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue");
-/* harmony import */ var _table_rows_CaseTwoExerciseTwoTable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./table-rows/CaseTwoExerciseTwoTable */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue");
-/* harmony import */ var _table_rows_CaseTwoExerciseTwoAnswer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./table-rows/CaseTwoExerciseTwoAnswer */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue");
+/* harmony import */ var _ConfirmTableRow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ConfirmTableRow */ "./resources/js/components/confirm/ConfirmTableRow.vue");
 
 //
 //
@@ -2024,10 +2020,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
-
-
-
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -2036,12 +2031,33 @@ __webpack_require__.r(__webpack_exports__);
       required: true
     }
   },
+  data: function data() {
+    return {
+      rows: [{
+        link: 'case-one#case-one-answer',
+        key: 'case1',
+        text: 'Case One answer'
+      }, {
+        link: 'case-two#case-two-exercise-one-answer',
+        key: 'case2ex1',
+        text: 'Case Two Exercise One answer'
+      }, {
+        link: 'case-two#case-two-exercise-one-image',
+        key: 'image_url',
+        text: 'Case Two Exercise One image'
+      }, {
+        link: 'case-two#case-two-exercise-two-answer',
+        key: 'case2ex2',
+        text: 'Case Two Exercise Two answer'
+      }, {
+        link: 'case-two#case-two-exercise-two-table',
+        key: 'naptt15',
+        text: 'Case Two Exercise Two table'
+      }]
+    };
+  },
   components: {
-    CaseOneAnswer: _table_rows_CaseOneAnswer__WEBPACK_IMPORTED_MODULE_1__["default"],
-    CaseTwoExerciseOneAnswer: _table_rows_CaseTwoExerciseOneAnswer__WEBPACK_IMPORTED_MODULE_2__["default"],
-    CaseTwoExerciseOneImage: _table_rows_CaseTwoExerciseOneImage__WEBPACK_IMPORTED_MODULE_3__["default"],
-    CaseTwoExerciseTwoTable: _table_rows_CaseTwoExerciseTwoTable__WEBPACK_IMPORTED_MODULE_4__["default"],
-    CaseTwoExerciseTwoAnswer: _table_rows_CaseTwoExerciseTwoAnswer__WEBPACK_IMPORTED_MODULE_5__["default"]
+    ConfirmTableRow: _ConfirmTableRow__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   methods: {
     fetch: function fetch() {
@@ -2074,10 +2090,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2099,218 +2115,29 @@ __webpack_require__.r(__webpack_exports__);
     baseUrl: {
       type: String,
       required: true
-    }
-  },
-  data: function data() {
-    return {
-      key: 'case1',
-      answers: null
-    };
-  },
-  computed: {
-    getStatus: function getStatus() {
-      if (!this.answers) return "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-      return this.answers[this.key] ? "<span class=\"text-success\"><i class=\"fas fa-check\"></i> Completed</span>" : "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-    }
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    window.events.$on('answers', function (answers) {
-      _this.answers = answers;
-    });
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    baseUrl: {
+    },
+    link: {
+      type: String,
+      required: true
+    },
+    rowKey: {
+      type: String,
+      required: true
+    },
+    linkText: {
       type: String,
       required: true
     }
   },
   data: function data() {
     return {
-      key: 'case2ex1',
       answers: null
     };
   },
   computed: {
     getStatus: function getStatus() {
       if (!this.answers) return "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-      return this.answers[this.key] ? "<span class=\"text-success\"><i class=\"fas fa-check\"></i> Completed</span>" : "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-    }
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    window.events.$on('answers', function (answers) {
-      _this.answers = answers;
-    });
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    baseUrl: {
-      type: String,
-      required: true
-    }
-  },
-  data: function data() {
-    return {
-      key: 'image_url',
-      answers: null
-    };
-  },
-  computed: {
-    getStatus: function getStatus() {
-      if (!this.answers) return "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-      return this.answers[this.key] ? "<span class=\"text-success\"><i class=\"fas fa-check\"></i> Completed</span>" : "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-    }
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    window.events.$on('answers', function (answers) {
-      _this.answers = answers;
-    });
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js&":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    baseUrl: {
-      type: String,
-      required: true
-    }
-  },
-  data: function data() {
-    return {
-      key: 'case2ex2',
-      answers: null
-    };
-  },
-  computed: {
-    getStatus: function getStatus() {
-      if (!this.answers) return "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-      return this.answers[this.key] ? "<span class=\"text-success\"><i class=\"fas fa-check\"></i> Completed</span>" : "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-    }
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    window.events.$on('answers', function (answers) {
-      _this.answers = answers;
-    });
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: {
-    baseUrl: {
-      type: String,
-      required: true
-    }
-  },
-  data: function data() {
-    return {
-      key: 'naptt15',
-      answers: null
-    };
-  },
-  computed: {
-    getStatus: function getStatus() {
-      if (!this.answers) return "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
-      return this.answers[this.key] ? "<span class=\"text-success\"><i class=\"fas fa-check\"></i> Completed</span>" : "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
+      return this.answers[this.rowKey] ? "<span class=\"text-success\"><i class=\"fas fa-check\"></i> Completed</span>" : "<span class=\"text-danger\"><i class=\"fas fa-times\"></i> Not completed</span>";
     }
   },
   mounted: function mounted() {
@@ -2338,7 +2165,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! toastify-js */ "./node_modules/toastify-js/src/toastify.js");
 /* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(toastify_js__WEBPACK_IMPORTED_MODULE_1__);
 
-//
 //
 //
 //
@@ -2945,10 +2771,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseOne.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/CaseOne.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2991,127 +2817,23 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      caseonetextarea: ''
-    };
-  },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
-    errors: 'errors'
-  })),
-  methods: {
-    submit: function submit() {
-      var response;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function submit$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.post('/cases/case-one', {
-                case1: this.caseonetextarea
-              }));
-
-            case 2:
-              response = _context.sent;
-              toastify_js__WEBPACK_IMPORTED_MODULE_2___default()({
-                text: "Answer saved successfully",
-                duration: 3000,
-                newWindow: true,
-                gravity: "top",
-                position: 'center',
-                backgroundColor: "#28a745",
-                stopOnFocus: true
-              }).showToast();
-
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, null, this);
+  props: {
+    answerKey: {
+      type: String,
+      required: true
     },
-    fetch: function fetch() {
-      var _ref, data;
-
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetch$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _context2.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get('/cases/case-one/answer'));
-
-            case 2:
-              _ref = _context2.sent;
-              data = _ref.data;
-
-              if (data.case1) {
-                this.caseonetextarea = data.case1;
-              }
-
-            case 5:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, null, this);
+    endpoint: {
+      type: String,
+      required: true
+    },
+    candidateId: {
+      type: Number,
+      required: true
     }
   },
-  mounted: function mounted() {
-    this.fetch();
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! toastify-js */ "./node_modules/toastify-js/src/toastify.js");
-/* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(toastify_js__WEBPACK_IMPORTED_MODULE_2__);
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      caseTwoExerciseOneTextarea: ''
+      body: ''
     };
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
@@ -3125,8 +2847,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.post('/cases/case-two/exercise-one', {
-                case2ex1: this.caseTwoExerciseOneTextarea
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.post("/cases/".concat(this.endpoint), {
+                body: this.body,
+                key: this.answerKey
               }));
 
             case 2:
@@ -3156,132 +2879,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get('/cases/case-two/exercise-one/answer'));
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get("/api/answers/".concat(this.candidateId)));
 
             case 2:
               _ref = _context2.sent;
               data = _ref.data;
 
-              if (data.case2ex1) {
-                this.caseTwoExerciseOneTextarea = data.case2ex1;
-              }
-
-            case 5:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, null, this);
-    }
-  },
-  mounted: function mounted() {
-    this.fetch();
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! toastify-js */ "./node_modules/toastify-js/src/toastify.js");
-/* harmony import */ var toastify_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(toastify_js__WEBPACK_IMPORTED_MODULE_2__);
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      caseTwoExerciseTwoTextarea: ''
-    };
-  },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapGetters"])({
-    errors: 'errors'
-  })),
-  methods: {
-    submit: function submit() {
-      var response;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function submit$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.post('/cases/case-two/exercise-two', {
-                case2ex2: this.caseTwoExerciseTwoTextarea
-              }));
-
-            case 2:
-              response = _context.sent;
-              toastify_js__WEBPACK_IMPORTED_MODULE_2___default()({
-                text: "Answer saved successfully",
-                duration: 3000,
-                newWindow: true,
-                gravity: "top",
-                position: 'center',
-                backgroundColor: "#28a745",
-                stopOnFocus: true
-              }).showToast();
-
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, null, this);
-    },
-    fetch: function fetch() {
-      var _ref, data;
-
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetch$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _context2.next = 2;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get('/cases/case-two/exercise-two/answer'));
-
-            case 2:
-              _ref = _context2.sent;
-              data = _ref.data;
-
-              if (data.case2ex2) {
-                this.caseTwoExerciseTwoTextarea = data.case2ex2;
+              if (data[this.answerKey]) {
+                this.body = data[this.answerKey];
               }
 
             case 5:
@@ -56008,25 +55613,17 @@ var render = function() {
     _vm._v(" "),
     _c(
       "tbody",
-      [
-        _c("case-one-answer", { attrs: { "base-url": _vm.baseUrl } }),
-        _vm._v(" "),
-        _c("case-two-exercise-one-answer", {
-          attrs: { "base-url": _vm.baseUrl }
-        }),
-        _vm._v(" "),
-        _c("case-two-exercise-one-image", {
-          attrs: { "base-url": _vm.baseUrl }
-        }),
-        _vm._v(" "),
-        _c("case-two-exercise-two-table", {
-          attrs: { "base-url": _vm.baseUrl }
-        }),
-        _vm._v(" "),
-        _c("case-two-exercise-two-answer", {
-          attrs: { "base-url": _vm.baseUrl }
+      _vm._l(_vm.rows, function(row) {
+        return _c("confirm-table-row", {
+          key: row.name,
+          attrs: {
+            "base-url": _vm.baseUrl,
+            link: row.link,
+            "row-key": row.key,
+            "link-text": row.text
+          }
         })
-      ],
+      }),
       1
     )
   ])
@@ -56051,10 +55648,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=template&id=039b21b7&":
-/*!***********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=template&id=039b21b7& ***!
-  \***********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=template&id=8c64bcbc&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=template&id=8c64bcbc& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -56068,163 +55665,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("tr", [
     _c("td", [
-      _c(
-        "a",
-        { attrs: { href: _vm.baseUrl + "/cases/case-one#case-one-answer" } },
-        [_vm._v("\n      Case One answer\n    ")]
-      )
-    ]),
-    _vm._v(" "),
-    _c("td", { domProps: { innerHTML: _vm._s(_vm.getStatus) } })
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386&":
-/*!**********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386& ***!
-  \**********************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("tr", [
-    _c("td", [
-      _c(
-        "a",
-        {
-          attrs: {
-            href: _vm.baseUrl + "/cases/case-two#case-two-exercise-one-answer"
-          }
-        },
-        [_vm._v("\n      Case Two Exercise One answer\n    ")]
-      )
-    ]),
-    _vm._v(" "),
-    _c("td", { domProps: { innerHTML: _vm._s(_vm.getStatus) } })
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac&":
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac& ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("tr", [
-    _c("td", [
-      _c(
-        "a",
-        {
-          attrs: {
-            href: _vm.baseUrl + "/cases/case-two#case-two-exercise-one-image"
-          }
-        },
-        [_vm._v("\n      Case Two Exercise One image\n    ")]
-      )
-    ]),
-    _vm._v(" "),
-    _c("td", { domProps: { innerHTML: _vm._s(_vm.getStatus) } })
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3&":
-/*!**********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3& ***!
-  \**********************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("tr", [
-    _c("td", [
-      _c(
-        "a",
-        {
-          attrs: {
-            href: _vm.baseUrl + "/cases/case-two#case-two-exercise-two-answer"
-          }
-        },
-        [_vm._v("\n      Case Two Exercise Two answer\n    ")]
-      )
-    ]),
-    _vm._v(" "),
-    _c("td", { domProps: { innerHTML: _vm._s(_vm.getStatus) } })
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e&":
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e& ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("tr", [
-    _c("td", [
-      _c(
-        "a",
-        {
-          attrs: {
-            href: _vm.baseUrl + "/cases/case-two#case-two-exercise-two-table"
-          }
-        },
-        [_vm._v("\n      Case Two Exercise Two table\n    ")]
-      )
+      _c("a", { attrs: { href: _vm.baseUrl + "/cases/" + _vm.link } }, [
+        _vm._v("\n      " + _vm._s(_vm.linkText) + "\n    ")
+      ])
     ]),
     _vm._v(" "),
     _c("td", { domProps: { innerHTML: _vm._s(_vm.getStatus) } })
@@ -56263,8 +55706,8 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn-outline-dark",
-            attrs: { type: "button", title: "Save image" },
+            staticClass: "btn btn-primary",
+            attrs: { title: "Save image" },
             on: {
               click: function($event) {
                 $event.preventDefault()
@@ -56990,10 +56433,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseOne.vue?vue&type=template&id=96cb7750&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/CaseOne.vue?vue&type=template&id=96cb7750& ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=template&id=71ab7f9e&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=template&id=71ab7f9e& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -57022,168 +56465,28 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.caseonetextarea,
-              expression: "caseonetextarea"
+              value: _vm.body,
+              expression: "body"
             }
           ],
           staticClass: "form-control",
-          class: { "is-invalid": _vm.errors.case1 },
+          class: { "is-invalid": _vm.errors[_vm.answerKey] },
           attrs: { rows: "10" },
-          domProps: { value: _vm.caseonetextarea },
+          domProps: { value: _vm.body },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.caseonetextarea = $event.target.value
+              _vm.body = $event.target.value
             }
           }
         }),
         _vm._v(" "),
-        _vm.errors.case1
+        _vm.errors[_vm.answerKey]
           ? _c("p", {
               staticClass: "invalid-feedback",
-              domProps: { textContent: _vm._s(_vm.errors.case1[0]) }
-            })
-          : _vm._e()
-      ]),
-      _vm._v(" "),
-      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Submit")])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "form",
-    {
-      staticClass: "mt-5",
-      on: {
-        submit: function($event) {
-          $event.preventDefault()
-          return _vm.submit($event)
-        }
-      }
-    },
-    [
-      _c("div", { staticClass: "form-group" }, [
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.caseTwoExerciseOneTextarea,
-              expression: "caseTwoExerciseOneTextarea"
-            }
-          ],
-          staticClass: "form-control",
-          class: { "is-invalid": _vm.errors.case2ex1 },
-          attrs: { rows: "10" },
-          domProps: { value: _vm.caseTwoExerciseOneTextarea },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.caseTwoExerciseOneTextarea = $event.target.value
-            }
-          }
-        }),
-        _vm._v(" "),
-        _vm.errors.case2ex1
-          ? _c("p", {
-              staticClass: "invalid-feedback",
-              domProps: { textContent: _vm._s(_vm.errors.case2ex1[0]) }
-            })
-          : _vm._e()
-      ]),
-      _vm._v(" "),
-      _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Submit")])
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "form",
-    {
-      staticClass: "mt-4",
-      on: {
-        submit: function($event) {
-          $event.preventDefault()
-          return _vm.submit($event)
-        }
-      }
-    },
-    [
-      _c("div", { staticClass: "form-group" }, [
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.caseTwoExerciseTwoTextarea,
-              expression: "caseTwoExerciseTwoTextarea"
-            }
-          ],
-          staticClass: "form-control",
-          class: { "is-invalid": _vm.errors.case2ex2 },
-          attrs: { rows: "10" },
-          domProps: { value: _vm.caseTwoExerciseTwoTextarea },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.caseTwoExerciseTwoTextarea = $event.target.value
-            }
-          }
-        }),
-        _vm._v(" "),
-        _vm.errors.case2ex2
-          ? _c("p", {
-              staticClass: "invalid-feedback",
-              domProps: { textContent: _vm._s(_vm.errors.case2ex2[0]) }
+              domProps: { textContent: _vm._s(_vm.errors[_vm.answerKey][0]) }
             })
           : _vm._e()
       ]),
@@ -70432,9 +69735,7 @@ window.events = new vue__WEBPACK_IMPORTED_MODULE_0___default.a();
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('qpf-table', __webpack_require__(/*! ./components/qpf-table/QpfTable.vue */ "./resources/js/components/qpf-table/QpfTable.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('draw-app', __webpack_require__(/*! ./components/draw/Draw.vue */ "./resources/js/components/draw/Draw.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('case-one-textarea', __webpack_require__(/*! ./components/textboxes/CaseOne.vue */ "./resources/js/components/textboxes/CaseOne.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('case-two-exercise-one-textarea', __webpack_require__(/*! ./components/textboxes/CaseTwoExerciseOne.vue */ "./resources/js/components/textboxes/CaseTwoExerciseOne.vue")["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('case-two-exercise-two-textarea', __webpack_require__(/*! ./components/textboxes/CaseTwoExerciseTwo.vue */ "./resources/js/components/textboxes/CaseTwoExerciseTwo.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('textbox-answer', __webpack_require__(/*! ./components/textboxes/TextboxAnswer.vue */ "./resources/js/components/textboxes/TextboxAnswer.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('confirm-page', __webpack_require__(/*! ./components/confirm/Confirm.vue */ "./resources/js/components/confirm/Confirm.vue")["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
@@ -70600,18 +69901,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/confirm/table-rows/CaseOneAnswer.vue":
-/*!**********************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseOneAnswer.vue ***!
-  \**********************************************************************/
+/***/ "./resources/js/components/confirm/ConfirmTableRow.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/confirm/ConfirmTableRow.vue ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseOneAnswer_vue_vue_type_template_id_039b21b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseOneAnswer.vue?vue&type=template&id=039b21b7& */ "./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=template&id=039b21b7&");
-/* harmony import */ var _CaseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseOneAnswer.vue?vue&type=script&lang=js& */ "./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _ConfirmTableRow_vue_vue_type_template_id_8c64bcbc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ConfirmTableRow.vue?vue&type=template&id=8c64bcbc& */ "./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=template&id=8c64bcbc&");
+/* harmony import */ var _ConfirmTableRow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ConfirmTableRow.vue?vue&type=script&lang=js& */ "./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -70620,9 +69921,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseOneAnswer_vue_vue_type_template_id_039b21b7___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseOneAnswer_vue_vue_type_template_id_039b21b7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _ConfirmTableRow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ConfirmTableRow_vue_vue_type_template_id_8c64bcbc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ConfirmTableRow_vue_vue_type_template_id_8c64bcbc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -70632,314 +69933,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/confirm/table-rows/CaseOneAnswer.vue"
+component.options.__file = "resources/js/components/confirm/ConfirmTableRow.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************/
+/***/ "./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseOneAnswer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ConfirmTableRow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./ConfirmTableRow.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ConfirmTableRow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=template&id=039b21b7&":
-/*!*****************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=template&id=039b21b7& ***!
-  \*****************************************************************************************************/
+/***/ "./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=template&id=8c64bcbc&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=template&id=8c64bcbc& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOneAnswer_vue_vue_type_template_id_039b21b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseOneAnswer.vue?vue&type=template&id=039b21b7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseOneAnswer.vue?vue&type=template&id=039b21b7&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOneAnswer_vue_vue_type_template_id_039b21b7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ConfirmTableRow_vue_vue_type_template_id_8c64bcbc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./ConfirmTableRow.vue?vue&type=template&id=8c64bcbc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/ConfirmTableRow.vue?vue&type=template&id=8c64bcbc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ConfirmTableRow_vue_vue_type_template_id_8c64bcbc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOneAnswer_vue_vue_type_template_id_039b21b7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseTwoExerciseOneAnswer_vue_vue_type_template_id_eb6b9386___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386&");
-/* harmony import */ var _CaseTwoExerciseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseTwoExerciseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseTwoExerciseOneAnswer_vue_vue_type_template_id_eb6b9386___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseTwoExerciseOneAnswer_vue_vue_type_template_id_eb6b9386___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386&":
-/*!****************************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386& ***!
-  \****************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneAnswer_vue_vue_type_template_id_eb6b9386___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneAnswer.vue?vue&type=template&id=eb6b9386&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneAnswer_vue_vue_type_template_id_eb6b9386___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneAnswer_vue_vue_type_template_id_eb6b9386___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue ***!
-  \********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseTwoExerciseOneImage_vue_vue_type_template_id_41d26aac___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac&");
-/* harmony import */ var _CaseTwoExerciseOneImage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseTwoExerciseOneImage.vue?vue&type=script&lang=js& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseTwoExerciseOneImage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseTwoExerciseOneImage_vue_vue_type_template_id_41d26aac___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseTwoExerciseOneImage_vue_vue_type_template_id_41d26aac___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneImage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseOneImage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneImage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac&":
-/*!***************************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac& ***!
-  \***************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneImage_vue_vue_type_template_id_41d26aac___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseOneImage.vue?vue&type=template&id=41d26aac&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneImage_vue_vue_type_template_id_41d26aac___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOneImage_vue_vue_type_template_id_41d26aac___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseTwoExerciseTwoAnswer_vue_vue_type_template_id_490722a3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3&");
-/* harmony import */ var _CaseTwoExerciseTwoAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseTwoExerciseTwoAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseTwoExerciseTwoAnswer_vue_vue_type_template_id_490722a3___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseTwoExerciseTwoAnswer_vue_vue_type_template_id_490722a3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3&":
-/*!****************************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3& ***!
-  \****************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoAnswer_vue_vue_type_template_id_490722a3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoAnswer.vue?vue&type=template&id=490722a3&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoAnswer_vue_vue_type_template_id_490722a3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoAnswer_vue_vue_type_template_id_490722a3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue ***!
-  \********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseTwoExerciseTwoTable_vue_vue_type_template_id_25f70b0e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e&");
-/* harmony import */ var _CaseTwoExerciseTwoTable_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js& */ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseTwoExerciseTwoTable_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseTwoExerciseTwoTable_vue_vue_type_template_id_25f70b0e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseTwoExerciseTwoTable_vue_vue_type_template_id_25f70b0e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoTable_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoTable_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e&":
-/*!***************************************************************************************************************!*\
-  !*** ./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e& ***!
-  \***************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoTable_vue_vue_type_template_id_25f70b0e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/confirm/table-rows/CaseTwoExerciseTwoTable.vue?vue&type=template&id=25f70b0e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoTable_vue_vue_type_template_id_25f70b0e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwoTable_vue_vue_type_template_id_25f70b0e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ConfirmTableRow_vue_vue_type_template_id_8c64bcbc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -71221,17 +70246,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/textboxes/CaseOne.vue":
-/*!*******************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseOne.vue ***!
-  \*******************************************************/
+/***/ "./resources/js/components/textboxes/TextboxAnswer.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/textboxes/TextboxAnswer.vue ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseOne_vue_vue_type_template_id_96cb7750___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseOne.vue?vue&type=template&id=96cb7750& */ "./resources/js/components/textboxes/CaseOne.vue?vue&type=template&id=96cb7750&");
-/* harmony import */ var _CaseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseOne.vue?vue&type=script&lang=js& */ "./resources/js/components/textboxes/CaseOne.vue?vue&type=script&lang=js&");
+/* harmony import */ var _TextboxAnswer_vue_vue_type_template_id_71ab7f9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TextboxAnswer.vue?vue&type=template&id=71ab7f9e& */ "./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=template&id=71ab7f9e&");
+/* harmony import */ var _TextboxAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TextboxAnswer.vue?vue&type=script&lang=js& */ "./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -71241,9 +70266,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseOne_vue_vue_type_template_id_96cb7750___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseOne_vue_vue_type_template_id_96cb7750___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _TextboxAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TextboxAnswer_vue_vue_type_template_id_71ab7f9e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TextboxAnswer_vue_vue_type_template_id_71ab7f9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -71253,176 +70278,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/textboxes/CaseOne.vue"
+component.options.__file = "resources/js/components/textboxes/TextboxAnswer.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/textboxes/CaseOne.vue?vue&type=script&lang=js&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseOne.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseOne.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseOne.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseOne.vue?vue&type=template&id=96cb7750&":
+/***/ "./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseOne.vue?vue&type=template&id=96cb7750& ***!
+  !*** ./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextboxAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./TextboxAnswer.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TextboxAnswer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=template&id=71ab7f9e&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=template&id=71ab7f9e& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOne_vue_vue_type_template_id_96cb7750___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseOne.vue?vue&type=template&id=96cb7750& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseOne.vue?vue&type=template&id=96cb7750&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOne_vue_vue_type_template_id_96cb7750___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TextboxAnswer_vue_vue_type_template_id_71ab7f9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./TextboxAnswer.vue?vue&type=template&id=71ab7f9e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/TextboxAnswer.vue?vue&type=template&id=71ab7f9e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TextboxAnswer_vue_vue_type_template_id_71ab7f9e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseOne_vue_vue_type_template_id_96cb7750___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseTwoExerciseOne.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseTwoExerciseOne.vue ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseTwoExerciseOne_vue_vue_type_template_id_5c7c8280___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280& */ "./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280&");
-/* harmony import */ var _CaseTwoExerciseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseTwoExerciseOne.vue?vue&type=script&lang=js& */ "./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseTwoExerciseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseTwoExerciseOne_vue_vue_type_template_id_5c7c8280___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseTwoExerciseOne_vue_vue_type_template_id_5c7c8280___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/textboxes/CaseTwoExerciseOne.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseOne.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOne_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280& ***!
-  \*************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOne_vue_vue_type_template_id_5c7c8280___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseOne.vue?vue&type=template&id=5c7c8280&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOne_vue_vue_type_template_id_5c7c8280___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseOne_vue_vue_type_template_id_5c7c8280___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseTwoExerciseTwo.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseTwoExerciseTwo.vue ***!
-  \******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CaseTwoExerciseTwo_vue_vue_type_template_id_74e43366___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366& */ "./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366&");
-/* harmony import */ var _CaseTwoExerciseTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CaseTwoExerciseTwo.vue?vue&type=script&lang=js& */ "./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CaseTwoExerciseTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _CaseTwoExerciseTwo_vue_vue_type_template_id_74e43366___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _CaseTwoExerciseTwo_vue_vue_type_template_id_74e43366___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/textboxes/CaseTwoExerciseTwo.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseTwo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366& ***!
-  \*************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwo_vue_vue_type_template_id_74e43366___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/textboxes/CaseTwoExerciseTwo.vue?vue&type=template&id=74e43366&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwo_vue_vue_type_template_id_74e43366___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CaseTwoExerciseTwo_vue_vue_type_template_id_74e43366___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TextboxAnswer_vue_vue_type_template_id_71ab7f9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
