@@ -5,138 +5,65 @@ namespace App\Http\Controllers;
 use App\Answer;
 use App\Candidate;
 use Carbon\Carbon;
+use App\Traits\Persistable;
 use Illuminate\Support\Facades\Cache;
 use App\Http\Requests\CaseTwoTableRequest;
 
 class CaseTwoController extends Controller
 {
-    public function show()
-    {
-      return view('cases/case-two');
-    }
+  use Persistable;
+  
+  public function show()
+  {
+    return view('cases.case-two');
+  }
 
-    public function image()
-    {
-      $candidate = Candidate::find(Cache::get('candidateid'));
+  public function image()
+  {
+    $candidate = $this->candidate();
 
-      $filepath = storage_path() . '/app/public/images/';
+    $filepath = storage_path() . '/app/public/images/';
 
-      $filename = "{$candidate->id}_{$candidate->firstname}_{$candidate->lastname}_" . 
-                  Carbon::now()->format('Ymd') .
-                  '_warm_front.png';
+    $filename = "{$candidate->id}_{$candidate->firstname}_{$candidate->lastname}_" . 
+                Carbon::now()->format('Ymd') .
+                '_warm_front.png';
 
-      $fullpath = $filepath . $filename;
+    $fullpath = $filepath . $filename;
 
-      $data = substr(request('imageData'), strpos(request('imageData'), ",") + 1);
+    $data = substr(request('imageData'), strpos(request('imageData'), ",") + 1);
 
-      $data = base64_decode($data);
+    $data = base64_decode($data);
 
-      $imgRes = imagecreatefromstring($data);
+    $imgRes = imagecreatefromstring($data);
 
-      imagepng($imgRes, $fullpath);
+    imagepng($imgRes, $fullpath);
 
-      if (Answer::where('candidate_id', $candidate->id)->first() === null) {
-        $answer = Answer::make([
-          'image_url' => $filename
-        ]);
+    $requestArr = array_merge(request()->all(), [
+      'image_url' => $filename
+    ]);
 
-        $answer->candidate_id = (int) Cache::get('candidateid');
+    $this->persist($requestArr, 'image_url');
+    
+    return 'good!';
+  }
 
-        $answer->save();
-      } else {
-        $answer = Answer::where('candidate_id', $candidate->id)->first();
+  public function table(CaseTwoTableRequest $request)
+  {
+    $answer = $this->answer();
+        
+    $answer->candidate_id = (int) Cache::get('candidateid');
 
-        $answer->update([
-          'image_url' => $filename
-        ]);
-      }
-      
-      return 'good!';
-    }
+    $answer->fill(request()->all());
 
-    public function table(CaseTwoTableRequest $request)
-    {
-      $candidate_id = (int) Cache::get('candidateid');
-      
-      if (Answer::where('candidate_id', $candidate_id)->first() === null) {
-        $answer = Answer::make(request()->all());
+    $answer->save();
+  }
 
-        $answer->candidate_id = (int) Cache::get('candidateid');
+  public function store()
+  {
+    request()->validate([
+      'body' => 'required'
+    ]);
 
-        $answer->save();
-      } else {
-        $answer = Answer::where('candidate_id', $candidate_id)->first();
-
-        $answer->update(request()->all());
-      }
-    }
-
-    public function getTableData()
-    {
-      $candidate_id = (int) Cache::get('candidateid');
-
-      return Answer::where('candidate_id', $candidate_id)->first();
-    }
-
-    public function store()
-    {
-      request()->validate([
-        'body' => 'required'
-      ]);
-
-      $candidate_id = (int) Cache::get('candidateid');
-      
-      if (Answer::where('candidate_id', $candidate_id)->first() === null) {
-        $answer = Answer::make();
-
-        $answer[request('key')] = request('body');
-
-        $answer->candidate_id = (int) Cache::get('candidateid');
-
-        $answer->save();
-      } else {
-        $answer = Answer::where('candidate_id', $candidate_id)->first();
-
-        $answer[request('key')] = request('body');
-
-        $answer->save();
-      }
-    }
-
-    public function getExerciseOneAnswer()
-    {
-      $candidate_id = (int) Cache::get('candidateid');
-
-      return Answer::where('candidate_id', $candidate_id)->first();
-    }
-
-    public function storeExerciseTwoAnswer()
-    {
-      request()->validate([
-        'case2ex2' => 'required'
-      ]);
-
-      $candidate_id = (int) Cache::get('candidateid');
-      
-      if (Answer::where('candidate_id', $candidate_id)->first() === null) {
-        $answer = Answer::make([
-          'case2ex2' => request('case2ex2')
-        ]);
-
-        $answer->candidate_id = (int) Cache::get('candidateid');
-
-        $answer->save();
-      } else {
-        $answer = Answer::where('candidate_id', $candidate_id)->first();
-
-        $answer->update(request()->all());
-      }
-    }
-
-    public function getExerciseTwoAnswer()
-    {
-      $candidate_id = (int) Cache::get('candidateid');
-
-      return Answer::where('candidate_id', $candidate_id)->first();
-    }
+    $this->persist(request()->all(), 'body');
+  }
 }

@@ -2205,6 +2205,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      options: {
+        backgroundImage: 'https://res.cloudinary.com/tcddmedia/image/upload/v1576252972/moip_direct_entry_assessment/case%202/Exercise%201/OBS-reference_hhz4yl.jpg',
+        brushColor: '#FF2D00',
+        brushSize: 4
+      }
+    };
+  },
   methods: {
     saveImage: function saveImage(e) {
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function saveImage$(_context2) {
@@ -2219,7 +2228,8 @@ __webpack_require__.r(__webpack_exports__);
                       case 0:
                         _context.next = 2;
                         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.post('/cases/case-two/image', {
-                          imageData: imageData
+                          imageData: imageData,
+                          key: 'image_url'
                         }));
 
                       case 2:
@@ -2260,7 +2270,7 @@ __webpack_require__.r(__webpack_exports__);
             case 2:
               _context3.next = 4;
               return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap($("#warmFront").data("jqScribble").update({
-                backgroundImage: options.backgroundImage
+                backgroundImage: this.options.backgroundImage
               }));
 
             case 4:
@@ -2279,16 +2289,11 @@ __webpack_require__.r(__webpack_exports__);
               return _context3.stop();
           }
         }
-      });
+      }, null, this);
     }
   },
   mounted: function mounted() {
-    var options = {
-      backgroundImage: 'https://res.cloudinary.com/tcddmedia/image/upload/v1576252972/moip_direct_entry_assessment/case%202/Exercise%201/OBS-reference_hhz4yl.jpg',
-      brushColor: '#FF2D00',
-      brushSize: 4
-    };
-    $('#warmFront').jqScribble(options);
+    $('#warmFront').jqScribble(this.options);
   }
 });
 

@@ -29,10 +29,23 @@
 import Toastify from 'toastify-js'
 
 export default {
+  data () {
+    return {
+      options: {
+        backgroundImage: 'https://res.cloudinary.com/tcddmedia/image/upload/v1576252972/moip_direct_entry_assessment/case%202/Exercise%201/OBS-reference_hhz4yl.jpg',
+        brushColor: '#FF2D00',
+        brushSize: 4
+      }
+    }
+  },
+
   methods: {
     async saveImage (e) {
       $("#warmFront").data("jqScribble").save(async (imageData) => {
-        let response = await axios.post('/cases/case-two/image', { imageData })
+        let response = await axios.post('/cases/case-two/image', { 
+          imageData,
+          key: 'image_url' 
+        })
 
         Toastify({
           text: "Image saved successfully",
@@ -49,7 +62,9 @@ export default {
     async  clearImage (e) {
       await $("#warmFront").data("jqScribble").clear()
 
-      await $("#warmFront").data("jqScribble").update({backgroundImage: options.backgroundImage});
+      await $("#warmFront").data("jqScribble").update({
+        backgroundImage: this.options.backgroundImage
+      });
 
       Toastify({
         text: "Image cleared successfully",
@@ -64,13 +79,7 @@ export default {
   },
 
   mounted () {
-    const options = {
-      backgroundImage: 'https://res.cloudinary.com/tcddmedia/image/upload/v1576252972/moip_direct_entry_assessment/case%202/Exercise%201/OBS-reference_hhz4yl.jpg',
-      brushColor: '#FF2D00',
-      brushSize: 4
-    }
-
-    $('#warmFront').jqScribble(options);
+    $('#warmFront').jqScribble(this.options);
   }
 }
 </script>
