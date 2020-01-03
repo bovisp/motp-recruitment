@@ -9,7 +9,7 @@ class MarkingController extends Controller
 {
   public function show(Candidate $candidate)
   {
-    $answers = Answer::find($candidate->id);
+    $answers = Answer::whereCandidateId($candidate->id)->first();
 
     return view('answers.show', compact('answers', 'candidate'));
   }
