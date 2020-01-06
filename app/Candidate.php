@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Score;
 use Illuminate\Database\Eloquent\Model;
 
 class Candidate extends Model
@@ -10,4 +11,9 @@ class Candidate extends Model
       'firstname',
       'lastname'
     ];
+
+    public function scores()
+    {
+      return $this->hasMany(Score::class);
+    }
 }

@@ -16,6 +16,7 @@ Vue.component('qpf-table', require('./components/qpf-table/QpfTable.vue').defaul
 Vue.component('draw-app', require('./components/draw/Draw.vue').default);
 Vue.component('textbox-answer', require('./components/textboxes/TextboxAnswer.vue').default);
 Vue.component('confirm-page', require('./components/confirm/Confirm.vue').default);
+Vue.component('score-item', require('./components/scores/ScoreItem.vue').default);
 
 const app = new Vue({  
   el: '#app',

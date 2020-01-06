@@ -55,3 +55,12 @@ Route::middleware(['auth'])->group(function () {
       ->middleware('iscandidate');
   });
 });
+
+/**
+ * Score routes.
+ */
+Route::middleware(['auth', 'isadmin'])->group(function () {
+  Route::prefix('/scores')->group(function () {
+    Route::post('/{candidate}', 'MarkingController@store');
+  });
+});

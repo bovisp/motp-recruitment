@@ -29,7 +29,7 @@ class AssessmentCompleted extends Mailable
      */
     public function build()
     {
-        return $this->from('paul.bovis@canada.ca')
+        return $this->from(env('MAIL_TO'))
           ->markdown('emails.assessments.completed');
     }
 }
