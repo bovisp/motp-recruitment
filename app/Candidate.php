@@ -16,4 +16,9 @@ class Candidate extends Model
     {
       return $this->hasMany(Score::class);
     }
+
+    public function path()
+    {
+      return env('APP_URL') . '/answers/' . $this->id;
+    }
 }

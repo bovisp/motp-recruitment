@@ -3,6 +3,12 @@
 @section('content')
 
   <div class="container">
+    <div class="d-flex">
+      <a href="{{ env('APP_URL') . '/answers' }}" class="ml-auto mb-4">
+        Back to candidate list
+      </a>
+    </div>
+
     <h2 class="mb-4">
       Responses for {{ $candidate->firstname }} {{ $candidate->lastname }}
     </h2>

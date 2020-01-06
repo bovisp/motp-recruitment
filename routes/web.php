@@ -53,6 +53,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/{candidate}/api', 'Api\AnswersController@show')
       ->middleware('iscandidate');
+
+      Route::get('/', 'MarkingController@index');
   });
 });
 

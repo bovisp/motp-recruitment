@@ -42,4 +42,11 @@ class MarkingController extends Controller
 
     return $score;
   }
+
+  public function index()
+  {
+    $candidates = Candidate::latest()->get();
+
+    return view('answers.index', compact('candidates'));
+  }
 }
