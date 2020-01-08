@@ -255,7 +255,7 @@
 
     <p>Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.</p>
 
-    <p>Insert METAR map interaction here</p>
+    <image-map></image-map>
 
     <p>Using only the data found above, please draw on the printed-out map which was provided to you where you think the surface warm front is located at 12Z. In the box below, provide a detailed reasoning of why you placed the front where you did. </p>
 
