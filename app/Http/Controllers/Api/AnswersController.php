@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use App\Answer;
 use App\Candidate;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 
 class AnswersController extends Controller

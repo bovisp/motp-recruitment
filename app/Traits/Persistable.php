@@ -4,7 +4,6 @@ namespace App\Traits;
 
 use App\Answer;
 use App\Candidate;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 
 trait Persistable

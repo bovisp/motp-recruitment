@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Answer;
 use App\Candidate;
 use Carbon\Carbon;
 use App\Traits\Persistable;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 use App\Http\Requests\CaseTwoTableRequest;
 

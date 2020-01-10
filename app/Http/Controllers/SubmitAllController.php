@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Answer;
 use App\Candidate;
-use Illuminate\Http\Request;
 use App\Mail\AssessmentCompleted;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 
 class SubmitAllController extends Controller

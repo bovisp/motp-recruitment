@@ -3,7 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Facades\Cache;
+use App\Candidate;
+use Illuminate\Support\Facades\Cookie;
 
 class HasNoCachedName
 {
