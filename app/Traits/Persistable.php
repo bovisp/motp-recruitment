@@ -5,6 +5,7 @@ namespace App\Traits;
 use App\Answer;
 use App\Candidate;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Cookie;
 
 trait Persistable
 {
@@ -26,6 +27,8 @@ trait Persistable
 
   protected function candidate()
   {
-    return Candidate::find((int) Cache::get('candidateid'));
+    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
+
+    return Candidate::find($candidate->id);
   }
 }

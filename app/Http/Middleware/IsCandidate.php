@@ -3,7 +3,9 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\Candidate;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Cookie;
 
 class IsCandidate
 {
@@ -40,6 +42,6 @@ class IsCandidate
 
     protected function activeCandidate()
     {
-      return (int) Cache::get('candidateid');
+      return Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->id;
     }
 }

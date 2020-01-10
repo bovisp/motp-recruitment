@@ -3,7 +3,9 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\Candidate;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Cookie;
 
 class HasCachedName
 {
@@ -16,10 +18,12 @@ class HasCachedName
    */
   public function handle($request, Closure $next)
   {
-      if (!Cache::has('candidate')) {
-        return redirect('/home');
-      }
-      
-      return $next($request);
+    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
+
+    if (!$candidate) {
+      return redirect('/home');
+    }
+    
+    return $next($request);
   }
 }
