@@ -1,10 +1,10 @@
-@if (App\Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first())
+@if (App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first())
 
   <div class="d-flex align-items-center w-100">
     <p>
       <strong>Candidate name: </strong>
-      {{ App\Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->firstname }} 
-      {{ App\Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->lastname }}
+      {{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->firstname }} 
+      {{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->lastname }}
     </p>
 
     <p class="ml-auto">
