@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import metarData from '../../data/metars' 
+import metarData from '../../data/metars-two' 
 
 export default {
   data () {

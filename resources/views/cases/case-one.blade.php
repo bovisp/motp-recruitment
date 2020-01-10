@@ -67,71 +67,7 @@
 
     <p>You next pull up the METARs over the past 12hrs at the sites you are responsible for, as well as those at a few of the surrounding sites nearby. Use the GOES fog product loop below for reference as you read through the METARs.</p>
 
-    <div class="row">
-      <div class="col-md-8">
-        <!-- Nav tabs for case1Tab2 -->
-        <ul id="case1Tab2" class="nav nav-tabs">
-          <li class="nav-item">
-            <a id="case1Tab2CYYU-tab" class="nav-link active" href="#case1Tab2CYYU" data-toggle="tab">CYYU METAR</a>
-          </li>
-          <li class="nav-item">
-            <a id="case1Tab2CYTS-tab" class="nav-link" href="#case1Tab2CYTS" data-toggle="tab">CYTS METAR</a>
-          </li>
-          <li class="nav-item">
-            <a id="case1Tab2CYXR-tab" class="nav-link" href="#case1Tab2CYXR" data-toggle="tab">CYXR METAR</a>
-          </li>
-          <li class="nav-item">
-            <a id="case1Tab2CYUY-tab" class="nav-link" href="#case1Tab2CYUY" data-toggle="tab">CYUY METAR</a>
-          </li>
-          <li class="nav-item">
-            <a id="case1Tab2CYMO-tab" class="nav-link" href="#case1Tab2CYMO" data-toggle="tab">CYMO METAR</a>
-          </li>
-          <li class="nav-item">
-            <a id="case1Tab2CYLD-tab" class="nav-link" href="#case1Tab2CYLD" data-toggle="tab">CYLD METAR</a>
-          </li>
-          <li class="nav-item">
-            <a id="case1Tab2CYGQ-tab" class="nav-link" href="#case1Tab2CYGQ" data-toggle="tab">CYGQ METAR</a>
-          </li>
-        </ul>
-
-        <!-- Tab panes case1Tab2 -->
-        <div class="tab-content mb-4">
-          <div id="case1Tab2CYYU" class="tab-pane active">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575648284/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYYU_afbxvc.png" alt="" />
-          </div>
-          <div id="case1Tab2CYTS" class="tab-pane">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576001810/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYTS_ad4xkq.png" alt="" />
-          </div>
-          <div id="case1Tab2CYXR" class="tab-pane">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575648283/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYXR_n6nae5.png" alt="" />
-          </div>
-          <div id="case1Tab2CYUY" class="tab-pane">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575648283/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYUY_wriry4.png" alt="" />
-          </div>
-          <div id="case1Tab2CYMO" class="tab-pane">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575648284/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYMO_tc66qj.png" alt="" />
-          </div>
-          <div id="case1Tab2CYLD" class="tab-pane">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575648284/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYLD_bby9si.png" alt="" />
-          </div>
-          <div id="case1Tab2CYGQ" class="tab-pane">
-            <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575648284/moip_direct_entry_assessment/case%201/METAR/OBS_12Z_CYGQ_kioyh0.png" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <figure class="figure">
-          <video controls loop style="max-width: 100%">
-            <source 
-              src="https://res.cloudinary.com/tcddmedia/video/upload/v1576770346/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_crop_umrisj.mp4"
-              type="video/mp4"
-            >
-          </video>
-          <figcaption class="figure-caption">GOES fog product valid from 0900Z-1200Z 8 October 2019</figcaption>
-        </figure>
-      </div>
-    </div>
+    <image-map-one></image-map-one>
     
     <p>Because it is just after 12Z, you now have access to new upper air soundings from the area. The three upper air sounding sites relevant for your geographic area are Pickle Lake, ON; Buffalo, NY; and Maniwaki, QC. In the image below, the 850mb winds from the soundings are plotted, as well as the actual 500mb height pattern from the 12Z soundings with the 12Z GOES NIGHT IR satellite image.</p>
 

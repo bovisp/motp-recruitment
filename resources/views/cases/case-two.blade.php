@@ -255,9 +255,9 @@
 
     <p>Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.</p>
 
-    <image-map></image-map>
+    <image-map-two></image-map-two>
 
-    <p>Using only the data found above, please draw on the printed-out map which was provided to you where you think the surface warm front is located at 12Z. In the box below, provide a detailed reasoning of why you placed the front where you did. </p>
+    <p>Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.</p>
 
     <draw-app></draw-app>
 
@@ -474,7 +474,7 @@
         <p class="my-2">Model sounding at Natashquan, QC from the 1200Z model run of the RDPS, valid every 3hrs from 1200Z November 12 2019 until 0600Z November 13.</p>
         <video style="max-width: 100%;" controls loop>
           <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/c_scale,w_700/v1576693692/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYNA-SOUNDINGS_dpmp5d.mp4"
+            src="https://res.cloudinary.com/tcddmedia/video/upload/c_scale,h_452/v1578670611/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYNA-SOUNDINGS_qkvbss.mp4"
             type="video/mp4"
           >
         </video>
@@ -484,7 +484,7 @@
         <p class="my-2">Model sounding at Deer Lake, NL from the 1200Z model run of the RDPS, valid every 3hrs from 1200Z November 12 2019 until 0600Z November 13.</p>
         <video style="max-width: 100%;" controls loop>
           <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/c_scale,w_700/v1576693693/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYDF-SOUNDINGS_qbp8qd.mp4"
+            src="https://res.cloudinary.com/tcddmedia/video/upload/c_scale,h_452/v1578670611/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP-CYDF-SOUNDINGS_l5crjr.mp4"
             type="video/mp4"
           >
         </video>

@@ -17,7 +17,8 @@ Vue.component('draw-app', require('./components/draw/Draw.vue').default)
 Vue.component('textbox-answer', require('./components/textboxes/TextboxAnswer.vue').default)
 Vue.component('confirm-page', require('./components/confirm/Confirm.vue').default)
 Vue.component('score-item', require('./components/scores/ScoreItem.vue').default)
-Vue.component('image-map', require('./components/imagemap/ImageMap.vue').default) 
+Vue.component('image-map-two', require('./components/imagemap/ImageMapTwo.vue').default)
+Vue.component('image-map-one', require('./components/imagemap/ImageMapOne.vue').default) 
 
 const app = new Vue({  
   el: '#app',
