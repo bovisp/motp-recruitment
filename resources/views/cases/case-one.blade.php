@@ -183,7 +183,7 @@
 
     <div id="case-one-answer">
       <textbox-answer
-        :candidate-id="{{ (int) Cache::get('candidateid') }}"
+        :candidate-id="{{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id }}"
         answer-key="case1"
         endpoint="case-one"
       ></textbox-answer>
