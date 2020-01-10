@@ -263,7 +263,7 @@
 
     <div id="case-two-exercise-one-answer" class="mt-5">
       <textbox-answer
-        :candidate-id="{{ (int) Cache::get('candidateid') }}"
+        :candidate-id="{{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id }}"
         answer-key="case2ex1"
         endpoint="case-two"
       ></textbox-answer>
@@ -494,14 +494,14 @@
     <p>Using the above information, fill-in the following forecast tables, choosing the likeliest precipitation type and amount for the previous 3hrs: </p>
 
     <qpf-table
-      :candidate-id="{{ (int) Cache::get('candidateid') }}"
+      :candidate-id="{{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id }}"
     ></qpf-table>
 
     <p>In the box below, explain your reasoning and outline the evidence that supports your forecasts.</p>
 
     <div id="case-two-exercise-two-answer">
       <textbox-answer
-        :candidate-id="{{ (int) Cache::get('candidateid') }}"
+        :candidate-id="{{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id }}"
         answer-key="case2ex2"
         endpoint="case-two"
       ></textbox-answer>
