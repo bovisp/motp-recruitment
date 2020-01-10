@@ -11,7 +11,7 @@ class AnswersController extends Controller
 {
   public function show()
   {
-    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
+    $candidate = Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first();
 
     return Answer::where(
       'candidate_id', $candidate->id

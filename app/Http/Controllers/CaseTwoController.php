@@ -50,7 +50,7 @@ class CaseTwoController extends Controller
   {
     $answer = $this->answer();
         
-    $answer->candidate_id = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->id;
+    $answer->candidate_id = Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id;
 
     $answer->fill(request()->all());
 

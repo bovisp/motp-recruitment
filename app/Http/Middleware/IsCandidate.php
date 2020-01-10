@@ -41,6 +41,6 @@ class IsCandidate
 
     protected function activeCandidate()
     {
-      return Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->id;
+      return Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id;
     }
 }

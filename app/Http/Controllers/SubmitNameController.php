@@ -14,13 +14,10 @@ class SubmitNameController extends Controller
         'lastname' => 'required'
       ]);
 
-$cookie = Cookie::get('motp_recruitment_session');
-//dd($cookie);
-
       $candidate = Candidate::create(
         array_merge(
           request()->only('firstname', 'lastname'),
-          ['session' => $cookie]
+          ['session' => Cookie::get(env('APP_COOKIE_NAME'))]
         )
       );
       

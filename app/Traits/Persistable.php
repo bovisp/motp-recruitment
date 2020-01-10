@@ -26,7 +26,7 @@ trait Persistable
 
   protected function candidate()
   {
-    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
+    $candidate = Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first();
 
     return Candidate::find($candidate->id);
   }
