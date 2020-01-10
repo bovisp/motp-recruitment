@@ -2,7 +2,7 @@
   <div class="row mb-5" style="height: 450px;">
     <div class="col-md-5">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 333">
-        <image width="360" height="333" xlink:href="https://res.cloudinary.com/tcddmedia/image/upload/v1578601457/moip_direct_entry_assessment/case%201/Reference_Map_f8r0ok.png"></image>
+        <image width="360" height="333" xlink:href="https://res.cloudinary.com/tcddmedia/image/upload/v1578688832/moip_direct_entry_assessment/case%201/Reference_Map_o6rcbi.png"></image>
         <a 
           @click.prevent="showMetar(station)"
           v-for="station in stations"
