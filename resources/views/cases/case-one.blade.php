@@ -65,7 +65,7 @@
 
     <p>The first satellite loop above is the GOES Fog Product. It is a subtraction between the 3.7µ channel and the 10.3µ channel. At night in the absence of solar radiation, high cloud appears white and low stratus cloud and fog appears dark. The second satellite loop shows a multispectral IR image, where lower cloud is mapped to blue and higher cloud is mapped to white at night.</p>
 
-    <p>You next pull up the METARs over the past 12hrs at the sites you are responsible for, as well as those at a few of the surrounding sites nearby. Use the GOES fog product loop below for reference as you read through the METARs.</p>
+    <p>Click on the red station boxes on the 12Z GOES fog product satellite image below to view the last 12hrs of METARs for that site.</p>
 
     <image-map-one></image-map-one>
     
