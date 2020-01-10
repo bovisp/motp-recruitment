@@ -16,10 +16,12 @@ class HasNoCachedName
    */
   public function handle($request, Closure $next)
   {
-      if (Cache::has('candidate')) {
-        return redirect('/cases/case-one');
-      }
-      
-      return $next($request);
+    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
+    
+    if ($candidate) {
+      return redirect('/cases/case-one');
+    }
+    
+    return $next($request);
   }
 }

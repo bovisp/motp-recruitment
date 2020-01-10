@@ -6,8 +6,10 @@ use App\Answer;
 use App\Candidate;
 use Illuminate\Http\Request;
 use App\Mail\AssessmentCompleted;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Cookie;
 
 class SubmitAllController extends Controller
 {
@@ -28,22 +30,20 @@ class SubmitAllController extends Controller
       ], 422);
     }
 
-    $candidate_id = (int) Cache::get('candidateid');
+    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
 
-    $candidate = Candidate::find($candidate_id);
+    $candidate->update([
+      'session' => ''
+    ]);
 
     Mail::to('paul.bovis@canada.ca')
       ->send(new AssessmentCompleted($candidate));
-
-    Cache::forget('candidate');
-    
-    Cache::forget('candidateid');
 
     auth()->logout();
   }
 
   protected function assessmentComplete() {
-    $candidate_id = (int) Cache::get('candidateid');
+    $candidate_id = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->id;
 
     $answer = Answer::where('candidate_id', $candidate_id)->first();
 

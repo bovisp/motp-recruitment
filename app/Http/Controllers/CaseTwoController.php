@@ -7,6 +7,7 @@ use App\Candidate;
 use Carbon\Carbon;
 use App\Traits\Persistable;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Cookie;
 use App\Http\Requests\CaseTwoTableRequest;
 
 class CaseTwoController extends Controller
@@ -51,7 +52,7 @@ class CaseTwoController extends Controller
   {
     $answer = $this->answer();
         
-    $answer->candidate_id = (int) Cache::get('candidateid');
+    $answer->candidate_id = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->id;
 
     $answer->fill(request()->all());
 

@@ -9,7 +9,8 @@ class Candidate extends Model
 {
     protected $fillable = [
       'firstname',
-      'lastname'
+      'lastname',
+      'session'
     ];
 
     public function scores()
