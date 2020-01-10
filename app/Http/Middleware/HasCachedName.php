@@ -17,7 +17,8 @@ class HasCachedName
    */
   public function handle($request, Closure $next)
   {
-    $candidate = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first();
+//	$cookie = Cookie::get('motp_recruitment_session');
+    $candidate = Candidate::whereSession($cookie)->first();
 
     if (!$candidate) {
       return redirect('/home');
