@@ -19,6 +19,7 @@ Vue.component('confirm-page', require('./components/confirm/Confirm.vue').defaul
 Vue.component('score-item', require('./components/scores/ScoreItem.vue').default)
 Vue.component('image-map-two', require('./components/imagemap/ImageMapTwo.vue').default)
 Vue.component('image-map-one', require('./components/imagemap/ImageMapOne.vue').default) 
+Vue.component('image-animator', require('./components/animator/ImageAnimator.vue').default) 
 
 const app = new Vue({  
   el: '#app',

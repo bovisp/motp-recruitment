@@ -41,15 +41,16 @@
     </ul>
 
     <!-- Tab panes for case1Tab1 -->
-    <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded" 
+      style="margin-top:-10px; border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;"
+    >
       <div id="case1Tab1Fog" class="tab-pane active">
-        <p class="my-2">{{ __('case1.tab.1.caption.1') }}</p>
-        <video controls loop>
-          <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576770637/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z_crop_so_ytnbvu.mp4"
-            type="video/mp4"
-          >
-        </video>
+        <p class="pt-3 px-3">{{ __('case1.tab.1.caption.1') }}</p>
+
+        <image-animator
+          file="case1GoesFogProduct"
+        ></image-animator>
       </div>
       
       <div id="case1Tab1Night" class="tab-pane">
