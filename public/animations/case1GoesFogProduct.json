@@ -1,0 +1,92 @@
+{
+  "0": {
+    "order": 0,
+    "time": "Oct 8 2019 0900 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948630/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_1_guwurk.gif"
+  },
+  "1": {
+    "order": 1,
+    "time": "Oct 8 2019 0920 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948631/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_2_ljyqvn.gif"
+  },
+  "2": {
+    "order": 2,
+    "time": "Oct 8 2019 0930 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948631/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_3_shtwjr.gif"
+  },
+  "3": {
+    "order": 3,
+    "time": "Oct 8 2019 0940 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948632/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_4_ofmru8.gif"
+  },
+  "4": {
+    "order": 4,
+    "time": "Oct 8 2019 0950 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948632/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_5_szlnrb.gif"
+  },
+  "5": {
+    "order": 5,
+    "time": "Oct 8 2019 1000 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948632/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_6_z8skf7.gif"
+  },
+  "6": {
+    "order": 6,
+    "time": "Oct 8 2019 1010 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948632/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_7_qh7iyv.gif"
+  },
+  "7": {
+    "order": 7,
+    "time": "Oct 8 2019 1020 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948632/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_8_vlxnva.gif"
+  },
+  "8": {
+    "order": 8,
+    "time": "Oct 8 2019 1030 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948632/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_9_kf2isr.gif"
+  },
+  "9": {
+    "order": 9,
+    "time": "Oct 8 2019 1040 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948630/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_10_mf14l0.gif"
+  },
+  "10": {
+    "order": 10,
+    "time": "Oct 8 2019 1050 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948630/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_11_cyh5az.gif"
+  },
+  "11": {
+    "order": 11,
+    "time": "Oct 8 2019 1100 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948630/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_12_krsveg.gif"
+  },
+  "12": {
+    "order": 12,
+    "time": "Oct 8 2019 1110 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948630/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_13_ci9vgu.gif"
+  },
+  "13": {
+    "order": 13,
+    "time": "Oct 8 2019 1120 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948630/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_14_auchxt.gif"
+  },
+  "14": {
+    "order": 14,
+    "time": "Oct 8 2019 1130 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948631/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_15_worlpn.gif"
+  },
+  "15": {
+    "order": 15,
+    "time": "Oct 8 2019 1140 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948631/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_16_jjamcx.gif"
+  },
+  "16": {
+    "order": 16,
+    "time": "Oct 8 2019 1150 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948631/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_17_j5lkxm.gif"
+  },
+  "17": {
+    "order": 17,
+    "time": "Oct 8 2019 1200 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1578948631/moip_direct_entry_assessment/case%201/GOES_FOG_PRODUCT_09_12z/Layer_18_zospu0.gif"
+  }
+}

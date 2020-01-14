@@ -74,7 +74,7 @@ Route::middleware(['auth', 'isadmin'])->group(function () {
  */
 Route::middleware(['auth'])->group(function () {
   Route::get('/data/animations/{file}', function ($file) {
-    $path = storage_path() . "/app/public/animations/${file}.json";
+    $path = public_path() . "/animations/${file}.json";
 
     if (!File::exists($path)) {
       throw new \Exception("Invalid File");
