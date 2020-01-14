@@ -1,0 +1,32 @@
+{
+  "0": {
+    "order": 0,
+    "time": "Oct 8 2019 0900Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579023420/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS/Layer_1_ofskeh.gif"
+  },
+  "1": {
+    "order": 1,
+    "time": "Oct 8 2019 1200Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579023420/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS/Layer_2_bqq5ge.gif"
+  },
+  "2": {
+    "order": 2,
+    "time": "Oct 8 2019 1500Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579023420/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS/Layer_3_ppfpq7.gif"
+  },
+  "3": {
+    "order": 3,
+    "time": "Oct 8 2019 1800Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579023420/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS/Layer_4_fi9pre.gif"
+  },
+  "4": {
+    "order": 4,
+    "time": "Oct 8 2019 2100Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579023420/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS/Layer_5_hftllb.gif"
+  },
+  "5": {
+    "order": 5,
+    "time": "Oct 9 2019 0000Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579023420/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS/Layer_6_tn8gpu.gif"
+  }
+}

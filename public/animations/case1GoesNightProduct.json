@@ -1,0 +1,102 @@
+{
+  "0": {
+    "order": 0,
+    "time": "Oct 8 2019 0850Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022298/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_1_eqlpxn.gif"
+  },
+  "1": {
+    "order": 1,
+    "time": "Oct 8 2019 0900Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022299/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_2_fcn9qd.gif"
+  },
+  "2": {
+    "order": 2,
+    "time": "Oct 8 2019 0910Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022301/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_3_wk51p7.gif"
+  },
+  "3": {
+    "order": 3,
+    "time": "Oct 8 2019 0920Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022300/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_4_hoz5sk.gif"
+  },
+  "4": {
+    "order": 4,
+    "time": "Oct 8 2019 0930Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022300/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_5_tnlcfm.gif"
+  },
+  "5": {
+    "order": 5,
+    "time": "Oct 8 2019 0940Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022301/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_6_bv5osm.gif"
+  },
+  "6": {
+    "order": 6,
+    "time": "Oct 8 2019 0950Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022301/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_7_ijyblv.gif"
+  },
+  "7": {
+    "order": 7,
+    "time": "Oct 8 2019 1000Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022301/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_8_a8hg1g.gif"
+  },
+  "8": {
+    "order": 8,
+    "time": "Oct 8 2019 1010Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022302/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_9_c8hd3n.gif"
+  },
+  "9": {
+    "order": 9,
+    "time": "Oct 8 2019 1020Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022298/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_10_sfnrj6.gif"
+  },
+  "10": {
+    "order": 10,
+    "time": "Oct 8 2019 1030Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022299/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_11_bkc8e3.gif"
+  },
+  "11": {
+    "order": 11,
+    "time": "Oct 8 2019 1040Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022298/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_12_fn1xbj.gif"
+  },
+  "12": {
+    "order": 12,
+    "time": "Oct 8 2019 1050Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022298/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_13_sqyo36.gif"
+  },
+  "13": {
+    "order": 13,
+    "time": "Oct 8 2019 1100Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022298/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_14_j7hiym.gif"
+  },
+  "14": {
+    "order": 14,
+    "time": "Oct 8 2019 1110Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022299/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_15_wcwhq2.gif"
+  },
+  "15": {
+    "order": 15,
+    "time": "Oct 8 2019 1120Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022299/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_16_zr6iqa.gif"
+  },
+  "16": {
+    "order": 16,
+    "time": "Oct 8 2019 1130Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022299/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_17_zxocdh.gif"
+  },
+  "17": {
+    "order": 17,
+    "time": "Oct 8 2019 1140Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022299/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_18_e1oydm.gif"
+  },
+  "18": {
+    "order": 18,
+    "time": "Oct 8 2019 1150Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022300/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_19_dd5apw.gif"
+  },
+  "19": {
+    "order": 19,
+    "time": "Oct 8 2019 1200Z",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579022301/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z/Layer_20_fyayum.gif"
+  }
+}

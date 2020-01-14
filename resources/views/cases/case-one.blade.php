@@ -54,13 +54,11 @@
       </div>
       
       <div id="case1Tab1Night" class="tab-pane">
-        <p class="my-2">{{ __('case1.tab.1.caption.2') }}</p>
-        <video controls loop>
-          <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576770635/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_crop_so_cs1mj3.mp4"
-            type="video/mp4"
-          >
-        </video>
+        <p class="pt-3 px-3">{{ __('case1.tab.1.caption.2') }}</p>
+        
+        <image-animator
+          file="case1GoesNightProduct"
+        ></image-animator>
       </div>
     </div>
 
@@ -80,7 +78,7 @@
     <p>{{ __('case1.paragraph.8') }}</p>
 
     <!-- Nav tabs for case1Tab2 -->
-    {{-- <ul id="case1Tab2" class="nav nav-tabs mt-4">
+    <ul id="case1Tab2" class="nav nav-tabs mt-4">
       <li class="nav-item">
         <a id="case1Tab212ZSoundingPickleLake-tab" class="nav-link active" href="#case1Tab212ZSoundingPickleLake" data-toggle="tab">{{ __('case1.tab.2.label.1') }}</a>
       </li>
@@ -90,10 +88,13 @@
       <li class="nav-item">
         <a id="case1Tab212ZSoundingManiwaki-tab" class="nav-link" href="#case1Tab212ZSoundingManiwaki" data-toggle="tab">{{ __('case1.tab.2.label.3') }}</a>
       </li>
-    </ul> --}}
+    </ul>
 
     <!-- Tab panes for case1Tab2 -->
-    {{-- <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;"
+    >
       <div id="case1Tab212ZSoundingPickleLake" class="tab-pane active">
         <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575663413/moip_direct_entry_assessment/case%201/UA_soundings/SOUNDING_PICKLE_LAKE_YPL_12Z_migise.png" alt="" />
       </div>
@@ -103,76 +104,75 @@
       <div id="case1Tab212ZSoundingManiwaki" class="tab-pane">
         <img style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1575663413/moip_direct_entry_assessment/case%201/UA_soundings/SOUNDING_MANIWAKI_12Z_ycfv31.png" alt="" />
       </div>
-    </div> --}}
+    </div>
 
     <p>{{ __('case1.paragraph.9') }}</p>
 
     <figure class="figure my-4">
-      {{-- <video controls loop>
-        <source 
-          src="https://res.cloudinary.com/tcddmedia/video/upload/v1576609652/moip_direct_entry_assessment/case%201/SURFACE_MSLP_WINDS_vl5llx_n3ezyo_ytojml.mp4"
-          type="video/mp4"
-        >
-      </video> --}}
+      <image-animator
+        file="case1SurfaceMslpWinds"
+        :standalone="true"
+      ></image-animator>
+
       <figcaption class="figure-caption">{{ __('case1.caption.3') }}</figcaption>
     </figure>
 
     <!-- Nav tabs for case1Tab3 -->
-    {{-- <ul id="case1Tab3" class="nav nav-tabs mt-4">
+    <ul id="case1Tab3" class="nav nav-tabs mt-4">
       <li class="nav-item">
         <a id="case1Tab3YTS-tab" class="nav-link active" href="#case1Tab3YTS" data-toggle="tab">{{ __('case1.tab.3.label.1') }}</a>
       </li>
       <li class="nav-item">
         <a id="case1Tab3YYU-tab" class="nav-link" href="#case1Tab3YYU" data-toggle="tab">{{ __('case1.tab.3.label.2') }}</a>
       </li>
-    </ul> --}}
+    </ul>
 
     <!-- Tab panes for case1Tab3 -->
-    {{-- <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;"
+    >
       <div id="case1Tab3YTS" class="tab-pane active">
-        <video controls loop>
-          <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576610697/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yts_ebib5v.mp4"
-            type="video/mp4"
-          >
-        </video>
+        <image-animator
+          file="case1CytsNwpSoundings"
+        ></image-animator>
       </div>
       <div id="case1Tab3YYU" class="tab-pane">
-        <video controls loop>
-          <source 
-            src="https://res.cloudinary.com/tcddmedia/video/upload/v1576610697/moip_direct_entry_assessment/case%201/UA_soundings/nwp_sounding_yyu_ywxrge.mp4"
-            type="video/mp4"
-          >
-        </video>
+        <image-animator
+          file="case1CyyuNwpSoundings"
+        ></image-animator>
       </div>
-    </div> --}}
+    </div>
 
     <p>{{ __('case1.paragraph.10') }}</p>
 
     <p>{{ __('case1.paragraph.11') }}</p>
 
     <!-- Nav tabs for case1Tab4 -->
-    {{-- <ul id="case1Tab4" class="nav nav-tabs mt-4">
+    <ul id="case1Tab4" class="nav nav-tabs mt-4">
       <li class="nav-item">
         <a id="case1Tab4YTSFog-tab" class="nav-link active" href="#case1Tab4YTSFog" data-toggle="tab">{{ __('case1.tab.4.label.1') }}</a>
       </li>
       <li class="nav-item">
         <a id="case1Tab4YYUFog-tab" class="nav-link" href="#case1Tab4YYUFog" data-toggle="tab">{{ __('case1.tab.4.label.2') }}</a>
       </li>
-    </ul> --}}
+    </ul>
 
     <!-- Tab panes for case1Tab4 -->
-    {{-- <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
+    >
       <div id="case1Tab4YTSFog" class="tab-pane active">
-        <p class="my-2">{{ __('case1.tab.4.caption.1') }}</p>
+        <p class="pt-3 px-3">{{ __('case1.tab.4.caption.1') }}</p>
         <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576601320/moip_direct_entry_assessment/case%201/YTS_FOG_CLIMATOLOGY_dkosfy.png" alt="" />
       </div>
       
       <div id="case1Tab4YYUFog" class="tab-pane">
-        <p class="my-2">{{ __('case1.tab.4.caption.1') }}</p>
+        <p class="pt-3 px-3">{{ __('case1.tab.4.caption.1') }}</p>
         <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576601320/moip_direct_entry_assessment/case%201/YYU_FOG_CLIMATOLOGY_depvon.png" alt="" />
       </div>
-    </div> --}}
+    </div>
 
     <p>{{ __('case1.paragraph.12') }}</p>
 

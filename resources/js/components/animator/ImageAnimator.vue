@@ -7,7 +7,10 @@
       <strong>{{ image.time }}</strong>
     </p>
 
-    <img :src="image.image" class="align-self-center">
+    <img 
+      :src="image.image" 
+      class="align-self-center"
+    >
 
     <controls 
       @start="start"

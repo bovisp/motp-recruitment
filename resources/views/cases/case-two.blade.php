@@ -5,28 +5,31 @@
   <div class="container">
     @include('cases.partials.header')
 
-    <h2>Case 2 Exersise 1 - Diagnosis of a Warm Front Over Atlantic Canada</h2>
+    <h2>{{ __('case2_exercise1.title') }}</h2>
 
-    <p>Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front over the map at the bottom of the exercise and provide a detailed justification for its placement on the page below.</p>
+    <p>{{ __('case2_exercise1.paragraph.1') }}</p>
 
     <!-- Nav tabs for Case2E1Tab1 -->
 
     <ul id="Case2E1Tab1" class="nav nav-tabs mt-4">
       <li class="nav-item">
-        <a id="Case2E1Tab1IR-tab" class="nav-link active" href="#Case2E1Tab1IR" data-toggle="tab">GOES 10.3 μm IR</a>
+        <a id="Case2E1Tab1IR-tab" class="nav-link active" href="#Case2E1Tab1IR" data-toggle="tab">{{ __('case2_exercise1.tab.1.label.1') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab1IRMultispectral-tab" class="nav-link" href="#Case2E1Tab1IRMultispectral" data-toggle="tab">GOES multispectral IR</a>
+        <a id="Case2E1Tab1IRMultispectral-tab" class="nav-link" href="#Case2E1Tab1IRMultispectral" data-toggle="tab">{{ __('case2_exercise1.tab.1.label.2') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab1WV-tab" class="nav-link" href="#Case2E1Tab1WV" data-toggle="tab">GOES WV</a>
+        <a id="Case2E1Tab1WV-tab" class="nav-link" href="#Case2E1Tab1WV" data-toggle="tab">{{ __('case2_exercise1.tab.1.label.3') }}</a>
       </li>
     </ul>
 
     <!-- Tab panes for Case2E1Tab1 -->
-    <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
+    >
       <div id="Case2E1Tab1IR" class="tab-pane active">
-        <p class="my-2">GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.1.caption.1') }}</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576787434/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_08-12Z_yuplwq.mp4"
@@ -36,7 +39,7 @@
       </div>
         
       <div id="Case2E1Tab1IRMultispectral" class="tab-pane">
-        <p class="my-2">GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.1.caption.2') }}</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576787433/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_IR_10.3_MULTISPEC_NIGHT_08-12Z_mhwysz.mp4"
@@ -46,7 +49,7 @@
       </div>
         
       <div id="Case2E1Tab1WV" class="tab-pane">
-        <p class="my-2">GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.1.caption.3') }}</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576787431/moip_direct_entry_assessment/case%202/Exercise%201/GOES_SAT_WV_06-12Z_somjti.mp4"
@@ -56,35 +59,38 @@
       </div>
     </div>
 
-    <p>The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.</p>
+    <p>{{ __('case2_exercise1.paragraph.2') }}</p>
 
     <!-- Nav tabs for Case2E1Tab2 -->
     <ul id="Case2E1Tab2" class="nav nav-tabs mt-4">
       <li class="nav-item">
-        <a id="Case2E1Tab2SFC-PRES-TEMP-tab" class="nav-link active" href="#Case2E1Tab2SFC-PRES-TEMP" data-toggle="tab">Surface Pressure / Temperature</a>
+        <a id="Case2E1Tab2SFC-PRES-TEMP-tab" class="nav-link active" href="#Case2E1Tab2SFC-PRES-TEMP" data-toggle="tab">{{ __('case2_exercise1.tab.2.label.1') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab2SFC-PRES-DP-tab" class="nav-link" href="#Case2E1Tab2SFC-PRES-DP" data-toggle="tab">Surface Pressure / Dew Point Temperature</a>
+        <a id="Case2E1Tab2SFC-PRES-DP-tab" class="nav-link" href="#Case2E1Tab2SFC-PRES-DP" data-toggle="tab">{{ __('case2_exercise1.tab.2.label.2') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab2SFC-PRES-PTEND-tab" class="nav-link" href="#Case2E1Tab2SFC-PRES-PTEND" data-toggle="tab">Surface Pressure / Pressure Tendency</a>
+        <a id="Case2E1Tab2SFC-PRES-PTEND-tab" class="nav-link" href="#Case2E1Tab2SFC-PRES-PTEND" data-toggle="tab">{{ __('case2_exercise1.tab.2.label.3') }}</a>
       </li>
     </ul>
 
     <!-- Tab panes for Case2E1Tab2 -->
-    <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
+    >
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
-        <p class="my-2">Surface pressure and temperature valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.1') }}</p>
         <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864830/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_temp_m8cw8y.png" alt="" />
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
-        <p class="my-2">Surface pressure and dew point temperature valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
         <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864830/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_dp_aucffs.png" alt="" />
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
-        <p class="my-2">Surface pressure and pressure tendency valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.3') }}</p>
         <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864831/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_ptend_cvmqkv.png" alt="" />
       </div>
     </div>
@@ -92,20 +98,23 @@
     <!-- Nav tabs for Case2E1Tab3 -->
     <ul id="Case2E1Tab3" class="nav nav-tabs mt-4">
       <li class="nav-item">
-        <a id="Case2E1Tab315CAPPISNOW-tab" class="nav-link active" href="#Case2E1Tab315CAPPISNOW" data-toggle="tab">1.5 km CAPPI Snow</a>
+        <a id="Case2E1Tab315CAPPISNOW-tab" class="nav-link active" href="#Case2E1Tab315CAPPISNOW" data-toggle="tab">{{ __('case2_exercise1.tab.3.label.1') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab3CompositeLOLLA-tab" class="nav-link" href="#Case2E1Tab3CompositeLOLLA" data-toggle="tab">Composite VR LOLAA</a>
+        <a id="Case2E1Tab3CompositeLOLLA-tab" class="nav-link" href="#Case2E1Tab3CompositeLOLLA" data-toggle="tab">{{ __('case2_exercise1.tab.3.label.2') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1TabDrilldownLOLLA-tab" class="nav-link" href="#Case2E1TabDrilldownLOLLA" data-toggle="tab">Drilldown VR LOLAA</a>
+        <a id="Case2E1TabDrilldownLOLLA-tab" class="nav-link" href="#Case2E1TabDrilldownLOLLA" data-toggle="tab">{{ __('case2_exercise1.tab.3.label.3') }}</a>
       </li>
     </ul>
 
     <!-- Tab panes for Case2E1Tab3 -->
-    <div class="tab-content mb-4">
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
+    >
       <div id="Case2E1Tab315CAPPISNOW" class="tab-pane active">
-        <p class="my-2">Composite loop of RADAR 1.5km CAPPI Snow imagery over the northeast coast, valid 0800-1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.3.caption.1') }}</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615599/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_CAPPI_1.5KM_SNOW_08-12Z_xok4ck.mp4"
@@ -115,7 +124,7 @@
       </div>
       
       <div id="Case2E1Tab3CompositeLOLLA" class="tab-pane">
-        <p class="my-2">Composite loop of Doppler LOLAA RADAR imagery over the northeast, valid 0800-1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.3.caption.2') }}</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615600/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Composite_VR_LOLAA_08-12Z_effwgs.mp4"
@@ -125,7 +134,7 @@
       </div>
       
       <div id="Case2E1TabDrilldownLOLLA" class="tab-pane">
-        <p class="my-2">o	Caption for Drilldown: Loop of Doppler LOLAA RADAR imagery from the CBW RADAR (In Cariboo, Maine), valid 0800-1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.3.caption.3') }}</p>
         <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576615599/moip_direct_entry_assessment/case%202/Exercise%201/RADAR_Drilldown_VR_LOLAA_08-12Z_x0d3lb.mp4"
@@ -135,129 +144,132 @@
       </div>
     </div>
 
-    <p>In the tephigrams below, the soundings valid for 00Z November 12 (red) and 12Z (black) are plotted. The associated hodographs are from the 12Z soundings.</p>
+    <p>{{ __('case2_exercise1.paragraph.3') }}</p>
 
-    <!-- Nav tabs -->
+    <!-- Nav tabs for Case2E1Tab4 -->
     <ul id="Case2E1Tab4" class="nav nav-tabs mt-4">
       <li class="nav-item">
-        <a id="Case2E1Tab4CYQITephi-tab" class="nav-link active" href="#Case2E1Tab4CYQITephi" data-toggle="tab">Yarmouth (CYQI) Tephi</a>
+        <a id="Case2E1Tab4CYQITephi-tab" class="nav-link active" href="#Case2E1Tab4CYQITephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.1') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYQIHodo-tab" class="nav-link" href="#Case2E1Tab4CYQIHodo" data-toggle="tab">Yarmouth (CYQI) Hodograph</a>
+        <a id="Case2E1Tab4CYQIHodo-tab" class="nav-link" href="#Case2E1Tab4CYQIHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.2') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYCXTephi-tab" class="nav-link" href="#Case2E1Tab4CYCXTephi" data-toggle="tab">Gagetown (CYCX) Tephi</a>
+        <a id="Case2E1Tab4CYCXTephi-tab" class="nav-link" href="#Case2E1Tab4CYCXTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.3') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYCXHodo-tab" class="nav-link" href="#Case2E1Tab4CYCXHodo" data-toggle="tab">Gagetown (CYCX) Hodograph</a>
+        <a id="Case2E1Tab4CYCXHodo-tab" class="nav-link" href="#Case2E1Tab4CYCXHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.4') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4KCARTephi-tab" class="nav-link" href="#Case2E1Tab4KCARTephi" data-toggle="tab">Caribou (KCAR) Tephi</a>
+        <a id="Case2E1Tab4KCARTephi-tab" class="nav-link" href="#Case2E1Tab4KCARTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.5') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4KCARHodo-tab" class="nav-link" href="#Case2E1Tab4KCARHodo" data-toggle="tab">Caribou (KCAR) Hodograph</a>
+        <a id="Case2E1Tab4KCARHodo-tab" class="nav-link" href="#Case2E1Tab4KCARHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.6') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYZVTephi-tab" class="nav-link" href="#Case2E1Tab4CYZVTephi" data-toggle="tab">Sept-Iles (CYZV) Tephi</a>
+        <a id="Case2E1Tab4CYZVTephi-tab" class="nav-link" href="#Case2E1Tab4CYZVTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.7') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYZVHodo-tab" class="nav-link" href="#Case2E1Tab4CYZVHodo" data-toggle="tab">Sept-Iles (CYZV) Hodograph</a>
+        <a id="Case2E1Tab4CYZVHodo-tab" class="nav-link" href="#Case2E1Tab4CYZVHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.8') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYJTTephi-tab" class="nav-link" href="#Case2E1Tab4CYJTTephi" data-toggle="tab">Stephenville (CYJT) Tephi</a>
+        <a id="Case2E1Tab4CYJTTephi-tab" class="nav-link" href="#Case2E1Tab4CYJTTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.9') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYJTHodo-tab" class="nav-link" href="#Case2E1Tab4CYJTHodo" data-toggle="tab">Stephenville (CYJT) Hodograph</a>
+        <a id="Case2E1Tab4CYJTHodo-tab" class="nav-link" href="#Case2E1Tab4CYJTHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.10') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYYTTephi-tab" class="nav-link" href="#Case2E1Tab4CYYTTephi" data-toggle="tab">St. John's (CYYT) Tephi</a>
+        <a id="Case2E1Tab4CYYTTephi-tab" class="nav-link" href="#Case2E1Tab4CYYTTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.11') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4CYYTHodo-tab" class="nav-link" href="#Case2E1Tab4CYYTHodo" data-toggle="tab">St. John's (CYYT) Hodograph</a>
+        <a id="Case2E1Tab4CYYTHodo-tab" class="nav-link" href="#Case2E1Tab4CYYTHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.12') }}</a>
       </li>
       <li class="nav-item">
-        <a id="Case2E1Tab4YQIYCXKCARComp-tab" class="nav-link" href="#Case2E1Tab4YQIYCXKCARComp" data-toggle="tab">YQI / YCX / KCAR Tephi Comparison</a>
+        <a id="Case2E1Tab4YQIYCXKCARComp-tab" class="nav-link" href="#Case2E1Tab4YQIYCXKCARComp" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.13') }}</a>
       </li>
     </ul>
 
-    <!-- Tab panes -->
-    <div class="tab-content mb-4">
+    <!-- Tab panes for Case2E1Tab4 -->
+    <div 
+      class="tab-content mb-4 rounded"
+      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
+    >
       <div id="Case2E1Tab4CYQITephi" class="tab-pane active">
-        <p class="my-2">Yarmouth (CYQI) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.1') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_ouk3tb.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYQIHodo" class="tab-pane">
-        <p class="my-2">Yarmouth (CYQI) hodograph valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.2') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_HODO_blmmfq.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYCXTephi" class="tab-pane">
-        <p class="my-2">Gagetown (CYCX) tephi valid 1200Z (black) for 12 November 2019 (no balloon was launched at 0000Z that day)</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.3') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576768979/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_coyiuw.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYCXHodo" class="tab-pane">
-        <p class="my-2">Gagetown (CYCX) hodograph valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.4') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_HODO_uajkae.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4KCARTephi" class="tab-pane">
-        <p class="my-2">Caribou (KCAR) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.5') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_fvda3u.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4KCARHodo" class="tab-pane">
-        <p class="my-2">Caribou (KCAR) hodograph valid 1200Z or 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.6') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013435/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_HODO_xds5er.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYZVTephi" class="tab-pane">
-        <p class="my-2">Sept-Iles (CYZV) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.7') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_f6gtqq.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYZVHodo" class="tab-pane">
-        <p class="my-2">Sept-Iles (CYZV) hodograph valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.8') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_HODO_qzkwd5.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYJTTephi" class="tab-pane">
-        <p class="my-2">Stephenville (CYJT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.9') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_z9tltf.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYJTHodo" class="tab-pane">
-        <p class="my-2">Stephenville (CYJT) hodograph valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.10') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_HODO_dnzjsa.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYYTTephi" class="tab-pane">
-        <p class="my-2">St. John's (CYYT) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.11') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_clbc4p.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4CYYTHodo" class="tab-pane">
-        <p class="my-2">St. John's (CYYT) hodograph valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.12') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_HODO_xtn24n.png" alt="" />
       </div>
       
       <div id="Case2E1Tab4YQIYCXKCARComp" class="tab-pane">
-        <p class="my-2">YQI (black) / YCX (red) / KCAR (blue) Tephi Comparison valid 1200Z 12 November 2019</p>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.13') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
       </div>
     </div>
 
     <figure class="figure my-4">
       <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
-      <figcaption class="figure-caption">GOES 10.3 μm IR satellite image valid 1200Z 12 November 2019. Upper air sites are indicated in red.</figcaption>
+      <figcaption class="figure-caption">{{ __('case2_exercise1.caption.1') }}</figcaption>
     </figure>
 
-    <p>Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.</p>
+    <p>{{ __('case2_exercise1.paragraph.4') }}</p>
 
     <image-map-two></image-map-two>
 
-    <p>Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.</p>
+    <p>{{ __('case2_exercise1.paragraph.5') }}</p>
 
     <draw-app></draw-app>
 
