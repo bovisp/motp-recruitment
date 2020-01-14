@@ -55,12 +55,12 @@
       
       <div id="case1Tab1Night" class="tab-pane">
         <p class="my-2">{{ __('case1.tab.1.caption.2') }}</p>
-        {{-- <video controls loop>
+        <video controls loop>
           <source 
             src="https://res.cloudinary.com/tcddmedia/video/upload/v1576770635/moip_direct_entry_assessment/case%201/GOES_NIGHT_IR_09_12Z_crop_so_cs1mj3.mp4"
             type="video/mp4"
           >
-        </video> --}}
+        </video>
       </div>
     </div>
 
