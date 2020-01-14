@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\File;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -64,5 +66,20 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth', 'isadmin'])->group(function () {
   Route::prefix('/scores')->group(function () {
     Route::post('/{candidate}', 'MarkingController@store');
+  });
+});
+
+/**
+ * Data routes
+ */
+Route::middleware(['auth'])->group(function () {
+  Route::get('/data/animations/{file}', function ($file) {
+    $path = storage_path() . "/app/public/animations/${file}.json";
+
+    if (!File::exists($path)) {
+      throw new \Exception("Invalid File");
+    }
+
+    return File::get($path);
   });
 });

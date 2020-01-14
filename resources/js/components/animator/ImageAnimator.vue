@@ -114,7 +114,7 @@ export default {
     },
 
     async fetch () {
-      let { data } = await axios.get(`/storage/animations/${this.file}.json`)
+      let { data } = await axios.get(`/data/animations/${this.file}`)
 
       this.data = await orderBy(data, ['order'], ['asc'])
 
