@@ -135,6 +135,7 @@
       <div id="case1Tab3YTS" class="tab-pane active">
         <image-animator
           file="case1CytsNwpSoundings"
+          :fluid="true"
         ></image-animator>
       </div>
       <div id="case1Tab3YYU" class="tab-pane">

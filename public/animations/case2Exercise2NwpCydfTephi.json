@@ -1,0 +1,37 @@
+{
+  "0": {
+    "order": 0,
+    "time": "Nov 12 2019 1200 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117872/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_1_xaankw.gif"
+  },
+  "1": {
+    "order": 1,
+    "time": "Nov 12 2019 1500 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117872/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_2_fw9ogr.gif"
+  },
+  "2": {
+    "order": 2,
+    "time": "Nov 12 2019 1800 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117872/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_3_rlt5g0.gif"
+  },
+  "3": {
+    "order": 3,
+    "time": "Nov 12 2019 2100 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117872/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_4_kfm0lw.gif"
+  },
+  "4": {
+    "order": 4,
+    "time": "Nov 13 2019 0000 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117872/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_5_aihwxh.gif"
+  },
+  "5": {
+    "order": 5,
+    "time": "Nov 13 2019 0300 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117873/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_6_qbecax.gif"
+  },
+  "6": {
+    "order": 6,
+    "time": "Nov 13 2019 0600 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579117873/moip_direct_entry_assessment/case%202/Exercise%202/Model%20Soundings/NWP_CYDF_SOUNDINGS/Layer_7_t8j2yy.gif"
+  }
+}

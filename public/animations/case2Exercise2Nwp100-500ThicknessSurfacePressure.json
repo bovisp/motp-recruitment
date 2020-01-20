@@ -1,0 +1,32 @@
+{
+  "0": {
+    "order": 0,
+    "time": "Nov 12 2019 1500 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579115394/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1000-500MB_THICKNESS_SFC_PRESSURE/Layer_2_dhhjdu.gif"
+  },
+  "1": {
+    "order": 1,
+    "time": "Nov 12 2019 1800 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579115394/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1000-500MB_THICKNESS_SFC_PRESSURE/Layer_3_grojsm.gif"
+  },
+  "2": {
+    "order": 2,
+    "time": "Nov 12 2019 2100 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579115395/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1000-500MB_THICKNESS_SFC_PRESSURE/Layer_4_ogjeli.gif"
+  },
+  "3": {
+    "order": 3,
+    "time": "Nov 13 2019 0000 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579115394/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1000-500MB_THICKNESS_SFC_PRESSURE/Layer_5_blu8wx.gif"
+  },
+  "4": {
+    "order": 4,
+    "time": "Nov 13 2019 0300 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579115395/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1000-500MB_THICKNESS_SFC_PRESSURE/Layer_6_hi1jcr.gif"
+  },
+  "5": {
+    "order": 5,
+    "time": "Nov 13 2019 0600 UTC",
+    "image": "https://res.cloudinary.com/tcddmedia/image/upload/v1579115395/moip_direct_entry_assessment/case%202/Exercise%202/NWP/NWP_1000-500MB_THICKNESS_SFC_PRESSURE/Layer_7_ji7c8x.gif"
+  }
+}

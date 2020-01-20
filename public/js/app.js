@@ -1948,6 +1948,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1957,6 +1958,11 @@ __webpack_require__.r(__webpack_exports__);
       required: true
     },
     standalone: {
+      type: Boolean,
+      required: false,
+      "default": false
+    },
+    fluid: {
       type: Boolean,
       required: false,
       "default": false
@@ -58192,6 +58198,7 @@ var render = function() {
       _vm._v(" "),
       _c("img", {
         staticClass: "align-self-center",
+        class: { "img-fluid": _vm.fluid },
         attrs: { src: _vm.image.image }
       }),
       _vm._v(" "),

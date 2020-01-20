@@ -10,6 +10,7 @@
     <img 
       :src="image.image" 
       class="align-self-center"
+      :class="{ 'img-fluid': fluid }"
     >
 
     <controls 
@@ -33,6 +34,11 @@ export default {
       required: true
     },
     standalone: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    fluid: {
       type: Boolean,
       required: false,
       default: false
