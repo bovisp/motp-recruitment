@@ -15,6 +15,29 @@ window.events = new Vue
 
 import './plugins/interceptors'
 
+/**
+ * Gives Vue access to the Laravel translation strings on a per language basis.
+ * 
+ * @param  {string} key The translation string key.
+ * 
+ * @return {string}     The translation string value.
+ */
+Vue.prototype.trans = (key) => {
+	let paths = key.split('.'),
+	    current = window.trans,
+        i;
+
+	for (i = 0; i < paths.length; ++i) {
+		if (current[paths[i]] == undefined) {
+			return undefined;
+		} else {
+			current = current[paths[i]];
+		}
+	}
+	
+	return current;
+}
+
 Vue.component('qpf-table', require('./components/qpf-table/QpfTable.vue').default)
 Vue.component('draw-app', require('./components/draw/Draw.vue').default)
 Vue.component('textbox-answer', require('./components/textboxes/TextboxAnswer.vue').default)

@@ -9,6 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    @include('layouts.partials.trans')
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -19,6 +21,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <script>
+      window.App = {
+          'lang': '{{ app()->getLocale() }}'
+      };
+    </script>
 </head>
 <body>
     <div id="app">
@@ -34,7 +42,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                      <li>
+                        <strong class="mr-2">Switch to:</strong>
+                      </li>
+                      <li style="display: {{ app()->getLocale() === 'en' ? 'none' : 'block' }};">
+                        <a href="{{ url('lang/en') }}">
+                          English
+                        </a>
+                      </li>
 
+                      <li style="display: {{ app()->getLocale() === 'fr' ? 'none' : 'block' }};">
+                        <a href="{{ url('lang/fr') }}">
+                          French
+                        </a>
+                      </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
