@@ -515,7 +515,7 @@
     </div>
 
     <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-primary mt-4">
-      Review answers and finish
+      {{ __('cases.review-finish') }}
     </a>
   </div>
 

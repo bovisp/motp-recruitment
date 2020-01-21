@@ -42,13 +42,13 @@ export default {
   methods: {
     async saveImage (e) {
       $("#warmFront").data("jqScribble").save(async (imageData) => {
-        let response = await axios.post('/cases/case-two/image', { 
+        let { data } = await axios.post('/cases/case-two/image', { 
           imageData,
           key: 'image_url' 
         })
 
         Toastify({
-          text: "Image saved successfully",
+          text: data.data,
           duration: 3000,
           newWindow: true,
           gravity: "top",
@@ -67,7 +67,7 @@ export default {
       });
 
       Toastify({
-        text: "Image cleared successfully",
+        text: trans('components.draw.image-cleared'),
         duration: 3000,
         newWindow: true,
         gravity: "top",

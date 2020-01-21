@@ -43,17 +43,17 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                       <li>
-                        <strong class="mr-2">Switch to:</strong>
+                      <strong class="mr-2">{{ __('navbar.switch-to') }}</strong>
                       </li>
                       <li style="display: {{ app()->getLocale() === 'en' ? 'none' : 'block' }};">
                         <a href="{{ url('lang/en') }}">
-                          English
+                          {{ __('navbar.english') }}
                         </a>
                       </li>
 
                       <li style="display: {{ app()->getLocale() === 'fr' ? 'none' : 'block' }};">
                         <a href="{{ url('lang/fr') }}">
-                          French
+                          {{ __('navbar.french') }}
                         </a>
                       </li>
                     </ul>

@@ -12,7 +12,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Precipitation Type</th>
+      <th scope="row">{{ __('components.qpf-table.precipitation-type') }}</th>
       <td>{{ $answers->naptt15 }}</td>
       <td>{{ $answers->naptt18 }}</td>
       <td>{{ $answers->naptt21 }}</td>
@@ -21,7 +21,7 @@
       <td>{{ $answers->naptt06 }}</td>
     </tr>
     <tr>
-      <th scope="row">Precipitation Amount</th>
+      <th scope="row">{{ __('components.qpf-table.precipitation-amount') }}</th>
       <td>{{ $answers->napat15 }}</td>
       <td>{{ $answers->napat15 }}</td>
       <td>{{ $answers->napat15 }}</td>
@@ -46,7 +46,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Precipitation Type</th>
+      <th scope="row">{{ __('components.qpf-table.precipitation-type') }}</th>
       <td>{{ $answers->dfptt15 }}</td>
       <td>{{ $answers->dfptt15 }}</td>
       <td>{{ $answers->dfptt15 }}</td>
@@ -55,7 +55,7 @@
       <td>{{ $answers->dfptt15 }}</td>
     </tr>
     <tr>
-      <th scope="row">Precipitation Amount</th>
+      <th scope="row">{{ __('components.qpf-table.precipitation-amount') }}</th>
       <td>{{ $answers->dfpat15 }}</td>
       <td>{{ $answers->dfpat15 }}</td>
       <td>{{ $answers->dfpat15 }}</td>

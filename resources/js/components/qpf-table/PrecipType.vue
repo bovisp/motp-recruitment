@@ -80,14 +80,14 @@ export default {
   data () {
     return {
       types: [
-        'Rain',
-        'Drizzle',
-        'Snow',
-        'Freezing Rain',
-        'Freezing Drizzle',
-        'Ice Pellets',
-        'Snow Grains',
-        'Rain-Snow mix'
+        trans('components.qpf-table.rain'),
+        trans('components.qpf-table.drizzle'),
+        trans('components.qpf-table.snow'),
+        trans('components.qpf-table.freezing-rain'),
+        trans('components.qpf-table.freezing-drizzle'),
+        trans('components.qpf-table.ice-pellets'),
+        trans('components.qpf-table.snow-grains'),
+        trans('components.qpf-table.rain-snow-mix')
       ]
     }
   },

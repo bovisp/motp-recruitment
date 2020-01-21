@@ -22,7 +22,7 @@ class MarkingController extends Controller
       return response()->json([
         'errors' => [
           'marks' => [
-            request('type') => 'The comment field is required'
+            request('type') => __('motpvalidations.scoring.comments.required')
           ]
         ]
           ], 422);
@@ -40,7 +40,10 @@ class MarkingController extends Controller
 
     $score->save();
 
-    return $score;
+    return response()->json([
+      'score' => $score,
+      'message' => __('components.scoring.success')
+    ], 200);
   }
 
   public function index()

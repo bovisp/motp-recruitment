@@ -5,15 +5,15 @@
   <div class="container">
     <div class="d-flex">
       <a href="{{ env('APP_URL') . '/answers' }}" class="ml-auto mb-4">
-        Back to candidate list
+        {{ __('answers.back-to-candidates') }}
       </a>
     </div>
 
     <h2 class="mb-4">
-      Responses for {{ $candidate->firstname }} {{ $candidate->lastname }}
+      {{ __('answers.responses-for') }} {{ $candidate->firstname }} {{ $candidate->lastname }}
     </h2>
 
-    <h3>Case One</h3>
+    <h3>{{ __('case1.title') }}</h3>
 
     {{ $answers->case1 }}
 
@@ -25,7 +25,7 @@
     ></score-item>
 
     <h3 class="mt-5">
-      Case Two Exercise One - image
+      {{ __('components.confirmation.case-two-exercise-one-image') }}
     </h3>
 
     <img src="{{ asset('storage/images/' . $answers->image_url) }}">
@@ -38,7 +38,7 @@
     ></score-item>
 
     <h3 class="mt-5">
-      Case Two Exercise One - answer
+      {{ __('components.confirmation.case-two-exercise-one-answer') }}
     </h3>
 
     {{ $answers->case2ex1 }}
@@ -51,7 +51,7 @@
     ></score-item>
 
     <h3 class="mt-5">
-      Case Two Exercise Two - table
+      {{ __('components.confirmation.case-two-exercise-two-table') }}
     </h3>
 
     @include('answers.partials.c2e2table')
@@ -64,7 +64,7 @@
     ></score-item>
 
     <h3 class="mt-5">
-      Case Two Exercise Two - answer
+      {{ __('components.confirmation.case-two-exercise-two-answer') }}
     </h3>
 
     {{ $answers->case2ex2 }}

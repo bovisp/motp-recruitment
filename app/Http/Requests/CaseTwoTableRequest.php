@@ -54,7 +54,7 @@ class CaseTwoTableRequest extends FormRequest
   public function messages()
   {
     return [
-      'required' => 'This field is required'
+      'required' => __('motpvalidations.qpf-table.required')
     ];
   }
 }

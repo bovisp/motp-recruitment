@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
       <div class="col-md-6">
         <h2>
-          Candidates
+          {{ __('answers.candidates') }}
         </h2>
 
         <ol>

@@ -5,11 +5,11 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <h2>
-          Moodle Exercise to Assess a Direct Entry Candidate’s Ability to Apply Theoretical Meteorological Knowledge
+          {{ __('submitname.title') }}
         </h2>
 
         <p>
-          This exercise is designed as a simulation, in order to assess your ability to apply theoretical meteorological knowledge. As such, the assessment will be based on your reasoning for forecast solutions rather than the solutions themselves. In your answers below, please provide detailed answers concerning the data you prioritize and reasoning behind your decisions as much as possible. Aim to provide as many pieces of evidence as you can for each forecast decision you make. You will be given 2 hours to complete the exercise. The simulation is made up of two cases comprising three exercises in total, so please plan your time accordingly.
+          {{ __('submitname.paragraph') }}
         </p>
       </div>
     </div>
@@ -20,7 +20,7 @@
           @csrf
 
           <div class="form-group">
-            <label for="firstname">First name</label>
+            <label for="firstname">{{ __('submitname.firstname') }}</label>
             <input 
               type="text" 
               class="form-control @error('firstname') is-invalid @enderror" 
@@ -36,7 +36,7 @@
           </div>
 
           <div class="form-group">
-            <label for="lastname">Last name</label>
+            <label for="lastname">{{ __('submitname.lastname') }}</label>
             <input 
               type="text" 
               class="form-control @error('lastname') is-invalid @enderror" 
@@ -51,7 +51,7 @@
             @enderror
           </div>
 
-          <button type="submit" class="btn btn-primary">Start assessment</button>
+          <button type="submit" class="btn btn-primary">{{ __('submitname.start-assessment') }}</button>
         </form>
       </div>
     </div>

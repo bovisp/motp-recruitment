@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Precipitation Type</th>
+          <th scope="row">{{ trans('components.qpf-table.precipitation-type') }}</th>
           <td><precip-type v-model="na.pt.t15" obj-key="na.pt.t15" /></td>
           <td><precip-type v-model="na.pt.t18" obj-key="na.pt.t18" /></td>
           <td><precip-type v-model="na.pt.t21" obj-key="na.pt.t21" /></td>
@@ -23,7 +23,7 @@
           <td><precip-type v-model="na.pt.t06" obj-key="na.pt.t06" /></td>
         </tr>
         <tr>
-          <th scope="row">Precipitation Amount</th>
+          <th scope="row">{{ trans('components.qpf-table.precipitation-amount') }}</th>
           <td><precip-amount type-key="na.pt.t15" amount-key ="na.pa.t15" v-model="na.pa.t15" /></td>
           <td><precip-amount type-key="na.pt.t18" amount-key ="na.pa.t18" v-model="na.pa.t18" /></td>
           <td><precip-amount type-key="na.pt.t21" amount-key ="na.pa.t21" v-model="na.pa.t21" /></td>
@@ -48,7 +48,7 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Precipitation Type</th>
+          <th scope="row">{{ trans('components.qpf-table.precipitation-type') }}</th>
           <td><precip-type v-model="df.pt.t15" obj-key="df.pt.t15" /></td>
           <td><precip-type v-model="df.pt.t18" obj-key="df.pt.t18" /></td>
           <td><precip-type v-model="df.pt.t21" obj-key="df.pt.t21" /></td>
@@ -57,7 +57,7 @@
           <td><precip-type v-model="df.pt.t06" obj-key="df.pt.t06" /></td>
         </tr>
         <tr>
-          <th scope="row">Precipitation Amount</th>
+          <th scope="row">{{ trans('components.qpf-table.precipitation-amount') }}</th>
           <td><precip-amount type-key="df.pt.t15" amount-key ="df.pa.t15" v-model="df.pa.t15" /></td>
           <td><precip-amount type-key="df.pt.t18" amount-key ="df.pa.t18" v-model="df.pa.t18" /></td>
           <td><precip-amount type-key="df.pt.t21" amount-key ="df.pa.t21" v-model="df.pa.t21" /></td>
@@ -69,7 +69,7 @@
     </table>
 
     <button class="btn btn-primary d-block" @click.prevent="submit">
-      Submit
+      {{ trans('generic.submit') }}
     </button>
   </div>
 </template>
@@ -166,12 +166,12 @@ export default {
     },
 
     async submit () {
-      let data = this.prepare()
+      let tableData = this.prepare()
 
-      let response = await axios.post('/cases/case-two/table', data)
+      let { data } = await axios.post('/cases/case-two/table', tableData)
 
       Toastify({
-        text: "Table data saved successfully",
+        text: data.data,
         duration: 3000,
         newWindow: true,
         gravity: "top",

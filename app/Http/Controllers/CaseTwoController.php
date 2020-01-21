@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Candidate;
 use Carbon\Carbon;
 use App\Traits\Persistable;
+use App\Http\Requests\TextBoxRequest;
 use Illuminate\Support\Facades\Cookie;
 use App\Http\Requests\CaseTwoTableRequest;
 
@@ -43,7 +44,9 @@ class CaseTwoController extends Controller
 
     $this->persist($requestArr, 'image_url');
     
-    return 'good!';
+    return response()->json([
+      'data' => __('components.draw.success')
+    ], 200);
   }
 
   public function table(CaseTwoTableRequest $request)
@@ -55,14 +58,18 @@ class CaseTwoController extends Controller
     $answer->fill(request()->all());
 
     $answer->save();
+
+    return response()->json([
+      'data' => __('components.qpf-table.success')
+    ], 200);
   }
 
-  public function store()
+  public function store(TextBoxRequest $request)
   {
-    request()->validate([
-      'body' => 'required'
-    ]);
-
     $this->persist(request()->all(), 'body');
+
+    return response()->json([
+      'message' => __('components.textbox.success')
+    ], 200);
   }
 }

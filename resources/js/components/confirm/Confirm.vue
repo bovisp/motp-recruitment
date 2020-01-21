@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>[This should be modified probably. Let me know what you would like to say instead.] Please review your answers below. Any answers marked as incomplete must be completed and submitted before you finish the assessment. To go to a particular answer, just click on its link in the table below. Click on the "Finish assessment" button below when you are done.</p>
+    <p>{{ trans('components.confirmation.header-text') }}</p>
 
     <confirm-table 
       :base-url="baseUrl"
@@ -12,7 +12,7 @@
       data-toggle="modal" 
       data-target="#confirmModal"  
     >
-      Finish assessment
+      
     </button>
 
     <div 
@@ -27,7 +27,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="confirmModalLabel">
-              Finish assessment
+              {{ trans('components.confirmation.modal-title') }}
             </h5>
 
             <button 
@@ -41,19 +41,19 @@
           </div>
 
           <div class="modal-body">
-            Are you sure that you wish to finish the assessment? If you click the "Finish" button, you will be logged out and will no longer have access to your work.
+            {{ trans('components.confirmation.modal-message') }}
           </div>
 
           <div class="modal-footer">
             <button 
               class="btn btn-secondary" 
               data-dismiss="modal"
-            >Close</button>
+            >{{ trans('generic.close') }}</button>
 
             <button 
               class="btn btn-primary" 
               @click.prevent="submit"
-            >Finish</button>
+            >{{ trans('generic.finish') }}</button>
           </div>
         </div>
       </div>

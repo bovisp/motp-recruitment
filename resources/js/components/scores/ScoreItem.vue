@@ -16,7 +16,7 @@
     </div>
 
     <button class="btn btn-sm btn-primary">
-      Submit
+      {{ trans('generic.submit') }}
     </button>
   </form>
 </template>
@@ -91,10 +91,10 @@ export default {
         marks: this.marks
       })
 
-      this.marks = data
+      this.marks = data.score
 
       Toastify({
-        text: "Score saved successfully",
+        text: data.message,
         duration: 3000,
         newWindow: true,
         gravity: "top",

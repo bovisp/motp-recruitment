@@ -15,7 +15,7 @@
       ></p>
     </div>
     
-    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary">{{ trans('generic.submit') }}</button>
   </form>
 </template>
 
@@ -53,13 +53,13 @@ export default {
 
   methods: {
     async submit () {
-      let response = await axios.post(`/cases/${this.endpoint}`, {
+      let { data } = await axios.post(`/cases/${this.endpoint}`, {
         body: this.body,
         key: this.answerKey
       })
 
       Toastify({
-        text: "Answer saved successfully",
+        text: data.message,
         duration: 3000,
         newWindow: true,
         gravity: "top",

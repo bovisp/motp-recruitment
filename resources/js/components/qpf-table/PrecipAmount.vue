@@ -103,22 +103,22 @@ export default {
   methods: {
     determineAmounts (value) {
       switch (value) {
-        case 'Rain':
-        case 'Freezing Rain':
-        case 'Drizzle':
-        case 'Freezing Drizzle':
-        case 'Rain-Snow mix':
+        case trans('components.qpf-table.rain'):
+        case trans('components.qpf-table.freezing-rain'):
+        case trans('components.qpf-table.drizzle'):
+        case trans('components.qpf-table.freezing-drizzle'):
+        case trans('components.qpf-table.rain-snow-mix'):
           this.amounts = this.liquidAmounts
           break;
         
-        case 'Snow':
-        case 'Ice Pellets':
-        case 'Snow Grains':
+        case trans('components.qpf-table.snow'):
+        case trans('components.qpf-table.ice-pellets'):
+        case trans('components.qpf-table.snow-grains'):
           this.amounts = this.solidAmounts
           break;
 
         default: 
-          throw new Error('Not a valid precipitation type')
+          throw new Error(trans('components.qpf-table.invalid-precipitation-type'))
       }
     },
 

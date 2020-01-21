@@ -2,8 +2,8 @@
   <table class="table">
     <thead>
       <tr>
-        <th>Response</th>
-        <th>Status</th>
+        <th>{{ trans('components.confirmation.response') }}</th>
+        <th>{{ trans('components.confirmation.status') }}</th>
       </tr>
     </thead>
 
@@ -41,27 +41,27 @@ export default {
         { 
           link: 'case-one#case-one-answer',
           key: 'case1',
-          text: 'Case One answer' 
+          text: trans('components.confirmation.case-one-answer')
         },
         { 
           link: 'case-two#case-two-exercise-one-answer',
           key: 'case2ex1',
-          text: 'Case Two Exercise One answer'
+          text: trans('components.confirmation.case-two-exercise-one-answer')
         },
         { 
           link: 'case-two#case-two-exercise-one-image',
           key: 'image_url',
-          text: 'Case Two Exercise One image' 
+          text: trans('components.confirmation.case-two-exercise-one-image')
         },
         { 
           link: 'case-two#case-two-exercise-two-answer',
           key: 'case2ex2',
-          text: 'Case Two Exercise Two answer' 
+          text: trans('components.confirmation.case-two-exercise-two-answer')
         },
         { 
           link: 'case-two#case-two-exercise-two-table',
           key: 'naptt15',
-          text: 'Case Two Exercise Two table' 
+          text: trans('components.confirmation.case-two-exercise-two-table')
         }
       ]
     }

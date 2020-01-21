@@ -4,16 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Candidate;
 use Illuminate\Support\Facades\Cookie;
+use App\Http\Requests\SubmitNameRequest;
 
 class SubmitNameController extends Controller
 {
-    public function store()
+    public function store(SubmitNameRequest $request)
     {
-      request()->validate([
-        'firstname' => 'required',
-        'lastname' => 'required'
-      ]);
-
       $candidate = Candidate::create(
         array_merge(
           request()->only('firstname', 'lastname'),

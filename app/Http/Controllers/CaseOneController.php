@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Traits\Persistable;
+use App\Http\Requests\TextBoxRequest;
 
 class CaseOneController extends Controller
 {
@@ -13,12 +14,12 @@ class CaseOneController extends Controller
       return view('cases.case-one');
     }
 
-    public function store()
+    public function store(TextBoxRequest $request)
     {
-      request()->validate([
-        'body' => 'required'
-      ]);
-
       $this->persist(request()->all(), 'body');
+
+      return response()->json([
+        'message' => __('components.textbox.success')
+      ], 200);
     }
 }

@@ -21,7 +21,7 @@ class SubmitAllController extends Controller
       return response()->json([
         'errors' => [
           'incomplete' => [
-            'You have not completed some of the exercises. Please complete these before finishing the assessment.'
+            __('components.confirmation.assessment-incomplete')
           ]
         ]
       ], 422);

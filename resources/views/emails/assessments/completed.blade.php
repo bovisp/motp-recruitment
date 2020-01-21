@@ -1,10 +1,10 @@
 @component('mail::message')
-# Assessment completed
+# {{ __('email.assessment-completed') }}
 
-{{ $candidate->firstname }} {{ $candidate->lastname }} has completed their online assessment.
+{{ $candidate->firstname }} {{ $candidate->lastname }} {{ __('email.paragraph') }}
 
 @component('mail::button', ['url' => env('APP_URL') . '/answers/' . $candidate->id ])
-View assessment answers
-@endcomponent
 
+@endcomponent
+{{ __('email.button') }}
 @endcomponent
