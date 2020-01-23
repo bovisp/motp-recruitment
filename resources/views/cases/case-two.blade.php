@@ -140,120 +140,12 @@
 
     <p>{{ __('case2_exercise1.paragraph.3') }}</p>
 
-    <!-- Nav tabs for Case2E1Tab4 -->
-    {{-- <ul id="Case2E1Tab4" class="nav nav-tabs mt-4">
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYQITephi-tab" class="nav-link active" href="#Case2E1Tab4CYQITephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.1') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYQIHodo-tab" class="nav-link" href="#Case2E1Tab4CYQIHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.2') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYCXTephi-tab" class="nav-link" href="#Case2E1Tab4CYCXTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.3') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYCXHodo-tab" class="nav-link" href="#Case2E1Tab4CYCXHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.4') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4KCARTephi-tab" class="nav-link" href="#Case2E1Tab4KCARTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.5') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4KCARHodo-tab" class="nav-link" href="#Case2E1Tab4KCARHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.6') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYZVTephi-tab" class="nav-link" href="#Case2E1Tab4CYZVTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.7') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYZVHodo-tab" class="nav-link" href="#Case2E1Tab4CYZVHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.8') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYJTTephi-tab" class="nav-link" href="#Case2E1Tab4CYJTTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.9') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYJTHodo-tab" class="nav-link" href="#Case2E1Tab4CYJTHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.10') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYYTTephi-tab" class="nav-link" href="#Case2E1Tab4CYYTTephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.11') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4CYYTHodo-tab" class="nav-link" href="#Case2E1Tab4CYYTHodo" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.12') }}</a>
-      </li>
-      <li class="nav-item">
-        <a id="Case2E1Tab4YQIYCXKCARComp-tab" class="nav-link" href="#Case2E1Tab4YQIYCXKCARComp" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.13') }}</a>
-      </li>
-    </ul>
-
-    <!-- Tab panes for Case2E1Tab4 -->
-    <div 
-      class="tab-content mb-4 rounded"
-      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
-    >
-      <div id="Case2E1Tab4CYQITephi" class="tab-pane active">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.1') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_ouk3tb.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYQIHodo" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.2') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_YARMOUTH_HODO_blmmfq.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYCXTephi" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.3') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576768979/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_coyiuw.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYCXHodo" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.4') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYCX_GAGETOWN_HODO_uajkae.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4KCARTephi" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.5') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_fvda3u.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4KCARHodo" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.6') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013435/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/KCAR_CARIBOU_HODO_xds5er.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYZVTephi" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.7') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_f6gtqq.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYZVHodo" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.8') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYZV_SEPT_ILES_HODO_qzkwd5.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYJTTephi" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.9') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_z9tltf.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYJTHodo" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.10') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYJT_STEPHENVILLE_HODO_dnzjsa.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYYTTephi" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.11') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_clbc4p.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4CYYTHodo" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.12') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYYT_ST_JOHN_S_WEST_HODO_xtn24n.png" alt="" />
-      </div>
-      
-      <div id="Case2E1Tab4YQIYCXKCARComp" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.13') }}</p>
-        <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
-      </div>
-    </div> --}}
     <image-map-tephi></image-map-tephi>
+
+    <figure class="figure my-4">
+      <img class="figure-img w-50" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
+      <figcaption class="figure-caption">{{ __('case2_exercise1.tab.4.caption.13') }}</figcaption>
+    </figure>
 
     <figure class="figure my-4">
       <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
