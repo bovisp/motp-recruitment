@@ -44,7 +44,8 @@ Vue.component('textbox-answer', require('./components/textboxes/TextboxAnswer.vu
 Vue.component('confirm-page', require('./components/confirm/Confirm.vue').default)
 Vue.component('score-item', require('./components/scores/ScoreItem.vue').default)
 Vue.component('image-map-two', require('./components/imagemap/ImageMapTwo.vue').default)
-Vue.component('image-map-one', require('./components/imagemap/ImageMapOne.vue').default) 
+Vue.component('image-map-one', require('./components/imagemap/ImageMapOne.vue').default)
+Vue.component('image-map-tephi', require('./components/imagemap/ImageMapTephi.vue').default) 
 Vue.component('image-animator', require('./components/animator/ImageAnimator.vue').default) 
 
 const app = new Vue({  

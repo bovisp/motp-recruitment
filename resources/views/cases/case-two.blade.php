@@ -141,7 +141,7 @@
     <p>{{ __('case2_exercise1.paragraph.3') }}</p>
 
     <!-- Nav tabs for Case2E1Tab4 -->
-    <ul id="Case2E1Tab4" class="nav nav-tabs mt-4">
+    {{-- <ul id="Case2E1Tab4" class="nav nav-tabs mt-4">
       <li class="nav-item">
         <a id="Case2E1Tab4CYQITephi-tab" class="nav-link active" href="#Case2E1Tab4CYQITephi" data-toggle="tab">{{ __('case2_exercise1.tab.4.label.1') }}</a>
       </li>
@@ -252,7 +252,8 @@
         <p class="pt-3 px-3">{{ __('case2_exercise1.tab.4.caption.13') }}</p>
         <img style="width: 50%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
       </div>
-    </div>
+    </div> --}}
+    <image-map-tephi></image-map-tephi>
 
     <figure class="figure my-4">
       <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
