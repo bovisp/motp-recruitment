@@ -80,14 +80,14 @@ export default {
   data () {
     return {
       types: [
-        trans('components.qpf-table.rain'),
-        trans('components.qpf-table.drizzle'),
-        trans('components.qpf-table.snow'),
-        trans('components.qpf-table.freezing-rain'),
-        trans('components.qpf-table.freezing-drizzle'),
-        trans('components.qpf-table.ice-pellets'),
-        trans('components.qpf-table.snow-grains'),
-        trans('components.qpf-table.rain-snow-mix')
+        this.trans('components.qpf-table.rain'),
+        this.trans('components.qpf-table.drizzle'),
+        this.trans('components.qpf-table.snow'),
+        this.trans('components.qpf-table.freezing-rain'),
+        this.trans('components.qpf-table.freezing-drizzle'),
+        this.trans('components.qpf-table.ice-pellets'),
+        this.trans('components.qpf-table.snow-grains'),
+        this.trans('components.qpf-table.rain-snow-mix')
       ]
     }
   },

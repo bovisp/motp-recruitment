@@ -38,11 +38,11 @@ export default {
 
   computed: {
     getStatus () {
-      if (!this.answers) return `<span class="text-danger"><i class="fas fa-times"></i> ${trans('components.confirmation.not-completed')}</span>`
+      if (!this.answers) return `<span class="text-danger"><i class="fas fa-times"></i> ${this.trans('components.confirmation.not-completed')}</span>`
 
       return this.answers[this.rowKey] ? 
-        `<span class="text-success"><i class="fas fa-check"></i> ${trans('components.confirmation.completed')}</span>` :
-        `<span class="text-danger"><i class="fas fa-times"></i> ${trans('components.confirmation.not-completed')}</span>`
+        `<span class="text-success"><i class="fas fa-check"></i> ${this.trans('components.confirmation.completed')}</span>` :
+        `<span class="text-danger"><i class="fas fa-times"></i> ${this.trans('components.confirmation.not-completed')}</span>`
     }
   },
 

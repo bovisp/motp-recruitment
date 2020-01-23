@@ -40,7 +40,7 @@ class SubmitAllController extends Controller
   }
 
   protected function assessmentComplete() {
-    $candidate_id = Candidate::whereSession(Cookie::get('motp_recruitement_session'))->first()->id;
+    $candidate_id = Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id;
 
     $answer = Answer::where('candidate_id', $candidate_id)->first();
 

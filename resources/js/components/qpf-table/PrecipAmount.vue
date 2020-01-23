@@ -103,17 +103,17 @@ export default {
   methods: {
     determineAmounts (value) {
       switch (value) {
-        case trans('components.qpf-table.rain'):
-        case trans('components.qpf-table.freezing-rain'):
-        case trans('components.qpf-table.drizzle'):
-        case trans('components.qpf-table.freezing-drizzle'):
-        case trans('components.qpf-table.rain-snow-mix'):
+        case this.trans('components.qpf-table.rain'):
+        case this.trans('components.qpf-table.freezing-rain'):
+        case this.trans('components.qpf-table.drizzle'):
+        case this.trans('components.qpf-table.freezing-drizzle'):
+        case this.trans('components.qpf-table.rain-snow-mix'):
           this.amounts = this.liquidAmounts
           break;
         
-        case trans('components.qpf-table.snow'):
-        case trans('components.qpf-table.ice-pellets'):
-        case trans('components.qpf-table.snow-grains'):
+        case this.trans('components.qpf-table.snow'):
+        case this.trans('components.qpf-table.ice-pellets'):
+        case this.trans('components.qpf-table.snow-grains'):
           this.amounts = this.solidAmounts
           break;
 

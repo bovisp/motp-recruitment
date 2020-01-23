@@ -12,7 +12,7 @@
       data-toggle="modal" 
       data-target="#confirmModal"  
     >
-      
+      {{ trans('components.confirmation.finish-button') }}
     </button>
 
     <div 
@@ -93,7 +93,7 @@ export default {
       try {
         let { data } = await axios.post('/cases/submit-all')
 
-        window.location = `${this.baseUrl}/login`
+        // window.location = `${this.baseUrl}/login`
       } catch (e) {
         await $('#confirmModal').modal('hide')
 

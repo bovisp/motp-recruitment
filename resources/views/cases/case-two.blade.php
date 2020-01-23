@@ -514,7 +514,7 @@
       @include('cases.partials.header')
     </div>
 
-    <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-primary mt-4">
+    <a href="{{ env('APP_URL') }}/cases/confirm" class="btn btn-primary btn-lg mt-4">
       {{ __('cases.review-finish') }}
     </a>
   </div>

@@ -41,27 +41,27 @@ export default {
         { 
           link: 'case-one#case-one-answer',
           key: 'case1',
-          text: trans('components.confirmation.case-one-answer')
+          text: this.trans('components.confirmation.case-one-answer')
         },
         { 
           link: 'case-two#case-two-exercise-one-answer',
           key: 'case2ex1',
-          text: trans('components.confirmation.case-two-exercise-one-answer')
+          text: this.trans('components.confirmation.case-two-exercise-one-answer')
         },
         { 
           link: 'case-two#case-two-exercise-one-image',
           key: 'image_url',
-          text: trans('components.confirmation.case-two-exercise-one-image')
+          text: this.trans('components.confirmation.case-two-exercise-one-image')
         },
         { 
           link: 'case-two#case-two-exercise-two-answer',
           key: 'case2ex2',
-          text: trans('components.confirmation.case-two-exercise-two-answer')
+          text: this.trans('components.confirmation.case-two-exercise-two-answer')
         },
         { 
           link: 'case-two#case-two-exercise-two-table',
           key: 'naptt15',
-          text: trans('components.confirmation.case-two-exercise-two-table')
+          text: this.trans('components.confirmation.case-two-exercise-two-table')
         }
       ]
     }

@@ -5,7 +5,12 @@ axios.interceptors.response.use(
 	response => response,
 	error => {
 		if (error.response.status === 422) {
-			store.dispatch('setErrors', error.response.data.errors)
+      store.dispatch('setErrors', {
+        errors: error.response.data.errors,
+        configData: error.response.config.data
+      })
+      
+      console.log(error.response)
 		}
 
 		return Promise.reject(error)
@@ -14,7 +19,7 @@ axios.interceptors.response.use(
 
 axios.interceptors.request.use(
 	config =>  {
-		store.dispatch('clearErrors')
+    store.dispatch('clearErrors')
 
 		return config
 	}, 

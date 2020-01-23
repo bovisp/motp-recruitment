@@ -5,17 +5,17 @@
         v-model="body" 
         rows="10" 
         class="form-control"
-        :class="{ 'is-invalid': errors[answerKey] }"
+        :class="{ 'is-invalid': configData['key'] === answerKey }"
       ></textarea>
 
       <p 
-        v-if="errors[answerKey]"
-        v-text="errors[answerKey][0]"
+        v-if="configData['key'] === answerKey"
+        v-text="errors['body'][0]"
         class="invalid-feedback"
       ></p>
     </div>
     
-    <button class="btn btn-primary">{{ trans('generic.submit') }}</button>
+    <button class="btn btn-primary btn-sm">{{ trans('generic.submit') }}</button>
   </form>
 </template>
 
@@ -47,7 +47,8 @@ export default {
 
   computed: {
     ...mapGetters({
-      errors: 'errors'
+      errors: 'errors',
+      configData: 'configData'
     })
   },
 

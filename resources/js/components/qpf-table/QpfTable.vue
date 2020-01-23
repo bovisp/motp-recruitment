@@ -68,7 +68,7 @@
       </tbody>
     </table>
 
-    <button class="btn btn-primary d-block" @click.prevent="submit">
+    <button class="btn btn-primary d-block btn-sm" @click.prevent="submit">
       {{ trans('generic.submit') }}
     </button>
   </div>
