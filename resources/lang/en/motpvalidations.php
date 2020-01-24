@@ -2,8 +2,8 @@
 
 return [
   'scoring' => [
-    'comments' => [
-      'required' => 'The comment field is required'
+    'score' => [
+      'invalid' => 'This value exceeds the maximum score'
     ]
   ],
   'textbox' => [

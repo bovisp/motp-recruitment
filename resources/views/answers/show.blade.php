@@ -21,6 +21,7 @@
       :candidate="{{ json_encode($candidate) }}"
       :answers="{{ json_encode($answers) }}"
       :scores="{{ json_encode($candidate->scores) }}"
+      :max-scores="{{ json_encode($maxScores) }}"
       type="case1"
     ></score-item>
 
@@ -34,6 +35,7 @@
       :candidate="{{ json_encode($candidate) }}"
       :answers="{{ json_encode($answers) }}"
       :scores="{{ json_encode($candidate->scores) }}"
+      :max-scores="{{ json_encode($maxScores) }}"
       type="image_url"
     ></score-item>
 
@@ -47,6 +49,7 @@
       :candidate="{{ json_encode($candidate) }}"
       :answers="{{ json_encode($answers) }}"
       :scores="{{ json_encode($candidate->scores) }}"
+      :max-scores="{{ json_encode($maxScores) }}"
       type="case2ex1"
     ></score-item>
 
@@ -60,6 +63,7 @@
       :candidate="{{ json_encode($candidate) }}"
       :answers="{{ json_encode($answers) }}"
       :scores="{{ json_encode($candidate->scores) }}"
+      :max-scores="{{ json_encode($maxScores) }}"
       type="naptt15"
     ></score-item>
 
@@ -73,6 +77,7 @@
       :candidate="{{ json_encode($candidate) }}"
       :answers="{{ json_encode($answers) }}"
       :scores="{{ json_encode($candidate->scores) }}"
+      :max-scores="{{ json_encode($maxScores) }}"
       type="case2ex2"
     ></score-item>
   </div>

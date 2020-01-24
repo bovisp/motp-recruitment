@@ -142,6 +142,8 @@
 
     <image-map-tephi></image-map-tephi>
 
+    <p>{{ __('case2_exercise1.paragraph.4') }}</p>
+
     <figure class="figure my-4">
       <img class="figure-img w-50" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576013433/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/CYQI_CYCX_KCAR_COMPARISON_h8veh5.png" alt="" />
       <figcaption class="figure-caption">{{ __('case2_exercise1.tab.4.caption.13') }}</figcaption>
@@ -152,11 +154,11 @@
       <figcaption class="figure-caption">{{ __('case2_exercise1.caption.1') }}</figcaption>
     </figure>
 
-    <p>{{ __('case2_exercise1.paragraph.4') }}</p>
+    <p>{{ __('case2_exercise1.paragraph.5') }}</p>
 
     <image-map-two></image-map-two>
 
-    <p>{{ __('case2_exercise1.paragraph.5') }}</p>
+    <p>{{ __('case2_exercise1.paragraph.6') }}</p>
 
     <draw-app></draw-app>
 

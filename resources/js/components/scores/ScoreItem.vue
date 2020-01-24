@@ -1,18 +1,39 @@
 <template>
   <form class="mt-4" @submit.prevent="submit">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label :for="`score-${type}`" class="font-weight-bolder">
+            Score (maximum {{ maxPoints }} points)
+          </label>
+
+          <input 
+            v-model="score" 
+            :id="`score-${type}`"
+            class="form-control"
+            :class="{ 'is-invalid': hasError }"
+          > 
+
+          <p 
+            v-if="hasError"
+            v-text="errors.marks[this.type]"
+            class="invalid-feedback"
+          ></p>
+        </div>
+      </div>
+    </div>
+
     <div class="form-group">
+      <label :for="`comments-${type}`" class="font-weight-bolder">
+        Evaluation comments
+      </label>
+
       <textarea 
+        id="`comments-${type}`"
         v-model="comment" 
         rows="10" 
         class="form-control"
-        :class="{ 'is-invalid': hasError }"
       ></textarea>
-
-      <p 
-        v-if="hasError"
-        v-text="errors.marks[this.type]"
-        class="invalid-feedback"
-      ></p>
     </div>
 
     <button class="btn btn-sm btn-primary">
@@ -43,12 +64,17 @@ export default {
     scores: {
       type: Array,
       required: true
+    },
+    maxScores: {
+      type: Array,
+      required: true
     }
   },
 
   data () {
     return {
-      marks: {}
+      marks: {},
+      maxPoints: 0
     }
   },
 
@@ -70,6 +96,16 @@ export default {
 
       set (value) {
         this.marks.comment = value
+      }
+    },
+
+    score: {
+      get () {
+        return this.marks.score ? this.marks.score : ''
+      },
+
+      set (value) {
+        this.marks.score = value
       }
     },
 
@@ -107,7 +143,9 @@ export default {
 
   mounted () {
     let marks = find(this.scores, ['type', this.type])
+    let maxPoints = find(this.maxScores, ['name', this.type])['score']
     this.marks = marks ? marks : {}
+    this.maxPoints = maxPoints ? maxPoints : 0
     this.marks.type = this.type
   }
 }

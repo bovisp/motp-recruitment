@@ -10,6 +10,7 @@ class Score extends Model
     protected $fillable = [
       'candidate_id',
       'comment',
+      'score',
       'type'
     ];
 
