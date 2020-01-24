@@ -5,6 +5,8 @@
   <div class="container">
     @include('cases.partials.header')
 
+    @include('cases.partials.case-one-scores')
+
     <h2>{{ __('case1.title') }}</h2>
 
     <div class="row">
@@ -181,7 +183,7 @@
       <p class="mb-0" style="color: #868e96; font-style: italic;">{{ __('case1.quote.2') }}</p>
     </blockquote>
 
-    <p>{{ __('case1.paragraph.13') }}</p>
+  <p>{{ __('case1.paragraph.13') }} <strong>({{ $maxScores->where('name', 'case1')->first()->score }} points)</strong></p>
 
     <div id="case-one-answer">
       <textbox-answer

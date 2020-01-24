@@ -5,6 +5,8 @@
   <div class="container">
     @include('cases.partials.header')
 
+    @include('cases.partials.case-two-scores')
+
     <h2>{{ __('case2_exercise1.title') }}</h2>
 
     <p>{{ __('case2_exercise1.paragraph.1') }}</p>
@@ -158,9 +160,17 @@
 
     <image-map-two></image-map-two>
 
-    <p>{{ __('case2_exercise1.paragraph.6') }}</p>
+    <p>
+      {{ __('case2_exercise1.paragraph.6') }} 
+      <strong>({{ $maxScores->where('name', 'image_url')->first()->score }} points)</strong>
+    </p>
 
     <draw-app></draw-app>
+
+    <p style="margin-bottom: -2rem;" class="mt-5">
+      Reasoning 
+      <strong>({{ $maxScores->where('name', 'case2ex1')->first()->score }} points)</strong>:
+    </p>
 
     <div id="case-two-exercise-one-answer" class="mt-5">
       <textbox-answer
@@ -389,13 +399,19 @@
       </div>
     </div>
 
-    <p>{{ __('case2_exercise2.paragraph.6') }}</p>
+    <p>
+      {{ __('case2_exercise2.paragraph.6') }} 
+      <strong>({{ $maxScores->where('name', 'naptt15')->first()->score }} points)</strong>
+    </p>
 
     <qpf-table
       :candidate-id="{{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id }}"
     ></qpf-table>
 
-    <p>{{ __('case2_exercise2.paragraph.7') }}</p>
+    <p>
+      {{ __('case2_exercise2.paragraph.7') }} 
+      <strong>({{ $maxScores->where('name', 'case2ex2')->first()->score }} points)</strong>
+    </p>
 
     <div id="case-two-exercise-two-answer">
       <textbox-answer
