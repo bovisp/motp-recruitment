@@ -29,7 +29,7 @@
       </label>
 
       <textarea 
-        id="`comments-${type}`"
+        :id="`comments-${type}`"
         v-model="comment" 
         rows="10" 
         class="form-control"
@@ -54,7 +54,6 @@ export default {
       required: true
     },
     answers: {
-      type: Object,
       required: true
     },
     type: {

@@ -36,9 +36,9 @@ class MarkingController extends Controller
       ->whereType(request('type'))
       ->first() ?? Score::make();
 
-    $score['comment'] = request('marks')['comment'];
+    $score['comment'] = request('marks')['comment'] ?? '';
 
-    $score['score'] = request('marks')['score'];
+    $score['score'] = request('marks')['score'] ?? null;
 
     $score['type'] = request('type');
 

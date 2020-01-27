@@ -16,7 +16,7 @@
             <li class="mb-4">
               <a href="{{ $candidate->path() }}">
                 {{ $candidate->firstname }} {{ $candidate->lastname }}
-              </a>
+              </a> - Took exam on {{ $candidate->created_at->isoFormat('MMMM Do YYYY') }}
             </li>
 
             <table class="table">
