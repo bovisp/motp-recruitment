@@ -54,7 +54,9 @@ class MarkingController extends Controller
 
   public function index()
   {
-    $candidates = Candidate::latest()->get();
+    $candidates = Candidate::with('scores')
+      ->latest()
+      ->get();
 
     return view('answers.index', compact('candidates'));
   }

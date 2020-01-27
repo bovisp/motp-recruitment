@@ -25,7 +25,7 @@ import './plugins/interceptors'
 Vue.prototype.trans = (key) => {
 	let paths = key.split('.'),
 	    current = window.trans,
-        i;
+      i;
 
 	for (i = 0; i < paths.length; ++i) {
 		if (current[paths[i]] == undefined) {

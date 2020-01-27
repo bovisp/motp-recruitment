@@ -15,7 +15,7 @@
 
     <h3>{{ __('case1.title') }}</h3>
 
-    {{ $answers->case1 }}
+    {{ $answers->case1 ?? '' }}
 
     <score-item
       :candidate="{{ json_encode($candidate) }}"
@@ -29,8 +29,14 @@
       {{ __('components.confirmation.case-two-exercise-one-image') }}
     </h3>
 
+    @if(optional($answers)->image_url !== null)
     <img src="{{ asset('storage/images/' . $answers->image_url) }}">
-
+    @else
+      <div class="alert alert-info">
+        This question hasn't been answered yet
+      </div>
+    @endif
+    
     <score-item
       :candidate="{{ json_encode($candidate) }}"
       :answers="{{ json_encode($answers) }}"
@@ -43,7 +49,7 @@
       {{ __('components.confirmation.case-two-exercise-one-answer') }}
     </h3>
 
-    {{ $answers->case2ex1 }}
+    {{ $answers->case2ex1 ?? '' }}
 
     <score-item
       :candidate="{{ json_encode($candidate) }}"
@@ -57,7 +63,13 @@
       {{ __('components.confirmation.case-two-exercise-two-table') }}
     </h3>
 
-    @include('answers.partials.c2e2table')
+    @if(optional($answers)->naptt15 !== null)
+      @include('answers.partials.c2e2table')
+    @else
+      <div class="alert alert-info">
+        This question hasn't been answered yet
+      </div>
+    @endif
 
     <score-item
       :candidate="{{ json_encode($candidate) }}"
@@ -71,7 +83,7 @@
       {{ __('components.confirmation.case-two-exercise-two-answer') }}
     </h3>
 
-    {{ $answers->case2ex2 }}
+    {{ $answers->case2ex2 ?? '' }}
 
     <score-item
       :candidate="{{ json_encode($candidate) }}"
