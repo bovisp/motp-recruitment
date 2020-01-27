@@ -28,7 +28,7 @@
 
                 <tr>
                   <td>Case One</td>
-                  <td>{{ $candidate->scores->where('type', 'case1')->first()->score ?? 'No answer' }}</td>
+                  <td>{{ $candidate->scores->where('type', 'case1')->first()->score ?? 'No score' }}</td>
                 </tr>
 
                 <tr>
