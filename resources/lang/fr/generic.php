@@ -1,7 +1,7 @@
 <?php
 
-return [
+return array (
   'close' => 'Close',
   'finish' => 'Finish',
-  'submit' => 'Submit'
-];
+  'submit' => 'Submit',
+);
