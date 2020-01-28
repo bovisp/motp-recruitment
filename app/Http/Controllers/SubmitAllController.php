@@ -34,9 +34,7 @@ class SubmitAllController extends Controller
       'session' => ''
     ]);
 
-    if (cache()->has('countdown')) {
-      TimerCache::remove($cookie);
-    }
+    TimerCache::remove($cookie);
 
     Mail::to('paul.bovis@canada.ca')
       ->send(new AssessmentCompleted($candidate));

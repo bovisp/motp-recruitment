@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 
 class TimerCache
 {
-  protected static $duration = 7200; // 2 hours in seconds
+  protected static $duration = 120; // 2 hours in seconds
 
   public static function set($cookie)
   {
@@ -27,6 +27,21 @@ class TimerCache
     self::removeFromCachedItem($cookie);
 
     return;
+  }
+
+  public static function check($cookie)
+  {
+    $cache = cache()->get('countdown');
+
+    $item = Arr::where($cache, function ($value, $key) use ($cookie) {
+      return $value['cookie'] === $cookie;
+    })[0];
+
+    if ($item['end'] <= Carbon::now()->timestamp) {
+      return false;
+    }
+
+    return true;
   }
 
   protected static function cacheItemExists($cookie)

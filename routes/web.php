@@ -18,7 +18,7 @@ Route::get('/home', 'HomeController@index')
 /**
  * Case routes.
  */
-Route::middleware(['auth', 'candidate.exists'])->group(function () {
+Route::middleware(['auth', 'candidate.exists', 'countdown'])->group(function () {
   Route::prefix('/cases/case-one')->group(function () {
     Route::get('/', 'CaseOneController@show');
 
