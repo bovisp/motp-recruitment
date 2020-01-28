@@ -2,7 +2,10 @@
 
 @section('content')
 
-  <div class="container">
+  <div class="container my-5">
+
+    @include('cases.partials.countdown-timer')
+
     <div class="row justify-content-center">
       <div class="col-md-8">
         <confirm-page 

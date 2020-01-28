@@ -31,6 +31,16 @@ class CheckCountdownTimer
 
         auth()->logout();
 
+        if (request()->expectsJson()) {
+          return response()->json([
+            'errors' => [
+              'timeup' => [
+                'Your evaluation time has expired.'
+              ]
+            ]
+          ], 401);
+        }
+
         return redirect('/login');
       }
 

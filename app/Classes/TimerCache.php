@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 
 class TimerCache
 {
-  protected static $duration = 120; // 2 hours in seconds
+  protected static $duration = 7200; // 2 hours in seconds
 
   public static function set($cookie)
   {
@@ -41,7 +41,7 @@ class TimerCache
       return false;
     }
 
-    return true;
+    return $item['end'] - Carbon::now()->timestamp;
   }
 
   protected static function cacheItemExists($cookie)

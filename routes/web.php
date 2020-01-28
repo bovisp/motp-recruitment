@@ -40,6 +40,8 @@ Route::middleware(['auth', 'candidate.exists', 'countdown'])->group(function () 
 
     Route::post('/submit-all', 'SubmitAllController@store');
   });
+
+  Route::get('/countdown', 'CountdownController@index');
 });
 
 Route::post('/submit-name', 'SubmitNameController@store')

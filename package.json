@@ -29,6 +29,7 @@
     "dependencies": {
         "es6-promise": "^4.2.8",
         "napa": "^3.0.0",
+        "pluralize": "^8.0.0",
         "toastify-js": "^1.6.1"
     }
 }
