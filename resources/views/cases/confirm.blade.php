@@ -7,7 +7,7 @@
       <div class="col-md-8">
         <confirm-page 
           base-url="{{ env('APP_URL') }}"
-          :candidate-id="{{ (int) Cache::get('candidateid') }}"
+          :candidate-id="{{ App\Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first()->id }}"
         ></confirm-page>
       </div>
     </div>
