@@ -11,34 +11,56 @@ class TimerCache
 
   public static function set($cookie)
   {
-    if (!cache()->has('countdown')) {
-      $cache = [];
-
-      array_push($cache, [
-        'cookie' => $cookie,
-        'start' => $start = Carbon::now()->timestamp,
-        'end' => $start + self::$duration
-      ]);
-
-      cache()->add('countdown', $cache);
+    if (self::cacheItemExists($cookie) === false) {
+      self::createCacheItem($cookie);
 
       return;
     }
 
+    self::addToCachedItem($cookie);
+
+    return;
+  }
+
+  public static function remove($cookie)
+  {
+    self::removeFromCachedItem($cookie);
+
+    return;
+  }
+
+  protected static function cacheItemExists($cookie)
+  {
+    if (cache()->has('countdown')) {
+      return true;
+    }
+
+    return false;
+  }
+
+  protected static function createCacheItem($cookie)
+  {
+    $cache = [];
+
+    $cache = self::pushToCacheItem($cache, $cookie);
+
+    cache()->add('countdown', $cache);
+
+    return;
+  }
+
+  protected static function addToCachedItem($cookie)
+  {
     $cache = cache()->get('countdown');
 
-    array_push($cache, [
-      'cookie' => $cookie,
-      'start' => $start = Carbon::now()->timestamp,
-      'end' => $start + self::$duration
-    ]);
+    $cache = self::pushToCacheItem($cache, $cookie);
 
     cache()->put('countdown', $cache);
 
     return;
   }
 
-  public static function remove($cookie)
+  protected static function removeFromCachedItem($cookie)
   {
     $cache = cache()->get('countdown');
 
@@ -47,7 +69,16 @@ class TimerCache
     });
 
     cache()->put('countdown', $cache);
+  }
 
-    return;
+  protected static function pushToCacheItem($cache, $cookie)
+  {
+    array_push($cache, [
+      'cookie' => $cookie,
+      'start' => $start = Carbon::now()->timestamp,
+      'end' => $start + self::$duration
+    ]);
+
+    return $cache;
   }
 }
