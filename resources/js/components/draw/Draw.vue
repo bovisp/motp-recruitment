@@ -163,7 +163,12 @@ export default {
 
     if (canvasEl) {
       canvasEl.addEventListener('click', e => {
-        console.log('clicked')
+        $("#warmFront").data("jqScribble").save(async (imageData) => {
+          let { data } = await axios.post('/cases/case-two/image', { 
+            imageData,
+            key: 'image_url' 
+          })
+        })
       })
     }
   }
