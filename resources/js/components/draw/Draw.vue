@@ -67,7 +67,7 @@ export default {
       });
 
       Toastify({
-        text: trans('components.draw.image-cleared'),
+        text: this.trans('components.draw.image-cleared'),
         duration: 3000,
         newWindow: true,
         gravity: "top",

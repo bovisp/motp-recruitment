@@ -22,7 +22,7 @@ class CaseTwoController extends Controller
   {
     $candidate = $this->candidate();
 
-    $filepath = storage_path() . '/app/public/images/';
+    $filepath = public_path() . '/storage/images/';
 
     $filename = "{$candidate->id}_{$candidate->firstname}_{$candidate->lastname}_" . 
                 Carbon::now()->format('Ymd') .

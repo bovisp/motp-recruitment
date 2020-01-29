@@ -105,8 +105,6 @@ export default {
         window.location = `${this.baseUrl}/login`
       }
 
-      console.log(this.timeRemaining)
-
       if (this.timeRemaining <= 360 && this.timeRemaining >= 300) {
         $('#timeRemainingModal').modal('show')
       }
