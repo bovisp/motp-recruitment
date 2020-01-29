@@ -3838,8 +3838,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    baseUrl: {
+      type: String,
+      required: true
+    }
+  },
   data: function data() {
     return {
       timeRemaining: 0
@@ -3878,14 +3927,42 @@ __webpack_require__.r(__webpack_exports__);
       var minutes = Math.floor(this.timeRemaining / 60) - hours * 60;
 
       if (hours === 0) {
-        return "".concat(this.strPadLeft(minutes, '0', 2), " ").concat(pluralize__WEBPACK_IMPORTED_MODULE_1___default()('minute'));
+        return "".concat(this.strPadLeft(minutes, '0', 2), " ").concat(pluralize__WEBPACK_IMPORTED_MODULE_1___default()('minute', minutes));
       }
 
-      return "".concat(hours, " ").concat(pluralize__WEBPACK_IMPORTED_MODULE_1___default()('hour'), " ").concat(this.strPadLeft(minutes, '0', 2), " ").concat(pluralize__WEBPACK_IMPORTED_MODULE_1___default()('minute'));
+      return "".concat(hours, " ").concat(pluralize__WEBPACK_IMPORTED_MODULE_1___default()('hour', hours), " ").concat(this.strPadLeft(minutes, '0', 2), " ").concat(pluralize__WEBPACK_IMPORTED_MODULE_1___default()('minute', minutes));
     }
   },
   mounted: function mounted() {
+    var _this = this;
+
     this.fetch();
+    setInterval(function _callee() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(_this.fetch());
+
+            case 2:
+              if (_this.timeRemaining === 0) {
+                window.location = "".concat(_this.baseUrl, "/login");
+              }
+
+              console.log(_this.timeRemaining);
+
+              if (_this.timeRemaining <= 360 && _this.timeRemaining >= 300) {
+                $('#timeRemainingModal').modal('show');
+              }
+
+            case 5:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      });
+    }, 60000);
   }
 });
 
@@ -60653,16 +60730,103 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "fixed-bottom bg-light py-3 border-top" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("p", { staticClass: "mb-0 text-right" }, [
-        _c("strong", [_vm._v("Time remaining:")]),
-        _vm._v(" \n      " + _vm._s(_vm.formattedTimeRemaining) + "\n    ")
+  return _c("div", [
+    _c("div", { staticClass: "fixed-bottom bg-light py-3 border-top" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("p", { staticClass: "mb-0 text-right" }, [
+          _c("strong", [_vm._v("Time remaining:")]),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              class: {
+                "text-danger":
+                  _vm.timeRemaining <= 360 && _vm.timeRemaining >= 300
+              }
+            },
+            [_vm._v(_vm._s(_vm.formattedTimeRemaining))]
+          )
+        ])
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "timeRemainingModal",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "timeRemainingModalLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c(
+                  "h5",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "timeRemainingModalLabel" }
+                  },
+                  [_vm._v("\n            Five minutes remaining\n          ")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      "aria-label": "Close"
+                    }
+                  },
+                  [
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _vm._v(
+                  "\n          You have five minutes remaining in the assessment. Please take this time to review your work. You will be automatically logged out of the assessment when there is no more time remaining.\n        "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { "data-dismiss": "modal" }
+                  },
+                  [_vm._v("OK")]
+                )
+              ])
+            ])
+          ]
+        )
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 

@@ -33,9 +33,9 @@ class TimerCache
   {
     $cache = cache()->get('countdown');
 
-    $item = Arr::where($cache, function ($value, $key) use ($cookie) {
+    $item = Arr::first($cache, function ($value, $key) use ($cookie) {
       return $value['cookie'] === $cookie;
-    })[0];
+    });
 
     if ($item['end'] <= Carbon::now()->timestamp) {
       return false;
