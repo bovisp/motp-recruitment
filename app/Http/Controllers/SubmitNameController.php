@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Candidate;
+use App\Classes\TimerCache;
 use Illuminate\Support\Facades\Cookie;
 use App\Http\Requests\SubmitNameRequest;
 
@@ -13,9 +14,11 @@ class SubmitNameController extends Controller
       $candidate = Candidate::create(
         array_merge(
           request()->only('firstname', 'lastname'),
-          ['session' => Cookie::get(env('APP_COOKIE_NAME'))]
+          ['session' => $cookie = Cookie::get(env('APP_COOKIE_NAME'))]
         )
       );
+
+      TimerCache::set($cookie);
       
       return redirect('/cases/case-one');
     }

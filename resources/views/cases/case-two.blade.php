@@ -2,10 +2,12 @@
 
 @section('content')
 
-  <div class="container">
+  <div class="container my-5">
     @include('cases.partials.header')
 
     @include('cases.partials.case-two-scores')
+
+    @include('cases.partials.countdown-timer')
 
     <h2>{{ __('case2_exercise1.title') }}</h2>
 

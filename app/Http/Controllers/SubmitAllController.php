@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Answer;
 use App\Candidate;
+use App\Classes\TimerCache;
 use App\Mail\AssessmentCompleted;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Cookie;
@@ -27,11 +28,13 @@ class SubmitAllController extends Controller
       ], 422);
     }
 
-    $candidate = Candidate::whereSession(Cookie::get(env('APP_COOKIE_NAME')))->first();
+    $candidate = Candidate::whereSession($cookie = Cookie::get(env('APP_COOKIE_NAME')))->first();
 
     $candidate->update([
       'session' => ''
     ]);
+
+    TimerCache::remove($cookie);
 
     Mail::to('paul.bovis@canada.ca')
       ->send(new AssessmentCompleted($candidate));
