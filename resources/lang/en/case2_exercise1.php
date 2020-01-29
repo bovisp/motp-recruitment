@@ -7,8 +7,9 @@ return array (
     1 => 'Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front over the map at the bottom of the exercise and provide a detailed justification for its placement on the page below.',
     2 => 'The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.',
     3 => 'In the tephigrams below, the soundings valid for 00Z November 12 (red) and 12Z (black) are plotted. The associated hodographs are from the 12Z soundings.',
-    4 => 'Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.',
-    5 => 'Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.',
+    4 => 'The following sounding shows a direct comparison between the 1200Z soundings at Yarmouth (black), Gagetown (red), and Caribou (blue) referenced above.',
+    5 => 'Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.',
+    6 => 'Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.',
   ),
   'caption' => 
   array (

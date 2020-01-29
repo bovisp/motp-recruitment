@@ -32,6 +32,8 @@ Route::middleware(['auth', 'candidate.exists', 'countdown'])->group(function () 
 
     Route::post('/image', 'CaseTwoController@image');
 
+    Route::get('/image', 'CaseTwoController@getImage');
+
     Route::post('/table', 'CaseTwoController@table');
   });
 

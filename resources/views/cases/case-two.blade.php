@@ -167,7 +167,9 @@
       <strong>({{ $maxScores->where('name', 'image_url')->first()->score }} points)</strong>
     </p>
 
-    <draw-app></draw-app>
+    <draw-app
+      base-url="{{ env('APP_URL') }}"
+    ></draw-app>
 
     <p style="margin-bottom: -2rem;" class="mt-5">
       Reasoning 
