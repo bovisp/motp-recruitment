@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Candidate;
+use App\Classes\TimerCache;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cookie;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -36,5 +40,22 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function logout(Request $request)
+    {
+      $candidate = Candidate::whereSession($cookie = Cookie::get(env('APP_COOKIE_NAME')))->first();
+
+      $candidate->update([
+        'session' => ''
+      ]);
+
+      TimerCache::remove($cookie);
+      
+      $this->guard()->logout();
+
+      $request->session()->invalidate();
+
+      return $this->loggedOut($request) ?: redirect('/');
     }
 }

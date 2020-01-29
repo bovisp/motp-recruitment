@@ -18,7 +18,7 @@ Route::get('/home', 'HomeController@index')
 /**
  * Case routes.
  */
-Route::middleware(['auth', 'candidate.exists'])->group(function () {
+Route::middleware(['auth', 'candidate.exists', 'countdown'])->group(function () {
   Route::prefix('/cases/case-one')->group(function () {
     Route::get('/', 'CaseOneController@show');
 
@@ -40,6 +40,8 @@ Route::middleware(['auth', 'candidate.exists'])->group(function () {
 
     Route::post('/submit-all', 'SubmitAllController@store');
   });
+
+  Route::get('/countdown', 'CountdownController@index');
 });
 
 Route::post('/submit-name', 'SubmitNameController@store')
