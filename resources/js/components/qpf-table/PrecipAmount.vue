@@ -38,10 +38,7 @@ export default {
       type: String,
       required: true
     },
-    value: {
-      type: String,
-      required: true
-    }
+    value: {}
   },
 
   computed: {
@@ -116,9 +113,6 @@ export default {
         case this.trans('components.qpf-table.snow-grains'):
           this.amounts = this.solidAmounts
           break;
-
-        default: 
-          throw new Error(trans('components.qpf-table.invalid-precipitation-type'))
       }
     },
 

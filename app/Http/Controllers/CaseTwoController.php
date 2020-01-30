@@ -56,7 +56,7 @@ class CaseTwoController extends Controller
     return $answer->image_url;
   }
 
-  public function table(CaseTwoTableRequest $request)
+  public function table()
   {
     $answer = $this->answer();
         

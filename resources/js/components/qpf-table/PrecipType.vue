@@ -34,10 +34,7 @@ export default {
       type: String,
       required: true
     },
-    value: {
-      type: String,
-      required: true
-    }
+    value: {}
   },
 
   watch: {

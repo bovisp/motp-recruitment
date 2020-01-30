@@ -68,7 +68,7 @@
       </tbody>
     </table>
 
-    <button class="btn btn-primary d-block btn-sm" @click.prevent="submit">
+    <button class="btn btn-primary d-block btn-sm" @click.prevent="submitData">
       {{ trans('generic.submit') }}
     </button>
   </div>
@@ -78,6 +78,7 @@
 import PrecipType from './PrecipType'
 import PrecipAmount from './PrecipAmount'
 import Toastify from 'toastify-js'
+import { debounce } from 'lodash-es'
 
 export default {
   props: {
@@ -94,6 +95,7 @@ export default {
 
   data () {
     return {
+      buttonClicked: false,
       df: {
         pt: {
           t15: '',
@@ -133,6 +135,24 @@ export default {
     }
   },
 
+  watch: {
+    df: {
+      deep: true,
+
+      handler () {
+        this.submit()
+      }
+    },
+
+    na: {
+      deep: true,
+
+      handler () {        
+        this.submit()
+      }
+    }
+  },
+
   methods: {
     async fetch () {
       let { data } = await axios.get(`/answers/${this.candidateId}/api`)
@@ -165,20 +185,30 @@ export default {
       }
     },
 
+    submitData () {
+      this.buttonClicked = true
+
+      this.submit()
+    },
+
     async submit () {
       let tableData = this.prepare()
 
       let { data } = await axios.post('/cases/case-two/table', tableData)
 
-      Toastify({
-        text: data.data,
-        duration: 3000,
-        newWindow: true,
-        gravity: "top",
-        position: 'center',
-        backgroundColor: "#28a745",
-        stopOnFocus: true,
-      }).showToast();
+      if (this.buttonClicked) {
+        Toastify({
+          text: data.data,
+          duration: 3000,
+          newWindow: true,
+          gravity: "top",
+          position: 'center',
+          backgroundColor: "#28a745",
+          stopOnFocus: true,
+        }).showToast();
+      }
+      
+      this.buttonClicked = false
     },
 
     prepare () {
