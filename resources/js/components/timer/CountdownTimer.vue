@@ -5,7 +5,7 @@
         <p class="mb-0 text-right">
           <strong>Time remaining:</strong> 
           <span
-            :class="{ 'text-danger': timeRemaining <= 360 && timeRemaining >= 300 }"
+            :class="{ 'text-danger': timeRemaining < 360 }"
           >{{ formattedTimeRemaining }}</span>
         </p>
       </div>

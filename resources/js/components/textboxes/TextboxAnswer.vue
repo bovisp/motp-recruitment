@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submit">
+  <form @submit.prevent="submitData">
     <div class="form-group">
       <textarea 
         v-model="body" 
@@ -22,6 +22,7 @@
 <script>
 import { mapGetters } from 'vuex'
 import Toastify from 'toastify-js'
+import { debounce } from 'lodash-es'
 
 export default {
   props: {
@@ -41,7 +42,16 @@ export default {
 
   data () {
     return {
-      body: ''
+      body: '',
+      buttonClicked: false
+    }
+  },
+
+  watch: {
+    body: {
+      handler: debounce(function () {
+        this.submit()
+      }, 2000)
     }
   },
 
@@ -53,21 +63,31 @@ export default {
   },
 
   methods: {
+    submitData () {
+      this.buttonClicked = true
+
+      this.submit()
+    },
+
     async submit () {
       let { data } = await axios.post(`/cases/${this.endpoint}`, {
         body: this.body,
         key: this.answerKey
       })
 
-      Toastify({
-        text: data.message,
-        duration: 3000,
-        newWindow: true,
-        gravity: "top",
-        position: 'center',
-        backgroundColor: "#28a745",
-        stopOnFocus: true,
-      }).showToast();
+      if (this.buttonClicked) {
+        Toastify({
+          text: data.message,
+          duration: 3000,
+          newWindow: true,
+          gravity: "top",
+          position: 'center',
+          backgroundColor: "#28a745",
+          stopOnFocus: true,
+        }).showToast();
+      }
+
+      this.buttonClicked = false
     },
 
     async fetch() {

@@ -78,7 +78,6 @@
 import PrecipType from './PrecipType'
 import PrecipAmount from './PrecipAmount'
 import Toastify from 'toastify-js'
-import { debounce } from 'lodash-es'
 
 export default {
   props: {
