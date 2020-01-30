@@ -18,16 +18,6 @@
         >
           <i class="fas fa-trash"></i>
         </button>
-
-        <button 
-          type="button" 
-          class="btn btn-danger mt-4" 
-          title="Cancel re-draw"
-          @click.prevent="cancelRedo"
-          v-if="imageUrl"
-        >
-          <i class="fas fa-times"></i>
-        </button>
       </div>
 
       <div style="width: 800px; height: 530px">
@@ -145,12 +135,6 @@ export default {
           })
         }
       }, 1000)
-    },
-
-    async cancelRedo () {
-      await $('#warmFront').data('jqScribble').clear()
-
-      this.redoImage = false
     }
   },
 
