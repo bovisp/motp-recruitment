@@ -7,7 +7,6 @@ use Carbon\Carbon;
 use App\Traits\Persistable;
 use App\Http\Requests\TextBoxRequest;
 use Illuminate\Support\Facades\Cookie;
-use App\Http\Requests\CaseTwoTableRequest;
 
 class CaseTwoController extends Controller
 {
