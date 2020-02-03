@@ -46,11 +46,13 @@ class LoginController extends Controller
     {
       $candidate = Candidate::whereSession($cookie = Cookie::get(env('APP_COOKIE_NAME')))->first();
 
-      $candidate->update([
-        'session' => ''
-      ]);
+      if ($candidate) {
+        $candidate->update([
+          'session' => ''
+        ]);
 
-      TimerCache::remove($cookie);
+        TimerCache::remove($cookie);
+      }
       
       $this->guard()->logout();
 
