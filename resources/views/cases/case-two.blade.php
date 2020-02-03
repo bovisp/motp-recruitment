@@ -164,7 +164,7 @@
 
     <p>
       {{ __('case2_exercise1.paragraph.6') }} 
-      <strong>({{ $maxScores->where('name', 'image_url')->first()->score }} points)</strong>
+      <strong>({{ $maxScores->where('name', 'image_url')->first()->score }} {{ __('case2_exercise1.points') }})</strong>
     </p>
 
     <draw-app
@@ -172,8 +172,8 @@
     ></draw-app>
 
     <p style="margin-bottom: -2rem;" class="mt-5">
-      Reasoning 
-      <strong>({{ $maxScores->where('name', 'case2ex1')->first()->score }} points)</strong>:
+      {{ __('case2_exercise1.reasoning') }}
+      <strong>({{ $maxScores->where('name', 'case2ex1')->first()->score }} {{ __('case2_exercise1.points') }})</strong>:
     </p>
 
     <div id="case-two-exercise-one-answer" class="mt-5">
@@ -405,7 +405,7 @@
 
     <p>
       {{ __('case2_exercise2.paragraph.6') }} 
-      <strong>({{ $maxScores->where('name', 'naptt15')->first()->score }} points)</strong>
+      <strong>({{ $maxScores->where('name', 'naptt15')->first()->score }} {{ __('case2_exercise1.points') }})</strong>
     </p>
 
     <qpf-table
@@ -414,7 +414,7 @@
 
     <p>
       {{ __('case2_exercise2.paragraph.7') }} 
-      <strong>({{ $maxScores->where('name', 'case2ex2')->first()->score }} points)</strong>
+      <strong>({{ $maxScores->where('name', 'case2ex2')->first()->score }} {{ __('case2_exercise1.points') }})</strong>
     </p>
 
     <div id="case-two-exercise-two-answer">

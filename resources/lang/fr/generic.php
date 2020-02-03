@@ -3,5 +3,6 @@
 return array (
   'close' => 'Close',
   'finish' => 'Finish',
-  'submit' => 'Submit',
+  'submit' => 'Save',
+  'ok' => 'OK'
 );

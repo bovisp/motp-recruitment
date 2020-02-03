@@ -1,7 +1,17 @@
 <?php
 
 return array (
-  'title' => 'Case 2 Exercise 1 - Diagnosis of a Warm Front Over Atlantic Canada',
+  'title' => 'Case 2 Exersise 1 - Diagnosis of a Warm Front Over Atlantic Canada',
+  'points' => 'points',
+  'reasoning' => 'Reasoning',
+  'score-header' => [
+    'marks-on-page' => 'Marks on this page',
+    'draw-on-image' => 'Draw on image for Exercise 1',
+    'points' => 'points',
+    'reasoning-exercise1' => 'Reasoning for Exercise 1',
+    'precip-type-table' => 'Precipitation type and amount table for Exercise 2',
+    'reasoning-excercise2' => 'Reasoning for Exercise 2',
+  ],
   'paragraph' => 
   array (
     1 => 'Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front over the map at the bottom of the exercise and provide a detailed justification for its placement on the page below.',

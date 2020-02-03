@@ -4,7 +4,7 @@
       <div class="col-md-3">
         <div class="form-group">
           <label :for="`score-${type}`" class="font-weight-bolder">
-            Score (maximum {{ maxPoints }} points)
+            {{ trans('answers.score-maximum') }} {{ maxPoints }} {{ trans('answers.score-points') }}
           </label>
 
           <input 
@@ -25,7 +25,7 @@
 
     <div class="form-group">
       <label :for="`comments-${type}`" class="font-weight-bolder">
-        Evaluation comments
+        {{ trans('answers.evaluation-comments') }}
       </label>
 
       <textarea 
