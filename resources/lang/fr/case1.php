@@ -1,33 +1,33 @@
 <?php
 
 return array (
-  'title' => 'Case 1',
+  'title' => 'Cas 1',
   'paragraph' => 
   array (
-    1 => 'It is October 8 at 12:00Z (8am local), and you have begun working your shift as an operational meteorologist for central Ontario. Today, you are in charge of issuing weather forecasts for Kapuskasing, ON (CYYU) and Timmins, ON (CYTS).',
-    2 => 'Topographically, the ground gently rises from the northwest to the southeast over the area, meaning that NW flow is upslope.',
-    3 => 'You received a briefing from your colleague on the night shift before he left:',
-    4 => 'You sit down to begin your shift, and immediately pull-up the following satellite imagery and surface observations.',
-    5 => 'The first satellite loop above is the GOES Fog Product. It is a subtraction between the 3.7µ channel and the 10.3µ channel. At night in the absence of solar radiation, high cloud appears white and low stratus cloud and fog appears dark. The second satellite loop shows a multispectral IR image, where lower cloud is mapped to blue and higher cloud is mapped to white at night.',
-    6 => 'Click on the red station boxes on the 12Z GOES fog product satellite image below to view the last 12hrs of METARs for that site.',
-    7 => 'Because it is just after 12Z, you now have access to new upper air soundings from the area. The three upper air sounding sites relevant for your geographic area are Pickle Lake, ON; Buffalo, NY; and Maniwaki, QC. In the image below, the 850mb winds from the soundings are plotted, as well as the actual 500mb height pattern from the 12Z soundings with the 12Z GOES NIGHT IR satellite image.',
-    8 => 'You next pull up each of the soundings.',
-    9 => 'After analyzing all these observations, you decide to examine some NWP fields. In the loop below, the model-derived MSLP is contoured, near-surface level wind barbs are plotted, and areas of strong winds are contoured in greens/yellows.',
-    10 => 'The vertical profiles for Timmins (YTS) and Kapuskasing (YYU) above are from the 06Z run of the RDPS model, valid over 15hrs from 0900Z October 8th until 0000Z October 9th.',
-    11 => 'You next examine climatological information for both Kapuskasing and Timmins in the fall. The graphs below depict the diurnal probability of fog over 24hours for September (blue), October (pink) and November (yellow) based on the last 37 years of data.',
-    12 => 'It is now almost 13:00Z (9am local), and you receive a phone call from a client:',
-    13 => 'Given your analysis, what do you tell her? Please explain your reasoning with at least 5 pieces of evidence for each forecast site.',
+    1 => 'Nous sommes le 8 octobre, 12Z (8h00 heure locale) et vous avez débuté votre quart de travail en tant que météorologiste opérationnel pour la région du Centre de l`Ontario. Aujourd`hui, vous êtes en charge d’émettre les prévisions pour Kapuskasing, Ont (CYYU) et Timmins, Ont (CYTS).',
+    2 => 'D`un point de vue topographique, le terrain est en pente du nord-ouest vers le sud-est de sorte qu`une circulation du nord-ouest est en ascendance orographique.',
+    3 => 'Vous avez reçu un exposé de votre collègue du quart de nuit avant qu`il quitte :',
+    4 => 'Vous prenez place et entamez votre quart. Vous affichez l’imagerie satellite et les observations de surface suivantes.',
+    5 => 'La première boucle d’animation satellite ci-haut est la GOES Fog Product. C’est une soustraction entre le canal 3.7µ et le canal 10.3µ. La nuit, durant l’absence de radiation solaire, les nuages élevés apparaissent blancs et le stratus bas et le brouillard apparaissent foncés. La deuxième boucle d’animation montre une image IR multispectrale où les nuages bas sont cartographiés en bleu et les nuages hauts en blanc durant la nuit.',
+    6 => 'Cliquez sur les petites boîtes rouges des stations sur l’image satellite GOES Fog Product 12Z ci-bas pour afficher les METARs des 12 dernières heures pour ce site.',
+    7 => 'Parce que c\'est juste après 12Z, vous avez maintenant accès à de nouvelles sondages. Les trois sites de sondage pertinents pour votre zone géographique sont Pickle Lake, ON ; Buffalo, NY ; et Maniwaki, QC.  Sur l\'image ci-dessous, les vents à 850mb des sondages sont représentés, ainsi que les hauteurs géopotentielles de 500mb avec l\'image satellite GOES NIGHT IR valide à 12Z .',
+    8 => 'Vous affichez ensuite chacun des sondages.',
+    9 => 'Après avoir analysé toutes ces observations vous décidez d’examiner certains champs de PNT. Dans la boucle ci-bas, les contours de la PNMM (Pression Niveau Moyen de la Mer) dérivée du modèle et les vents près de la surface sont tracés et les régions de vents forts sont tracés en vert/jaune.',
+    10 => 'Les profils verticaux pour Timmins (YTS) et Kapuskasing (YYU) ci-haut sont de la passe 06Z du modèle RDPS valides pour une période de 15 heures de 0900Z le 8 octobre à 0000Z le 9 octobre.',
+    11 => 'Vous examinez ensuite l’information climatologique pour Kapuskasing et Timmins pour l’automne. Les graphiques ci-bas affichent la probabilité diurne de brouillard pour 24 heures pour septembre (bleu), octobre (rose) et novembre (jaune) basée sur les données des 37 dernières années.',
+    12 => 'Il est maintenant presque 1300Z (9h00 heure locale) et vous recevez un appel d’un client :',
+    13 => 'Suite à votre analyse, qu’est-ce que vous lui dites? Expliquez votre raisonnement avec au moins 5 éléments de preuve pour chaque site de prévision.',
   ),
   'caption' => 
   array (
-    1 => 'Topographic map of central Canada with Timmins (CYTS) and Kapuskasing (CYYU) highlighted.',
-    2 => 'GOES night IR image valid at 1200Z 8 October 2019. 500 mb geopotential heights and 850 mb winds are superimposed on top of the image. Pickle Lake, Maniwaki and Buffalo are indicated on the map.',
-    3 => 'Model-derived mean sea level pressure (MSLP) and 925 mb winds valid from 0900Z 8 October to 0000Z 9 October 2019. Shaded regions indicate areas of stronger winds.',
+    1 => 'Carte topographique du centre du Canada avec Timmins (CYTS) et Kapuskasing (CYYU) rehaussés.',
+    2 => 'Image GOES night IR valide le 8 octobre 2019 à 12Z. Hauteurs géopotentielles de 500 mb et vents à 850 mb superposés sur l`image. Pickle Lake, Maniwaki et Buffalo sont indiqués sur la carte.',
+    3 => 'La PNMM dérivée du modèle et les vents à 925 mb valides de 0900Z le 8 octobre à 0000Z le 9 octobre 2019. Les régions ombragées indiquent les secteurs de vents forts.',
   ),
   'quote' => 
   array (
-    1 => 'It was not a very busy night. Mostly clear skies expected today under a ridge of high pressure. Satellite imagery is showing some low stratus cloud in areas of central Ontario, and a few sites are reporting reductions to visibility in fog.',
-    2 => 'Hi, this is Emily Smith with the provincial government in Ontario. We need to get some updates on the fog in central Ontario. Specifically, we need to know when you expect the fog to clear out and visibility to improve to at least 6SM in Timmins, and whether you expect any fog to develop over Kapuskasing this morning.',
+    1 => 'Ce n’était pas trop occupé cette nuit. Ça devrait être dégagé aujourd`hui sous la crête de haute pression. L’imagerie satellitaire montre un peu de nuages Stratus de bas niveaux dans les secteurs du centre de l’Ontario et quelques sites rapportent des restrictions à la visibilité dans le brouillard.',
+    2 => 'Bonjour, c’est Emilie Smith du gouvernement provincial de l’Ontario. Nous aimerions avoir une mise à jour sur le brouillard dans le centre de l’Ontario. Plus spécifiquement, nous aimerions savoir quand vous prévoyez que le brouillard va se dissiper et que la visibilité va s’améliorer jusqu’à 6MN à Timmins et si vous anticipez une formation de brouillard sur Kapuskasing ce matin.',
   ),
   'tab' => 
   array (
@@ -40,38 +40,38 @@ return array (
       ),
       'caption' => 
       array (
-        1 => 'GOES fog product valid from 0900Z-1200Z 8 October 2019.',
-        2 => 'GOES night IR product valid from 0900Z-1200Z 8 October 2019,',
+        1 => 'GOES fog product valide de 09Z à 12Z, 8 octobre 2019.',
+        2 => 'GOES NIGHT IR product valide from 0900Z-1200Z 8 October 2019,',
       ),
     ),
     2 => 
     array (
       'label' => 
       array (
-        1 => '12Z Sounding Pickle Lake',
-        2 => '12Z Sounding Buffalo',
-        3 => '12Z Sounding Maniwaki',
+        1 => '12Z Sondage Pickle Lake',
+        2 => '12Z Sondage Buffalo',
+        3 => '12Z Sondage Maniwaki',
       ),
     ),
     3 => 
     array (
       'label' => 
       array (
-        1 => 'YTS NWP Soundings',
-        2 => 'YYU NWP Soundings',
+        1 => 'YTS Sondages - PNT',
+        2 => 'YYU Sondages - PNT',
       ),
     ),
     4 => 
     array (
       'label' => 
       array (
-        1 => 'YTS Fog Climatology',
-        2 => 'YYU Fog Climatology',
+        1 => 'YTS Climatologie du brouillard',
+        2 => 'YYU Climatologie du brouillard',
       ),
       'caption' => 
       array (
-        1 => 'Fog climatology for September (blue), October (pink) and November (yellow) at Timmins(CYTS). The graph indicates the probability, in a given hour, that fog could occur.',
-        2 => 'Fog climatology for September (blue), October (pink) and November (yellow) at Kapuskasing (CYYU). The graph indicates the probability, in a given hour, that fog could occur.',
+        1 => 'Climatologie du brouillard pour septembre (bleu), octobre (rose) et novembre (jaune) à Timmins(CYTS). Le graphique indique la probabilité, pour une heure donnée, qu\'un brouillard puisse se présenter.',
+        2 => 'Climatologie du brouillard pour septembre (bleu), octobre (rose) et novembre (jaune) à Kapuskasing (CYYU). Le graphique indique la probabilité, pour une heure donnée, qu\'un brouillard puisse se présenter.',
       ),
     ),
   ),
