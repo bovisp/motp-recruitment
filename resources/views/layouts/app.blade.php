@@ -77,6 +77,15 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    @if (auth()->user()->email === 'mariette.kulin@canada.ca')
+                                      <a class="dropdown-item" href="{{ env('APP_URL') }}/answers">
+                                        Answers
+                                      </a>
+
+                                      <a class="dropdown-item" href="{{ env('APP_URL') }}/translations">
+                                        Translations
+                                      </a>
+                                    @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -28,7 +28,7 @@
 
                 <tr>
                   <td>{{ __('answers.case-one') }}</td>
-                  <td>{{ $candidate->scores->where('type', 'case1')->first()->score ?? 'No score' }}</td>
+                  <td>{{ $candidate->scores->where('type', 'case1')->first()->score ?? 'No answer' }}</td>
                 </tr>
 
                 <tr>
@@ -49,6 +49,11 @@
                 <tr>
                   <td>{{ __('answers.case-two-exercise-two-answer') }}</td>
                   <td>{{ $candidate->scores->where('type', 'case2ex2')->first()->score ?? 'No answer' }}</td>
+                </tr>
+
+                <tr>
+                  <td class="text-right">Total</td>
+                  <td>{{ $candidate->scores->sum('score') }}</td>
                 </tr>
               </tbody>
             </table>
