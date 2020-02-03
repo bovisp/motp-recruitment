@@ -1,27 +1,19 @@
 <?php
 
 return array (
-  'title' => 'Case 2 Exersise 1 - Diagnosis of a Warm Front Over Atlantic Canada',
-  'score-header' => [
-    'marks-on-page' => 'Marks on this page',
-    'draw-on-image' => 'Draw on image for Exercise 1',
-    'points' => 'points',
-    'reasoning-exercise1' => 'Reasoning for Exercise 1',
-    'precip-type-table' => 'Precipitation type and amount table for Exercise 2',
-    'reasoning-excercise2' => 'Reasoning for Exercise 2',
-  ],
+  'title' => 'Case 2 Exercise 1 - Diagnosis of a Warm Front Over Atlantic Canada',
   'paragraph' => 
   array (
-    1 => 'Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front over the map at the bottom of the exercise and provide a detailed justification for its placement on the page below.',
-    2 => 'The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.',
-    3 => 'In the tephigrams below, the soundings valid for 00Z November 12 (red) and 12Z (black) are plotted. The associated hodographs are from the 12Z soundings.',
-    4 => 'The following sounding shows a direct comparison between the 1200Z soundings at Yarmouth (black), Gagetown (red), and Caribou (blue) referenced above.',
-    5 => 'Click on each of the Observing sites in the red box below to view a history of the surface observations at that site over the past 12 hrs.',
-    6 => 'Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.',
+    1 => 'Avec l’information météo fournie pour la matinée du 12 novembre 2019 sur les provinces de l’Atlantique, diagnostiquez la position du front chaud à la surface. Tracer le front sur la carte au bas de l’exercice et fournir une justification détaillée quant à sa position sur la page ci-bas.',
+    2 => 'La première image satellite ci-haut montre le canal 10.3µ en noir et blanc de 0800Z à 1200Z avec les données de foudre superposées. La deuxième image satellite montre une image multispectrale où les nuages bas sont en bleu et les nuages hauts en blanc durant la nuit. La troisième image satellite montre le canal 6.9µ (vapeur d’eau).',
+    3 => 'Pour les téphigrammes ci-bas, les sondages valides le 12 novembre, 00Z (rouge) et 12Z (noir) sont tracés. Les hodographes associés sont des sondages de 12Z.',
+    4 => 'Cliquez sur chacun des sites d`observation ci-bas (boîtes rouges) afin de visualiser les observations de surface des 12 dernières heures pour ce site.',
+    5 => 'En utilisant votre souris, tracez la position du front chaud de surface sur la carte ci-bas et cliquez sur l’icône ``save`` pour l’enregistrer. À l’intérieur de la boîte, veuillez fournir un raisonnement détaillé justifiant votre position du front chaud.',
+    6 => 'En utilisant votre souris, tracez la position du front chaud de surface sur la carte ci-bas et cliquez sur l’icône ``save`` pour l’enregistrer. À l’intérieur de la boîte, veuillez fournir un raisonnement détaillé justifiant votre position du front chaud.',
   ),
   'caption' => 
   array (
-    1 => 'GOES 10.3 μm IR satellite image valid 1200Z 12 November 2019. Upper air sites are indicated in red.',
+    1 => 'Image satellite GOES 10.3 μm IR valide le 12 Novembre 2019 à 1200Z. Les sites de sondages sont indiquées en rouge.',
   ),
   'tab' => 
   array (
@@ -30,29 +22,29 @@ return array (
       'label' => 
       array (
         1 => 'GOES 10.3 μm IR',
-        2 => 'GOES multispectral IR',
-        3 => 'GOES WV',
+        2 => 'GOES multispectrale IR',
+        3 => 'GOES Vapeur d\'eau',
       ),
       'caption' => 
       array (
-        1 => 'GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019.',
-        2 => 'GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019.',
-        3 => 'GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019.',
+        1 => 'Imagerie satellite GOES 10.3 μm IR valide 12 novembre 2019 0800-1200Z',
+        2 => 'Imagerie satellite GOES 10.3 μm multispectrale IR valide 12 novembre 2019 0800-1200Z',
+        3 => 'Imagerie satellite GOES 6.9 μm vapeur d\'eau valide 12 novembre 2019 0600-1200Z',
       ),
     ),
     2 => 
     array (
       'label' => 
       array (
-        1 => 'Surface Pressure / Temperature',
-        2 => 'Surface Pressure / Dew Point Temperature',
-        3 => 'Surface Pressure / Pressure Tendency',
+        1 => 'Pression de surface / Température',
+        2 => 'Pression de surface / Température du point de rosée',
+        3 => 'Pression de surface / Tendance de pression',
       ),
       'caption' => 
       array (
-        1 => 'Surface pressure and temperature valid 1200Z 12 November 2019.',
-        2 => 'Surface pressure and dew point temperature valid 1200Z 12 November 2019.',
-        3 => 'Surface pressure and pressure tendency valid 1200Z 12 November 2019.',
+        1 => 'Pression de surface et température valide le 12 novembre 2019 à 1200Z.',
+        2 => 'Pression de surface et température du point de rosée valide le 12 novembre 2019 à 1200Z.',
+        3 => 'Pression de surface et tendance de pression valide le 12 novembre 2019 à 1200Z',
       ),
     ),
     3 => 
@@ -106,4 +98,15 @@ return array (
       ),
     ),
   ),
+  'score-header' => 
+  array (
+    'marks-on-page' => 'Points sur cette page',
+    'draw-on-image' => 'Dessinez sur l\'image pour l\'exercice 1',
+    'points' => 'points',
+    'reasoning-exercise1' => 'Raisonnement pour Exercise 1',
+    'precip-type-table' => 'Tableau des types et des montants de précipitations pour l\'exercice 2',
+    'reasoning-excercise2' => 'Raisonnement pour Exercise 2',
+  ),
+  'points' => 'points',
+  'reasoning' => 'Raisonnement',
 );
