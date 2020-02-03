@@ -1,9 +1,9 @@
 <div class="alert alert-info">
   <p>
     <strong>
-      Marks on this page:
+      {{ __('case1.score-header.marks-on-page') }}:
     </strong>
   </p>
 
-  <p class="mb-0">Reasoning: <strong>30 points</strong></p>
+  <p class="mb-0">{{ __('case1.score-header.reasoning') }}: <strong>30 {{ __('case1.score-header.points') }}</strong></p>
 </div>

@@ -32,8 +32,8 @@ class SubmitNameRequest extends FormRequest
     public function messages()
     {
       return [
-        'firstname.required' => 'Please enter your first name.',
-        'lastname.required' => 'Please enter your last name.'
+        'firstname.required' => __('motpvalidations.submit-name.firstname'),
+        'lastname.required' => __('motpvalidations.submit-name.lastname')
       ];
     }
 }

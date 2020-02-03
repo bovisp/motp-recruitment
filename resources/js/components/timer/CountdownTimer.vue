@@ -3,7 +3,7 @@
     <div class="fixed-bottom bg-light py-3 border-top">
       <div class="container">
         <p class="mb-0 text-right">
-          <strong>Time remaining:</strong> 
+          <strong>{{ trans('time_remaining.remaining') }}:</strong> 
           <span
             :class="{ 'text-danger': timeRemaining < 360 }"
           >{{ formattedTimeRemaining }}</span>
@@ -23,7 +23,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="timeRemainingModalLabel">
-              Five minutes remaining
+              {{ trans('time_remaining.modal-title') }}
             </h5>
 
             <button 
@@ -37,14 +37,14 @@
           </div>
 
           <div class="modal-body">
-            You have five minutes remaining in the assessment. Please take this time to review your work. You will be automatically logged out of the assessment when there is no more time remaining.
+            {{ trans('time_remaining.modal-paragraph') }}
           </div>
 
           <div class="modal-footer">
             <button 
               class="btn btn-primary" 
               data-dismiss="modal"
-            >OK</button>
+            >{{ trans('generic.ok') }}</button>
           </div>
         </div>
       </div>
@@ -88,10 +88,10 @@ export default {
       let minutes = Math.floor(this.timeRemaining / 60) - (hours * 60)
 
       if (hours === 0) {
-        return `${this.strPadLeft(minutes,'0',2)} ${pluralize('minute', minutes)}`
+        return `${this.strPadLeft(minutes,'0',2)} ${pluralize(this.trans('time_remaining.minute'), minutes)}`
       }
 
-      return `${hours} ${pluralize('hour', hours)} ${this.strPadLeft(minutes,'0',2)} ${pluralize('minute', minutes)}`
+      return `${hours} ${pluralize(this.trans('time_remaining.hour'), hours)} ${this.strPadLeft(minutes,'0',2)} ${pluralize(this.trans('time_remaining.minute'), minutes)}`
     }
   },
 

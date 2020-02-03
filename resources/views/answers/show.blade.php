@@ -33,7 +33,7 @@
     <img src="{{ asset('storage/images/' . $answers->image_url) }}">
     @else
       <div class="alert alert-info">
-        This question hasn't been answered yet
+        {{ __('answers.question-not-answered') }}
       </div>
     @endif
     
@@ -67,7 +67,7 @@
       @include('answers.partials.c2e2table')
     @else
       <div class="alert alert-info">
-        This question hasn't been answered yet
+        {{ __('answers.question-not-answered') }}
       </div>
     @endif
 

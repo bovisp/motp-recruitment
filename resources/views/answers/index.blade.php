@@ -16,38 +16,38 @@
             <li class="mb-4">
               <a href="{{ $candidate->path() }}">
                 {{ $candidate->firstname }} {{ $candidate->lastname }}
-              </a> - Took exam on {{ $candidate->created_at->isoFormat('MMMM Do YYYY') }}
+              </a> - {{ __('answers.took-exam-on') }} {{ $candidate->created_at->isoFormat('MMMM Do YYYY') }}
             </li>
 
             <table class="table">
               <tbody>
                 <tr>
-                  <th>Question</th>
-                  <th>Score</th>
+                  <th>{{ __('answers.question') }}</th>
+                  <th>{{ __('answers.score') }}</th>
                 </tr>
 
                 <tr>
-                  <td>Case One</td>
+                  <td>{{ __('answers.case-one') }}</td>
                   <td>{{ $candidate->scores->where('type', 'case1')->first()->score ?? 'No score' }}</td>
                 </tr>
 
                 <tr>
-                  <td>Case Two Exercise One image</td>
+                  <td>{{ __('answers.case-two-exercise-one-image') }}</td>
                   <td>{{ $candidate->scores->where('type', 'image_url')->first()->score ?? 'No answer' }}</td>
                 </tr>
 
                 <tr>
-                  <td>Case Two Exercise One answer</td>
+                  <td>{{ __('answers.case-two-exercise-one-answer') }}</td>
                   <td>{{ $candidate->scores->where('type', 'case2ex1')->first()->score ?? 'No answer' }}</td>
                 </tr>
 
                 <tr>
-                  <td>Case Two Exercise Two table</td>
+                  <td>{{ __('answers.case-two-exercise-two-table') }}</td>
                   <td>{{ $candidate->scores->where('type', 'naptt15')->first()->score ?? 'No answer' }}</td>
                 </tr>
 
                 <tr>
-                  <td>Case Two Exercise Two answer</td>
+                  <td>{{ __('answers.case-two-exercise-two-answer') }}</td>
                   <td>{{ $candidate->scores->where('type', 'case2ex2')->first()->score ?? 'No answer' }}</td>
                 </tr>
               </tbody>
