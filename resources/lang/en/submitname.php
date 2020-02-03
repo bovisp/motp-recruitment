@@ -6,4 +6,10 @@ return array (
   'firstname' => 'First name',
   'lastname' => 'Last name',
   'start-assessment' => 'Start assessment',
+  'marks' => 'Marks',
+  'case-one' => 'Case one',
+  'case-two-exercise-one' => 'Case two - Exercise one',
+  'case-two-exercise-two' => 'Case two - Exercise two',
+  'total' => 'Total',
+  'points' => 'points',
 );

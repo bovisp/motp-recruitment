@@ -14,6 +14,8 @@
       </div>
     </div>
 
+    @include('score-header')
+
     <div class="row justify-content-center mt-5">
       <div class="col-md-4">
       <form action="{{ env('APP_URL') }}/submit-name" method="POST">
