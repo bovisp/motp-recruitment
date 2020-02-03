@@ -2,12 +2,6 @@
 
 return array (
   'title' => 'Cas 1',
-  'points' => 'points',
-  'score-header' => [
-    'marks-on-page' => 'Marks on this page',
-    'reasoning' => 'Reasoning',
-    'points' => 'points',
-  ],
   'paragraph' => 
   array (
     1 => 'Nous sommes le 8 octobre, 12Z (8h00 heure locale) et vous avez débuté votre quart de travail en tant que météorologiste opérationnel pour la région du Centre de l`Ontario. Aujourd`hui, vous êtes en charge d’émettre les prévisions pour Kapuskasing, Ont (CYYU) et Timmins, Ont (CYTS).',
@@ -80,5 +74,12 @@ return array (
         2 => 'Climatologie du brouillard pour septembre (bleu), octobre (rose) et novembre (jaune) à Kapuskasing (CYYU). Le graphique indique la probabilité, pour une heure donnée, qu\'un brouillard puisse se présenter.',
       ),
     ),
+  ),
+  'points' => 'points',
+  'score-header' => 
+  array (
+    'marks-on-page' => 'Marks on this page',
+    'reasoning' => 'Reasoning',
+    'points' => 'points',
   ),
 );

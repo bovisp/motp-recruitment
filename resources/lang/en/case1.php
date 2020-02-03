@@ -2,12 +2,6 @@
 
 return array (
   'title' => 'Case 1',
-  'points' => 'points',
-  'score-header' => [
-    'marks-on-page' => 'Marks on this page',
-    'reasoning' => 'Reasoning',
-    'points' => 'points',
-  ],
   'paragraph' => 
   array (
     1 => 'It is October 8 at 12:00Z (8am local), and you have begun working your shift as an operational meteorologist for central Ontario. Today, you are in charge of issuing weather forecasts for Kapuskasing, ON (CYYU) and Timmins, ON (CYTS).',
@@ -80,5 +74,12 @@ return array (
         2 => 'Fog climatology for September (blue), October (pink) and November (yellow) at Kapuskasing (CYYU). The graph indicates the probability, in a given hour, that fog could occur.',
       ),
     ),
+  ),
+  'points' => 'points',
+  'score-header' => 
+  array (
+    'marks-on-page' => 'Marks on this page',
+    'reasoning' => 'Reasoning',
+    'points' => 'points',
   ),
 );
