@@ -1,17 +1,13 @@
 <?php
 
 return array (
-<<<<<<< HEAD
   'title' => 'Cas 1',
-=======
-  'title' => 'Case 1',
   'points' => 'points',
   'score-header' => [
     'marks-on-page' => 'Marks on this page',
     'reasoning' => 'Reasoning',
     'points' => 'points',
   ],
->>>>>>> 40d56b2f6918ebcf97c5850abf9a1f23b7acbc4b
   'paragraph' => 
   array (
     1 => 'Nous sommes le 8 octobre, 12Z (8h00 heure locale) et vous avez débuté votre quart de travail en tant que météorologiste opérationnel pour la région du Centre de l`Ontario. Aujourd`hui, vous êtes en charge d’émettre les prévisions pour Kapuskasing, Ont (CYYU) et Timmins, Ont (CYTS).',
