@@ -16,8 +16,9 @@ return array (
   array (
     'required' => 'This field is required',
   ),
-  'submit-name' => [
+  'submit-name' => 
+  array (
     'firstname' => 'Please enter your first name.',
     'lastname' => 'Please enter your last name.',
-  ]
+  ),
 );

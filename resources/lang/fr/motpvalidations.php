@@ -5,19 +5,20 @@ return array (
   array (
     'comments' => 
     array (
-      'required' => 'The comment field is required',
+      'required' => 'Le champ de commentaire est requis',
     ),
   ),
   'textbox' => 
   array (
-    'required' => 'Please make sure that you type in your answer before clicking submit.',
+    'required' => 'Veuillez vous assurer que vous avez bien inscrit votre réponse avant de cliquer sur "Soumettre".',
   ),
   'qpf-table' => 
   array (
-    'required' => 'This field is required',
+    'required' => 'Ce champ est requis',
   ),
-  'submit-name' => [
-    'firstname' => 'Please enter your first name.',
-    'lastname' => 'Please enter your last name.',
-  ]
+  'submit-name' => 
+  array (
+    'firstname' => 'Veuillez entrer votre prénom.',
+    'lastname' => 'Veuillez entrer votre nom de famille.',
+  ),
 );

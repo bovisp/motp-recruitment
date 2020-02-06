@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'switch-to' => 'Switch to:',
-  'english' => 'English',
-  'french' => 'French',
+  'switch-to' => 'Passer au:',
+  'english' => 'Anglais',
+  'french' => 'Français',
 );
