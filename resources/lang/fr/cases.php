@@ -3,8 +3,8 @@
 return array (
   'header' => 
   array (
-    'candidate-name' => 'Candidate name:',
-    'go-to-case' => 'Go to Case',
+    'candidate-name' => 'Nom du candidat:',
+    'go-to-case' => 'Passez au cas',
   ),
-  'review-finish' => 'Review answers and finish',
+  'review-finish' => 'Revoir les réponses et finir',
 );

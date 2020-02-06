@@ -1,16 +1,16 @@
 <?php
 
 return array (
-  'title' => 'Case 2 Exersise 2 - Precipitation Forecast over Newfoundland',
+  'title' => 'Cas 2 Exercice 2 - Prévision de précipitation sur Terre-Neuve',
   'paragraph' => 
   array (
-    1 => 'It is November 12 at 12:00Z, and you have begun working your shift as an operational meteorologist for Northeastern Quebec and Newfoundland. Today, you are in charge of issuing weather forecasts for Natashquan, QC (CYNA) and Deer Lake, NL (CYDF). Examining the maps in the TABs below, you can see that Natashquan is located on the shore of the Gulf of St Lawrence, with terrain rising to the north. The town of Deer Lake is located in a valley oriented NE-SW on the eastern edge of the lake from which it is named, in north-central Newfoundland.',
-    2 => 'You have already analyzed the satellite, RADAR, METARs, and upper air data over the area, and diagnosed the presence of a warm front (Case 2 Exercise 1). You now must create a forecast of precipitation type and amount for both CYNA and CYDF from 15:00Z November 12 until 06:00Z November 13.',
-    3 => 'In the viewer above, you can see various model fields generated from the 12:00Z run of the RDPS from that day, valid from 15:00Z November 12 until 06:00Z November 13. On the left, the model fields are:',
-    4 => 'On the right:',
-    5 => 'You also have access to model soundings for both sites. Step through the time steps of the soundings below for CYNA and CYDF, generated from the 12:00Z model run of the RDPS and valid every 3hrs from 12:00Z November 12 until 06:00Z November 13.',
-    6 => 'Using the above information, fill-in the following forecast tables, choosing the likeliest precipitation type and amount for the previous 3hrs:',
-    7 => 'In the box below, explain your reasoning and outline the evidence that supports your forecasts.',
+    1 => 'Nous sommes le 12 novembre à 1200Z et vous venez de débuter votre quart de travail comme météorologiste opérationnel pour Terre-Neuve et le nord-est du Québec. Aujourd’hui vous êtes en charge d’émettre les prévisions météo pour Natashquan, Qc (CYNA) et Deer Lake, T-N (CYDF). En examinant les cartes ci-bas vous pouvez voir que Natashquan est situé sur la côte du Golfe St-Laurent avec une ascendance topographique vers le nord. Deer Lake est situé dans une vallée orientée NE-SO sur la partie est du lac du même nom dans le centre-nord de Terre-Neuve.',
+    2 => 'Vous avez déjà analysé les données satellite, radar, METAR et en altitude pour cette région et diagnostiqué la présence d’un front chaud (Cas 2 Exercice 1). Vous devez maintenant produire une prévision du type et quantité de précipitation pour CYNA et CYDF pour la période du 12 novembre 1500Z jusqu’au 13 novembre 0600Z.',
+    3 => 'Dans la visionneuse ci-haut vous pouvez voir différents champs de modèle générés à partir de la passe 1200Z du RDPS de cette journée, valide du 12 novembre 1500Z au 13 novembre 0600Z. À la gauche, les champs de modèle sont :',
+    4 => 'À la droite:',
+    5 => 'Vous avez aussi accès aux données de sondage du modèle pour les 2 sites. Vous pourrez parcourir les pas de temps des sondages ci-bas pour CYNA et CYDF générés de la passe 1200Z du modèle RDPS et valides chaque 3 hrs de 1200Z le 12 novembre jusqu’à 0600Z le 13 novembre.',
+    6 => 'En utilisant l’information ci-haut, remplissez les tables de prévision suivantes en choisissant le type de précipitation le plus probable et les quantités pour les 3 hrs précédentes.',
+    7 => 'Dans la boîte ci-dessous, expliquez votre raisonnement et présentez les preuves qui étayent vos prévisions.',
   ),
   'tab' => 
   array (
@@ -18,60 +18,60 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'Reference map',
-        2 => 'Map – CYNA',
-        3 => 'Map – CYDF',
+        1 => 'Carte de reférence',
+        2 => 'Carte – CYNA',
+        3 => 'Carte – CYDF',
       ),
       'caption' => 
       array (
-        1 => '10.3 micron IR GOES satellite image over the northeast coast, taken at 12:00Z. The locations of Natashquan (CYNA) and Deer Lake (CYDF) are circled in red.',
-        2 => 'Google Map view around Natashquan (CYNA), detailing the terrain.',
-        3 => 'Google Map view around Deer Lake (CYDF), detailing the terrain.',
+        1 => 'Image satellite 10.3μ IR GOES sur la côte nord-est prise à 1200Z. Natashquan (CYNA) et Deer Lake (CYDF) sont encerclées en rouge.',
+        2 => 'Vue Google Map autour de Natashquan (CYNA), montrant le terrain.',
+        3 => 'Vue Google Map autour de Deer Lake (CYDF), montrant le terrain.',
       ),
     ),
     2 => 
     array (
       'label' => 
       array (
-        1 => 'NWP SFC TEMP PRES',
-        2 => 'NWP SFC WIND PRES',
-        3 => 'NWP WET BULB TEMP',
+        1 => 'PNT SFC TEMP PRES',
+        2 => 'PNT SFC VENT PRES',
+        3 => 'PNT TEMP THERMOMÈTRE MOUILLÉ',
       ),
       'caption' => 
       array (
-        1 => 'Surface temperature plotted in reds (warm) to blues (cool), overlaid with mean sea level pressure in black valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
-        2 => 'Wind barbs colour-coded to wind speed of winds at 10m height above ground level, overlaid with mean sea level pressure in black valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
-        3 => 'Wet-bulb potential temperature at 850mb in oC plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
+        1 => 'Température de surface tracée en rouge (chaud) à bleu (frais) avec la pression moyenne de surface en noir valide le 12 novembre 2019 1500Z jusqu’au 13 novembre 2019 0600Z.',
+        2 => 'Barbules de vent codés en couleurs de vitesse de vent à 10m au-dessus du sol avec la pression au niveau moyen de la mer superposée en noir, valide de 1500Z le 12 novembre 2019 à 0600Z le 13 novembre 2019.',
+        3 => 'Température potentielle du thermomètre mouillé à 850mb tracée en °C de jaune (chaud) à vert (fais) avec les hauteurs géopotentielles de 850 mb superposées, valide de 1500Z le 12 novembre 2019 à 0600Z le 13 novembre 2019.',
       ),
     ),
     3 => 
     array (
       'label' => 
       array (
-        1 => 'NWP 3HR QPF 850MB TEMP',
-        2 => 'NWP 700MB RH HEIGHTS',
-        3 => 'NWP 500MB VORT HEIGHTS',
-        4 => 'NWP 1000-500 THICKNESS SFC PRES',
+        1 => 'PNT 3HR QPP 850MB TEMP',
+        2 => 'PNT 700MB HR HAUTEURS',
+        3 => 'PNT 500MB TOURBILLON HAUTEURS',
+        4 => 'PNT 1000-500 ÉPAISSEURS PRES SFC',
       ),
       'caption' => 
       array (
-        1 => '3HR Quantitative Precipitation Amounts, overlaid with temperature in &deg;C at 850mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
-        2 => 'Areas of Relative humidity greater than 50% at 700mb, overlaid with geopotential heights at 700mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
-        3 => 'Absolute vorticity at 500mb, overlaid with geopotential heights at 500mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
-        4 => '1000-500mb thickness lines, overlaid with mean sea level pressure valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
+        1 => 'Quantités de précipitation prévues aux 3 hrs avec la température en °C à 850mb valide du 12 novembre 2019 1500Z au 13 novembre 2019 0600Z',
+        2 => 'Areas of Relative humidity greater than 50% at 700mb, overlaid with geopotential heights at 700mb, valide de 1500Z le 12 novembere 2019 à 0600Z le 13 novembre 2019.',
+        3 => 'Tourbillon absolu à 500mb avec les hauteurs géopotentielles de 500mb superposées, valide de 1500Z le 12 novembre 2019 à 0600Z le 13 novembre 2019.',
+        4 => 'Contours d’épaisseurs 1000-500mb avec la pression au niveau moyen de la mer superposée, valide de 1500Z le 12 novembre 2019 à 0600Z le 13 novembre 2019.',
       ),
     ),
     4 => 
     array (
       'label' => 
       array (
-        1 => 'NWP CYNA Tephi',
-        2 => 'NWP CYDF Tephi',
+        1 => 'PNT CYNA Téphi',
+        2 => 'PNT CYDF Téphi',
       ),
       'caption' => 
       array (
-        1 => 'Model sounding at Natashquan, QC from the 1200Z model run of the RDPS, valid every 3hrs from 1200Z November 12 2019 until 0600Z November 13.',
-        2 => 'Model sounding at Deer Lake, NL from the 1200Z model run of the RDPS, valid every 3hrs from 1200Z November 12 2019 until 0600Z November 13.',
+        1 => 'Sondage du modèle à Natashquan, Qc de la passe 1200Z du RDPS valide aux 3 hrs du 12 novembre 1200Z au 13 novembre 0600Z',
+        2 => 'Sondage du modèle à Deer Lake, T-N de la passe 1200Z du RDPS valide aux 3 hrs du 12 novembre 1200Z au 13 novembre 0600Z',
       ),
     ),
   ),
@@ -81,19 +81,19 @@ return array (
     array (
       'item' => 
       array (
-        1 => 'Surface Temperature: Surface temperature plotted in reds (warm) to blues (cool), overlaid with mean sea level pressure in black.',
-        2 => 'Near-surface winds: Wind barbs colour-coded to wind speed of winds at 10m height above ground level, overlaid with mean sea level pressure in black.',
-        3 => '850mb Wet-bulb: Wet-bulb potential temperature at 850mb in oC plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb.',
+        1 => 'Température de surface: température tracée en rouge (chaud) vers bleu (frais) avec la pression au niveau moyen de la mer en noir.',
+        2 => 'Vents près de la surface: barbules de vent codés en couleurs de vitesse de vent à 10m au-dessus du sol avec la pression au niveau moyen de la mer superposée en noir.',
+        3 => 'Température du thermomètre mouillé à 850mb : Température potentielle du thermomètre mouillé à 850mb tracée en °C de jaune (chaud) à vert (fais) avec les hauteurs géopotentielles de 850 mb superposées.',
       ),
     ),
     2 => 
     array (
       'item' => 
       array (
-        1 => '3HR QPF: 3HR Quantitative Precipitation Amounts, overlaid with temperature in &deg;C at 850mb.',
-        2 => '700mb RH: Areas of Relative humidity greater than 50% at 700mb, overlaid with geopotential heights at 700mb.',
-        3 => '500mb Vort: Absolute vorticity at 500mb, overlaid with geopotential heights at 500mb.',
-        4 => '1000-500mb Thickness: 1000-500mb thickness lines, overlaid with mean sea level pressure.',
+        1 => 'QPP 3hrs: Quantités de précipitation prévues aux 3 hrs avec la température à 850mb en °C superposée.',
+        2 => 'HR 700mb: Secteurs où l’humidité relative à 700mb est supérieure à 50% avec les hauteurs géopotentielles de 700mb superposées.',
+        3 => 'Tourbillon 500mb: Tourbillon absolu à 500mb avec les hauteurs géopotentielles de 500mb superposées.',
+        4 => 'Épaisseurs 1000-500mb: contours d’épaisseurs 1000-500mb avec la pression au niveau moyen de la mer superposée.',
       ),
     ),
   ),

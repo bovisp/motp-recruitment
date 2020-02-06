@@ -1,8 +1,8 @@
 <?php
 
 return array (
-  'close' => 'Close',
-  'finish' => 'Finish',
-  'submit' => 'Save',
-  'ok' => 'OK'
+  'close' => 'Fermer',
+  'finish' => 'Terminer',
+  'submit' => 'Soumettre',
+  'ok' => 'OK',
 );

@@ -2,7 +2,7 @@
 
 return array (
   'title' => 'Case 2 Exercise 1 - Diagnosis of a Warm Front Over Atlantic Canada',
-  'paragraph' =>
+  'paragraph' => 
   array (
     1 => 'Given the following weather information for the morning of November 12, 2019 at 12:00Z over Atlantic Canada, diagnose the location of the warm front at the surface. Draw the front over the map at the bottom of the exercise and provide a detailed justification for its placement on the page below.',
     2 => 'The first Satellite image above shows the 10.3µ channel in black and white from 08:00-12:00Z, with lightning strikes overlaid. The second satellite image shows a multispectral image, where lower cloud is mapped to blue and higher cloud is mapped to white at night. The third satellite image shows the 6.9µ water vapour channel.',
@@ -11,60 +11,60 @@ return array (
     5 => 'Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.',
     6 => 'Using your mouse, draw in the location of the surface warm front on the map below and click the save icon. In the following box, provide a detailed reasoning of why you placed the warm front where you did.',
   ),
-  'caption' =>
+  'caption' => 
   array (
     1 => 'GOES 10.3 μm IR satellite image valid 1200Z 12 November 2019. Upper air sites are indicated in red.',
   ),
-  'tab' =>
+  'tab' => 
   array (
-    1 =>
+    1 => 
     array (
-      'label' =>
+      'label' => 
       array (
         1 => 'GOES 10.3 μm IR',
         2 => 'GOES multispectral IR',
         3 => 'GOES WV',
       ),
-      'caption' =>
+      'caption' => 
       array (
         1 => 'GOES 10.3 μm IR satellite imagery valid 0800-1200Z 12 November 2019.',
         2 => 'GOES 10.3 μm multispectral IR satellite imagery valid 0800-1200Z 12 November 2019.',
         3 => 'GOES 6.9 μm water vapour satellite imagery valid 0600-1200Z 12 November 2019.',
       ),
     ),
-    2 =>
+    2 => 
     array (
-      'label' =>
+      'label' => 
       array (
         1 => 'Surface Pressure / Temperature',
         2 => 'Surface Pressure / Dew Point Temperature',
         3 => 'Surface Pressure / Pressure Tendency',
       ),
-      'caption' =>
+      'caption' => 
       array (
         1 => 'Surface pressure and temperature valid 1200Z 12 November 2019.',
         2 => 'Surface pressure and dew point temperature valid 1200Z 12 November 2019.',
         3 => 'Surface pressure and pressure tendency valid 1200Z 12 November 2019.',
       ),
     ),
-    3 =>
+    3 => 
     array (
-      'label' =>
+      'label' => 
       array (
         1 => '1.5 km CAPPI Snow',
         2 => 'Composite VR LOLAA',
         3 => 'Drilldown VR LOLAA',
       ),
-      'caption' =>
+      'caption' => 
       array (
         1 => 'Composite loop of RADAR 1.5km CAPPI Snow imagery over the northeast coast, valid 0800-1200Z 12 November 2019.',
         2 => 'Composite loop of Doppler LOLAA RADAR imagery over the northeast, valid 0800-1200Z 12 November 2019.',
         3 => 'Loop of Doppler LOLAA RADAR imagery from the CBW RADAR (In Cariboo, Maine), valid 0800-1200Z 12 November 2019.',
       ),
     ),
-    4 =>
+    4 => 
     array (
-      'label' =>
+      'label' => 
       array (
         1 => 'Yarmouth (CYQI) Tephi',
         2 => 'Yarmouth (CYQI) Hodograph',
@@ -80,7 +80,7 @@ return array (
         12 => 'St. John\'s (CYYT) Hodograph',
         13 => 'YQI / YCX / KCAR Tephi Comparison',
       ),
-      'caption' =>
+      'caption' => 
       array (
         1 => 'Yarmouth (CYQI) tephi valid 0000Z (red) and 1200Z (black) for 12 November 2019.',
         2 => 'Yarmouth (CYQI) hodograph valid 1200Z 12 November 2019.',
@@ -100,7 +100,7 @@ return array (
   ),
   'points' => 'points',
   'reasoning' => 'Reasoning',
-  'score-header' =>
+  'score-header' => 
   array (
     'marks-on-page' => 'Marks on this page',
     'draw-on-image' => 'Draw on image for Exercise 1',

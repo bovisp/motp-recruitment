@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'assessment-completed' => 'Assessment completed',
-  'paragraph' => 'has completed their online assessment.',
-  'button' => 'View assessment answers',
+  'assessment-completed' => 'Évaluation complétée',
+  'paragraph' => 'a terminé son évaluation en ligne.',
+  'button' => 'Voir les réponses',
 );
