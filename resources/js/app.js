@@ -6,9 +6,6 @@ axios.defaults.baseURL = 'http://msc-educ-smc.cmc.ec.gc.ca/motp-recruitment'
 
 import Vue from 'vue'
 import store from './store'
-import ES6Promise from 'es6-promise'
-
-ES6Promise.polyfill()
 
 window.Vue = Vue
 window.events = new Vue

@@ -153,10 +153,10 @@
       <figcaption class="figure-caption">{{ __('case2_exercise1.tab.4.caption.13') }}</figcaption>
     </figure>
 
-    <figure class="figure my-4">
+    {{-- <figure class="figure my-4">
       <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_850/v1576013434/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/SOUNDING_LOCATIONS_12Z_IR_SAT_idqerj.png" alt="" />
       <figcaption class="figure-caption">{{ __('case2_exercise1.caption.1') }}</figcaption>
-    </figure>
+    </figure> --}}
 
     <p>{{ __('case2_exercise1.paragraph.5') }}</p>
 

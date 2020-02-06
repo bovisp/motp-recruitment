@@ -111,7 +111,7 @@ function BasicCanvasSave(imageData){window.open(imageData,'jqScribble Image');}
     {
         var img = new Image();
         img.src = settings.backgroundImage;
-        img.crossOrigin = "Anonymous";
+        img.crossOrigin = 'anonymous';
 
         img.onload = function(){
             if (settings.backgroundImageHeight && settings.backgroundImageWidth){

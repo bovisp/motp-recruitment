@@ -57,7 +57,7 @@ export default {
   data () {
     return {
       options: {
-        backgroundImage: 'https://res.cloudinary.com/tcddmedia/image/upload/v1579538082/moip_direct_entry_assessment/case%202/Exercise%201/OBS-reference_q6pygk.jpg',
+        backgroundImage: `${this.baseUrl}/images/background.jpg`,
         brushColor: '#FF2D00',
         brushSize: 4
       },
