@@ -3,6 +3,6 @@
 return array (
   'close' => 'Fermer',
   'finish' => 'Terminer',
-  'submit' => 'Soumettre',
+  'submit' => 'Enregistrer',
   'ok' => 'OK',
 );

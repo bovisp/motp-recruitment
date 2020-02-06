@@ -33,9 +33,9 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'PNT SFC TEMP PRES',
-        2 => 'PNT SFC VENT PRES',
-        3 => 'PNT TEMP THERMOMÈTRE MOUILLÉ',
+        1 => 'SFC TEMP PRES',
+        2 => 'SFC VENT PRES',
+        3 => 'TEMP THERMOMÈTRE MOUILLÉ',
       ),
       'caption' => 
       array (
@@ -48,10 +48,10 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'PNT 3HR QPP 850MB TEMP',
-        2 => 'PNT 700MB HR HAUTEURS',
-        3 => 'PNT 500MB TOURBILLON HAUTEURS',
-        4 => 'PNT 1000-500 ÉPAISSEURS PRES SFC',
+        1 => '3HR QPP 850MB TEMP',
+        2 => '700MB HR HAUTEURS',
+        3 => '500MB TOURBILLON HAUTEURS',
+        4 => '1000-500 ÉPAISSEURS PRES SFC',
       ),
       'caption' => 
       array (
@@ -66,7 +66,7 @@ return array (
       'label' => 
       array (
         1 => 'PNT CYNA Téphi',
-        2 => 'PNT CYDF Téphi',
+        2 => 'CYDF Téphi',
       ),
       'caption' => 
       array (

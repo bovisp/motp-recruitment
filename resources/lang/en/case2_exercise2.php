@@ -33,9 +33,9 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'NWP SFC TEMP PRES',
-        2 => 'NWP SFC WIND PRES',
-        3 => 'NWP WET BULB TEMP',
+        1 => 'SFC TEMP PRES',
+        2 => 'SFC WIND PRES',
+        3 => 'WET BULB TEMP',
       ),
       'caption' => 
       array (
@@ -48,10 +48,10 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'NWP 3HR QPF 850MB TEMP',
-        2 => 'NWP 700MB RH HEIGHTS',
-        3 => 'NWP 500MB VORT HEIGHTS',
-        4 => 'NWP 1000-500 THICKNESS SFC PRES',
+        1 => '3HR QPF 850MB TEMP',
+        2 => '700MB RH HEIGHTS',
+        3 => '500MB VORT HEIGHTS',
+        4 => '1000-500 THICKNESS SFC PRES',
       ),
       'caption' => 
       array (
@@ -65,8 +65,8 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'NWP CYNA Tephi',
-        2 => 'NWP CYDF Tephi',
+        1 => 'CYNA Tephi',
+        2 => 'CYDF Tephi',
       ),
       'caption' => 
       array (

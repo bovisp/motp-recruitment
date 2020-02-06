@@ -6,9 +6,9 @@ return array (
   array (
     1 => 'Avec l’information météo fournie pour la matinée du 12 novembre 2019 sur les provinces de l’Atlantique, diagnostiquez la position du front chaud à la surface. Tracer le front sur la carte au bas de l’exercice et fournir une justification détaillée quant à sa position sur la page ci-bas.',
     2 => 'La première image satellite ci-haut montre le canal 10.3µ en noir et blanc de 0800Z à 1200Z avec les données de foudre superposées. La deuxième image satellite montre une image multispectrale où les nuages bas sont en bleu et les nuages hauts en blanc durant la nuit. La troisième image satellite montre le canal 6.9µ (vapeur d’eau).',
-    3 => 'Pour les téphigrammes ci-bas, les sondages valides le 12 novembre, 00Z (rouge) et 12Z (noir) sont tracés. Les hodographes associés sont des sondages de 12Z.',
-    4 => 'Cliquez sur chacun des sites d`observation ci-bas (boîtes rouges) afin de visualiser les observations de surface des 12 dernières heures pour ce site.',
-    5 => 'En utilisant votre souris, tracez la position du front chaud de surface sur la carte ci-bas et cliquez sur l’icône ``save`` pour l’enregistrer. À l’intérieur de la boîte, veuillez fournir un raisonnement détaillé justifiant votre position du front chaud.',
+    3 => 'Cliquez sur les sites de sondages (boîtes rouges) dans l\'image de satellite valide à 1200Z ci-bas pour regarder les téphigrammes at hodographes qui les correspondent. Pour les téphigrammes, les sondages valides le 12 novembre, 00Z (rouge) et 12Z (noir) sont tracés. Les hodographes associés sont des sondages de 12Z.',
+    4 => 'Le téphi ci-bas montre une comparaison directe entre les sondages de 1200Z à Yarmouth (YQI, noir), Gagetown (YCX, rouge), et Caribou (KCAR, bleu).',
+    5 => 'Cliquez sur chacun des sites d`observation ci-bas (boîtes rouges) afin de visualiser les observations de surface des 12 dernières heures pour ce site.',
     6 => 'En utilisant votre souris, tracez la position du front chaud de surface sur la carte ci-bas et cliquez sur l’icône ``save`` pour l’enregistrer. À l’intérieur de la boîte, veuillez fournir un raisonnement détaillé justifiant votre position du front chaud.',
   ),
   'caption' => 
