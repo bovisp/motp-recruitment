@@ -1,9 +1,9 @@
 <?php
 
-return array(
-  'modal-title' => 'Five minutes remaining',
-  'modal-paragraph' => 'You have five minutes remaining in the assessment. Please take this time to review your work. You will be automatically logged out of the assessment when there is no more time remaining.',
-  'remaining' => 'Time remaining',
+return array (
+  'modal-title' => 'cinq minutes restantes',
+  'modal-paragraph' => 'Il vous reste cinq minutes pour l\'évaluation. Veuillez prendre ce temps pour revoir votre travail. Vous serez automatiquement déconnecté de l\'évaluation lorsqu\'il ne vous restera plus de temps.',
+  'remaining' => 'Temps restant',
   'minute' => 'minute',
   'hour' => 'heure',
 );
