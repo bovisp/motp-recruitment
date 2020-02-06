@@ -1,6 +1,6 @@
 <?php
 
 return array (
-  'failed' => 'These credentials do not match our records.',
-  'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+  'failed' => 'Ces données ne correspondent pas à nos dossiers.',
+  'throttle' => 'Trop de demandes de connexion. Veuillez réessayer dans :secondes secondes.',
 );
