@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="d-flex flex-column justify-content-center p-2"
+    class="p-2"
     :class="{ 'border rounded': standalone }"
   >
     <p class="mb-3 text-center">
@@ -9,7 +9,7 @@
 
     <img 
       :src="image.image" 
-      class="align-self-center"
+      class="d-block mr-auto ml-auto"
       :class="{ 'img-fluid': fluid }"
     >
 
