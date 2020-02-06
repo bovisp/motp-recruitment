@@ -1,7 +1,7 @@
 <template>
-  <div class="row mb-5" style="max-height: 450px;">
-    <div class="col-md-5">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 643 433">
+  <div class="row mb-5" style="height: 600px;">
+    <div class="col-md-5 d-flex">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 643 433" style="width: 100%; align-self-start">
         <image width="643" height="433" xlink:href="https://res.cloudinary.com/tcddmedia/image/upload/v1579799943/moip_direct_entry_assessment/case%202/Exercise%201/Soundings%20-%20Actual/12z_sounding_locations_awuolm.jpg"></image>
         <a 
           @click.prevent="showTabs(station)"
@@ -41,11 +41,11 @@
           style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
         >
           <div id="tephiTab" class="tab-pane active">
-            <img :src="activeStation.images.tephi" class="w-75 pt-4 px-2 pb-2">
+            <img :src="activeStation.images.tephi" class="pt-4 px-2 pb-2" style="width: 100%;">
           </div>
           
           <div id="hodoTab" class="tab-pane">
-            <img :src="activeStation.images.hodo" class="w-75 pt-4 px-2 pb-2">
+            <img :src="activeStation.images.hodo" class="pt-4 px-2 pb-2" style="width: 100%;">
           </div>
         </div>
       </div>
