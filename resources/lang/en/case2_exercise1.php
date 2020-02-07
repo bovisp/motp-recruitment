@@ -54,6 +54,7 @@ return array (
         1 => '1.5 km CAPPI Snow',
         2 => 'Composite VR LOLAA',
         3 => 'Drilldown VR LOLAA',
+        4 => 'Caribou radar location',
       ),
       'caption' => 
       array (

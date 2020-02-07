@@ -107,6 +107,9 @@
       <li class="nav-item">
         <a id="Case2E1TabDrilldownLOLLA-tab" class="nav-link" href="#Case2E1TabDrilldownLOLLA" data-toggle="tab">{{ __('case2_exercise1.tab.3.label.3') }}</a>
       </li>
+      <li class="nav-item">
+        <a id="Case2E1Tab3CaribouLocation-tab" class="nav-link" href="#Case2E1Tab3CaribouLocation" data-toggle="tab">{{ __('case2_exercise1.tab.3.label.4') }}</a>
+      </li>
     </ul>
 
     <!-- Tab panes for Case2E1Tab3 -->
@@ -139,6 +142,10 @@
           file="case2Exercise1RadarDrilldownVrLolla"
           :fluid="true"
         ></image-animator>
+      </div>
+
+      <div id="Case2E1Tab3CaribouLocation" class="tab-pane">
+        <img class="mt-4 pb-4 pl-4 pr-4" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581105304/moip_direct_entry_assessment/case%202/Exercise%201/RADAR/Map-Caribou-RADAR_hffdwz.png" alt="" />
       </div>
     </div>
 
