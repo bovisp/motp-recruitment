@@ -61,6 +61,7 @@ return array (
         1 => 'Composite loop of RADAR 1.5km CAPPI Snow imagery over the northeast coast, valid 0800-1200Z 12 November 2019.',
         2 => 'Composite loop of Doppler LOLAA RADAR imagery over the northeast, valid 0800-1200Z 12 November 2019.',
         3 => 'Loop of Doppler LOLAA RADAR imagery from the CBW RADAR (In Cariboo, Maine), valid 0800-1200Z 12 November 2019.',
+        4 => 'Geographic reference map for location of the CBW RADAR in Caribou, Maine.',
       ),
     ),
     4 => 

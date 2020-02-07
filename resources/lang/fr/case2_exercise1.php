@@ -61,6 +61,7 @@ return array (
         1 => 'Boucle composite de l’imagerie radar 1.5km CAPPI Neige pour la côte nord-est, valide le 12 novembre 2019, 0800-1200Z',
         2 => 'Boucle composite de l\'imagerie radar Doppler LOLAA pour la côte nord-est, valide le 12 novembre 2019, 0800-1200Z.',
         3 => 'Boucle de l\'imagerie radar Doppler LOLAA de la site CBW (à Caribou, Maine), valide le 12 Novembre 2019, 0800-1200Z.',
+        4 => 'Carte de référence pour le site RADAR CBW à Caribou, Maine.',
       ),
     ),
     4 => 

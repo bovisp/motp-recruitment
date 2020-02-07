@@ -85,7 +85,6 @@ export default {
         this.trans('components.qpf-table.ice-pellets'),
         this.trans('components.qpf-table.snow-grains'),
         this.trans('components.qpf-table.rain-snow-mix'),
-        this.trans('components.qpf-table.virga')
       ]
     }
   },

@@ -72,6 +72,7 @@ export default {
   data () {
     return {
       solidAmounts: [
+        '0 cm',
         '0.1-0.5 cm',
         '0.5-1 cm',
         '1-2.5 cm',

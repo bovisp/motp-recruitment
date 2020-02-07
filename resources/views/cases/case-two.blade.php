@@ -82,17 +82,17 @@
     >
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
         <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.1') }}</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864830/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_temp_m8cw8y.png" alt="" />
+        <img class="px-3 pb-3" style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_uglxiz.png" alt="" />
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
         <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576864830/moip_direct_entry_assessment/case%202/Exercise%201/MAP_PLOT_dp_aucffs.png" alt="" />
+        <img class="px-3 pb-3" style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_yk6m1w.png" alt="" />
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
         <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.3') }}</p>
-        <img class="img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581019611/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_napk1h.png" alt="" />
+        <img class="px-3 pb-3" style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_tyfpwg.png" alt="" />
       </div>
     </div>
 
@@ -145,8 +145,9 @@
       </div>
 
       <div id="Case2E1Tab3CaribouLocation" class="tab-pane">
-        <img class="mt-4 pb-4 pl-4 pr-4" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581105304/moip_direct_entry_assessment/case%202/Exercise%201/RADAR/Map-Caribou-RADAR_hffdwz.png" alt="" />
-      </div>
+        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.3.caption.4') }}</p>
+
+        <img class="px-3 pb-3" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581105304/moip_direct_entry_assessment/case%202/Exercise%201/RADAR/Map-Caribou-RADAR_hffdwz.png" alt="" />      </div>
     </div>
 
     <p>{{ __('case2_exercise1.paragraph.3') }}</p>
