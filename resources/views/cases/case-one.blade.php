@@ -170,12 +170,12 @@
     >
       <div id="case1Tab4YTSFog" class="tab-pane active">
         <p class="pt-3 px-3">{{ __('case1.tab.4.caption.1') }}</p>
-        <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576601320/moip_direct_entry_assessment/case%201/YTS_FOG_CLIMATOLOGY_dkosfy.png" alt="" />
+        <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581103193/moip_direct_entry_assessment/case%201/YTS-FOG-CLIMATOLOGY_jdvff6.png" alt="" />
       </div>
       
       <div id="case1Tab4YYUFog" class="tab-pane">
         <p class="pt-3 px-3">{{ __('case1.tab.4.caption.1') }}</p>
-        <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1576601320/moip_direct_entry_assessment/case%201/YYU_FOG_CLIMATOLOGY_depvon.png" alt="" />
+        <img class="w-75" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581103193/moip_direct_entry_assessment/case%201/YYU-FOG-CLIMATOLOGY_spsvdh.png" alt="" />
       </div>
     </div>
 
