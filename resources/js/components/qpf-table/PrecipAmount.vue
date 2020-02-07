@@ -83,6 +83,7 @@ export default {
         '20-25 cm'
       ],
       liquidAmounts: [
+        '0 mm',
         '0.1-0.5 mm',
         '0.5-1 mm',
         '1-2.5 mm',
@@ -105,6 +106,7 @@ export default {
         case this.trans('components.qpf-table.drizzle'):
         case this.trans('components.qpf-table.freezing-drizzle'):
         case this.trans('components.qpf-table.rain-snow-mix'):
+        case this.trans('components.qpf-table.virga'):
           this.amounts = this.liquidAmounts
           break;
         

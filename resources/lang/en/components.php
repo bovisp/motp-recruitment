@@ -37,6 +37,7 @@ return array (
     'precipitation-type' => 'Precipitation Type',
     'precipitation-amount' => 'Precipitation Amount',
     'success' => 'Table data saved successfully',
+    'virga' => 'Virga',
   ),
   'scoring' => 
   array (

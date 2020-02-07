@@ -305,7 +305,7 @@
                 :fluid="true"
               ></image-animator>
 
-              <p class="p-2">{{ __('case2_exercise2.tab.3.caption.1') }}</p>
+              <p class="p-2">{!! __('case2_exercise2.tab.3.caption.1') !!}</p>
             </div>
             
             <div id="Case2E2Tab3700MBRHHEIGHTS" class="tab-pane">

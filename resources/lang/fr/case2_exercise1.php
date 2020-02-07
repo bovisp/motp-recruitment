@@ -54,6 +54,7 @@ return array (
         1 => '1.5 km CAPPI Neige',
         2 => 'Composite VR LOLAA',
         3 => 'Caribou, Maine (CBW) VR LOLAA',
+        4 => 'Caribou radar location',
       ),
       'caption' => 
       array (
