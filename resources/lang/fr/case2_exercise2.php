@@ -56,7 +56,7 @@ return array (
       'caption' => 
       array (
         1 => 'Quantités de précipitation prévues aux 3 hrs avec la température en °C à 850mb valide du 12 novembre 2019 1500Z au 13 novembre 2019 0600Z',
-        2 => 'Areas of Relative humidity greater than 50% at 700mb, overlaid with geopotential heights at 700mb, valide de 1500Z le 12 novembere 2019 à 0600Z le 13 novembre 2019.',
+        2 => 'Secteurs où l’humidité relative à 700mb est supérieure à 50% avec les hauteurs géopotentielles de 700mb superposées. , valide de 1500Z le 12 novembere 2019 à 0600Z le 13 novembre 2019.',
         3 => 'Tourbillon absolu à 500mb avec les hauteurs géopotentielles de 500mb superposées, valide de 1500Z le 12 novembre 2019 à 0600Z le 13 novembre 2019.',
         4 => 'Contours d’épaisseurs 1000-500mb avec la pression au niveau moyen de la mer superposée, valide de 1500Z le 12 novembre 2019 à 0600Z le 13 novembre 2019.',
       ),
@@ -65,7 +65,7 @@ return array (
     array (
       'label' => 
       array (
-        1 => 'PNT CYNA Téphi',
+        1 => 'CYNA Téphi',
         2 => 'CYDF Téphi',
       ),
       'caption' => 

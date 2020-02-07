@@ -41,7 +41,7 @@ return array (
       array (
         1 => 'Surface temperature plotted in reds (warm) to blues (cool), overlaid with mean sea level pressure in black valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
         2 => 'Wind barbs colour-coded to wind speed of winds at 10m height above ground level, overlaid with mean sea level pressure in black valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
-        3 => 'Wet-bulb potential temperature at 850mb in oC plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
+        3 => 'Wet-bulb potential temperature at 850mb in °C plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb valid 1500Z 12 November 2019 to 0600Z 13 November 2019.',
       ),
     ),
     3 => 
@@ -83,14 +83,14 @@ return array (
       array (
         1 => 'Surface Temperature: Surface temperature plotted in reds (warm) to blues (cool), overlaid with mean sea level pressure in black.',
         2 => 'Near-surface winds: Wind barbs colour-coded to wind speed of winds at 10m height above ground level, overlaid with mean sea level pressure in black.',
-        3 => '850mb Wet-bulb: Wet-bulb potential temperature at 850mb in oC plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb.',
+        3 => '850mb Wet-bulb: Wet-bulb potential temperature at 850mb in °C plotted in yellows (warm) to greens (cool), overlaid with geopotential heights at 850mb.',
       ),
     ),
     2 => 
     array (
       'item' => 
       array (
-        1 => '3HR QPF: 3HR Quantitative Precipitation Amounts, overlaid with temperature in &deg;C at 850mb.',
+        1 => '3HR QPF: 3HR Quantitative Precipitation Amounts, overlaid with temperature in degrees Celcius at 850mb.',
         2 => '700mb RH: Areas of Relative humidity greater than 50% at 700mb, overlaid with geopotential heights at 700mb.',
         3 => '500mb Vort: Absolute vorticity at 500mb, overlaid with geopotential heights at 500mb.',
         4 => '1000-500mb Thickness: 1000-500mb thickness lines, overlaid with mean sea level pressure.',
