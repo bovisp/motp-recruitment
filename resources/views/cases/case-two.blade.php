@@ -81,18 +81,115 @@
       style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
     >
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.1') }}</p>
-        <img class="px-3 pb-3" style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_uglxiz.png" alt="" />
+        <div>
+          <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.1') }}</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <img class="px-3 pb-3 img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-1-SFC-PRES-TEMP_uglxiz.png" alt="" />
+            </div>
+
+            <div class="col-md-6 d-flex">
+              <div 
+                style="width: 300px; height: 75px; background-color: #fff; border: 1px solid #000;"
+                class="align-self-end mb-3 ml-3"
+              >
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px dashed red; width: 75px;"></div>
+
+                  <p class="ml-2 mb-0">
+                    <strong>{!! __('case2_exercise1.map_legend.temp') !!}</strong> 
+                  </p>
+                </div>
+
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px solid black; width: 75px;"></div>
+
+                  <p class="ml-2 mb-0">
+                    <strong>{{ __('case2_exercise1.map_legend.surface_pressure') }}</strong> 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
-        <img class="px-3 pb-3" style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_yk6m1w.png" alt="" />
+        <div>
+          <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <img class="px-3 pb-3 img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-2-SFC-PRES-DP_yk6m1w.png" alt="" />
+            </div>
+
+            <div class="col-md-6 d-flex">
+              <div 
+                style="width: 350px; height: 75px; background-color: #fff; border: 1px solid #000;"
+                class="align-self-end mb-3 ml-3"
+              >
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px dashed #64f84a; width: 75px;"></div>
+
+                  <p class="ml-2 mb-0">
+                    <strong>{!! __('case2_exercise1.map_legend.dew_point_temp') !!}</strong> 
+                  </p>
+                </div>
+
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px solid black; width: 75px;"></div>
+
+                  <p class="ml-2 mb-0">
+                    <strong>{{ __('case2_exercise1.map_legend.surface_pressure') }}</strong> 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
-        <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.3') }}</p>
-        <img class="px-3 pb-3" style="width: 60%;" src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_tyfpwg.png" alt="" />
+        <div>
+          <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <img class="px-3 pb-3 img-fluid"src="https://res.cloudinary.com/tcddmedia/image/upload/v1581110211/moip_direct_entry_assessment/case%202/Exercise%201/MAP-PLOT-3-SFC-PRES-PTEND_tyfpwg.png" alt="" />
+            </div>
+
+            <div class="col-md-6 d-flex">
+              <div 
+                style="width: 300px; height: 110px; background-color: #fff; border: 1px solid #000;"
+                class="align-self-end mb-3 ml-3"
+              >
+              <div class="d-flex align-items-center px-3" style="height: 35px;">
+                <div style="height: 0px; border: 2px solid black; width: 75px;"></div>
+
+                <p class="ml-2 mb-0">
+                  <strong>{{ __('case2_exercise1.map_legend.surface_pressure') }}</strong> 
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center px-3" style="height: 35px;">
+                <div style="height: 0px; border: 2px dashed red; width: 75px;"></div>
+
+                <p class="ml-2 mb-0">
+                  <strong>{{ __('case2_exercise1.map_legend.pressure_falls') }}</strong> 
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center px-3" style="height: 35px;">
+                <div style="height: 0px; border: 2px dashed blue; width: 75px;"></div>
+
+                <p class="ml-2 mb-0">
+                  <strong>{{ __('case2_exercise1.map_legend.pressure_rises') }}</strong> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
