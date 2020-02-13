@@ -76,12 +76,8 @@
     </ul>
 
     <!-- Tab panes for Case2E1Tab2 -->
-    <div 
-      class="tab-content mb-4 rounded"
-      style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;"
-    >
+    <div class="tab-content mb-4 rounded" style="border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6; margin-top: -10px;">
       <div id="Case2E1Tab2SFC-PRES-TEMP" class="tab-pane active">
-        <div>
           <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.1') }}</p>
 
           <div class="row">
@@ -90,10 +86,7 @@
             </div>
 
             <div class="col-md-6 d-flex">
-              <div 
-                style="width: 300px; height: 75px; background-color: #fff; border: 1px solid #000;"
-                class="align-self-end mb-3 ml-3"
-              >
+              <div style="width: 300px; height: 75px; background-color: #fff; border: 1px solid #000;" class="align-self-end mb-3 ml-3">
                 <div class="d-flex align-items-center px-3" style="height: 35px;">
                   <div style="height: 0px; border: 2px dashed red; width: 75px;"></div>
 
@@ -112,11 +105,9 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-DP" class="tab-pane">
-        <div>
           <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
 
           <div class="row">
@@ -125,10 +116,7 @@
             </div>
 
             <div class="col-md-6 d-flex">
-              <div 
-                style="width: 350px; height: 75px; background-color: #fff; border: 1px solid #000;"
-                class="align-self-end mb-3 ml-3"
-              >
+              <div style="width: 350px; height: 75px; background-color: #fff; border: 1px solid #000;" class="align-self-end mb-3 ml-3">
                 <div class="d-flex align-items-center px-3" style="height: 35px;">
                   <div style="height: 0px; border: 2px dashed #64f84a; width: 75px;"></div>
 
@@ -147,11 +135,9 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       
       <div id="Case2E1Tab2SFC-PRES-PTEND" class="tab-pane">
-        <div>
           <p class="pt-3 px-3">{{ __('case2_exercise1.tab.2.caption.2') }}</p>
 
           <div class="row">
@@ -160,36 +146,33 @@
             </div>
 
             <div class="col-md-6 d-flex">
-              <div 
-                style="width: 300px; height: 110px; background-color: #fff; border: 1px solid #000;"
-                class="align-self-end mb-3 ml-3"
-              >
-              <div class="d-flex align-items-center px-3" style="height: 35px;">
-                <div style="height: 0px; border: 2px solid black; width: 75px;"></div>
+              <div style="width: 300px; height: 110px; background-color: #fff; border: 1px solid #000;" class="align-self-end mb-3 ml-3">
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px solid black; width: 75px;"></div>
 
-                <p class="ml-2 mb-0">
-                  <strong>{{ __('case2_exercise1.map_legend.surface_pressure') }}</strong> 
-                </p>
+                  <p class="ml-2 mb-0">
+                    <strong>{{ __('case2_exercise1.map_legend.surface_pressure') }}</strong> 
+                  </p>
+                </div>
+
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px dashed red; width: 75px;"></div>
+
+                  <p class="ml-2 mb-0">
+                    <strong>{{ __('case2_exercise1.map_legend.pressure_falls') }}</strong> 
+                  </p>
+                </div>
+
+                <div class="d-flex align-items-center px-3" style="height: 35px;">
+                  <div style="height: 0px; border: 2px dashed blue; width: 75px;"></div>
+
+                  <p class="ml-2 mb-0">
+                    <strong>{{ __('case2_exercise1.map_legend.pressure_rises') }}</strong> 
+                  </p>
+                </div>
               </div>
-
-              <div class="d-flex align-items-center px-3" style="height: 35px;">
-                <div style="height: 0px; border: 2px dashed red; width: 75px;"></div>
-
-                <p class="ml-2 mb-0">
-                  <strong>{{ __('case2_exercise1.map_legend.pressure_falls') }}</strong> 
-                </p>
-              </div>
-
-              <div class="d-flex align-items-center px-3" style="height: 35px;">
-                <div style="height: 0px; border: 2px dashed blue; width: 75px;"></div>
-
-                <p class="ml-2 mb-0">
-                  <strong>{{ __('case2_exercise1.map_legend.pressure_rises') }}</strong> 
-                </p>
-              </div>
-            </div>
+            </div>  
           </div>
-        </div>
       </div>
     </div>
 
@@ -308,7 +291,7 @@
     >
       <div id="Case2E2Tab1Ref" class="tab-pane active">
         <p class="pt-3 px-3">{{ __('case2_exercise2.tab.1.caption.1') }}</p>
-        <img src="https://res.cloudinary.com/tcddmedia/image/upload/v1576165269/moip_direct_entry_assessment/case%202/Exercise%202/Forecast_Reference_z0m8vm.png" alt="" />
+        <img class="img-fluid q " src="https://res.cloudinary.com/tcddmedia/image/upload/v1576165269/moip_direct_entry_assessment/case%202/Exercise%202/Forecast_Reference_z0m8vm.png" alt="" />
       </div>
         
       <div id="Case2E2Tab1YNA" class="tab-pane">
