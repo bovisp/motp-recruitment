@@ -11,9 +11,9 @@
 
       <option 
         v-for="type in types"
-        :key="type"
-        :value="type"
-      >{{ type }}</option>
+        :key="type.code"
+        :value="type.code"
+      >{{ type.name }}</option>
     </select>
 
     <p 
@@ -77,14 +77,14 @@ export default {
   data () {
     return {
       types: [
-        this.trans('components.qpf-table.rain'),
-        this.trans('components.qpf-table.drizzle'),
-        this.trans('components.qpf-table.snow'),
-        this.trans('components.qpf-table.freezing-rain'),
-        this.trans('components.qpf-table.freezing-drizzle'),
-        this.trans('components.qpf-table.ice-pellets'),
-        this.trans('components.qpf-table.snow-grains'),
-        this.trans('components.qpf-table.rain-snow-mix'),
+        {code: 'rain', name: this.trans('components.qpf-table.rain')},
+        {code: 'drizzle', name: this.trans('components.qpf-table.drizzle')},
+        {code: 'snow', name: this.trans('components.qpf-table.snow')},
+        {code: 'freezing-rain', name: this.trans('components.qpf-table.freezing-rain')},
+        {code: 'freezing-drizzle', name: this.trans('components.qpf-table.freezing-drizzle')},
+        {code: 'ice-pellets', name: this.trans('components.qpf-table.ice-pellets')},
+        {code: 'snow-grains', name: this.trans('components.qpf-table.snow-grains')},
+        {code: 'rain-snow-mix', name: this.trans('components.qpf-table.rain-snow-mix')},
       ]
     }
   },
