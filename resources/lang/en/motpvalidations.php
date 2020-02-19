@@ -7,6 +7,10 @@ return array (
     array (
       'required' => 'The comment field is required',
     ),
+    'score' => 
+    array (
+      'invalid' => 'This score is higher than the maximum score.',
+    ),
   ),
   'textbox' => 
   array (
