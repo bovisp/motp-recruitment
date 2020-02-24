@@ -1,8 +1,10 @@
+import settings from './settings'
+
 require('./bootstrap')
 
 require('./plugins/jqScribble')
 
-axios.defaults.baseURL = 'http://msc-educ-smc.cmc.ec.gc.ca/motp-recruitment'
+axios.defaults.baseURL = settings.baseURL
 
 import Vue from 'vue'
 import store from './store'
