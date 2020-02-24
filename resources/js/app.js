@@ -1,10 +1,8 @@
-import settings from './settings'
-
 require('./bootstrap')
 
 require('./plugins/jqScribble')
 
-axios.defaults.baseURL = settings.baseURL
+axios.defaults.baseURL = window.baseURL
 
 import Vue from 'vue'
 import store from './store'

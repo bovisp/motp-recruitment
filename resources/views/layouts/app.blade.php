@@ -10,6 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     @include('layouts.partials.trans')
+    @include('layouts.partials.baseURL')
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
