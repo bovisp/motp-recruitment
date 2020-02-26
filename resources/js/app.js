@@ -45,6 +45,7 @@ Vue.component('image-map-one', require('./components/imagemap/ImageMapOne.vue').
 Vue.component('image-map-tephi', require('./components/imagemap/ImageMapTephi.vue').default) 
 Vue.component('image-animator', require('./components/animator/ImageAnimator.vue').default) 
 Vue.component('countdown-timer', require('./components/timer/CountdownTimer.vue').default) 
+Vue.component('textbox-test', require('./components/test/TextboxTest.vue').default) 
 
 const app = new Vue({  
   el: '#app',

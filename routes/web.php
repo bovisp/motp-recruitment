@@ -6,6 +6,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test', 'TestController@index');
+
+Route::get('/test/data', 'TestController@show');
+
+Route::post('/test', 'TestController@store');
+
 /**
  * Auth routes.
  */
