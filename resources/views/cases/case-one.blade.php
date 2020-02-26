@@ -18,7 +18,7 @@
 
       <div class="col-md-6">
         <figure class="figure">
-          <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/c_scale,w_589/v1575644904/moip_direct_entry_assessment/case%201/case_1_kap_tim_map_hmldig.jpg" />
+          <img class="figure-img img-fluid" src="https://res.cloudinary.com/tcddmedia/image/upload/v1582747778/moip_direct_entry_assessment/case%201/yyu_yts_ref_map_pdsoff.png" />
           <figcaption class="figure-caption">{{ __('case1.caption.1') }}</figcaption>
         </figure>
       </div>
