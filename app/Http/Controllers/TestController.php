@@ -26,6 +26,6 @@ class TestController extends Controller
 
   public function show()
   {
-    return Test::first()->body;
+    return Test::first()->body ?? '';
   }
 }

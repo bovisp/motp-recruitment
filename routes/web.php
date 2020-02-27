@@ -82,14 +82,12 @@ Route::middleware(['auth', 'isadmin'])->group(function () {
 /**
  * Data routes
  */
-Route::middleware(['auth'])->group(function () {
-  Route::get('/data/animations/{file}', function ($file) {
-    $path = public_path() . "/animations/${file}.json";
+Route::get('/data/animations/{file}', function ($file) {
+  $path = public_path() . "/animations/${file}.json";
 
-    if (!File::exists($path)) {
-      throw new \Exception("Invalid File");
-    }
+  if (!File::exists($path)) {
+    throw new \Exception("Invalid File");
+  }
 
-    return File::get($path);
-  });
+  return File::get($path);
 });
